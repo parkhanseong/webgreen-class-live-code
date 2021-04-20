@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>blur bg</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html, body {
+        height: 100%;
+        /* border: 10px solid red; */
+    }
+    body:before {
+        content: '';
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: url(image/blur-bg.jpg);
+        z-index: -1;
+        filter: blur(15.3px);
+    }
+    .wrap {
+        width: 700px;
+        height: 100%;
+        margin: 0 auto;
+        /* border: 1px solid #000; */
+        /* margin-top: 100px; */
+    }
+    .box {
+        /* border: 1px solid #000; */
+        /* margin: 0 auto; */
+        margin-top: 100px;
+        width: 400px;
+        height: 400px;
+        background: #999;
+    }
+</style>
+</head>
+<body>
+
+    <div class="wrap">
+        <!-- <div class="box">
+            <h1>lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus quia dolorum facere officiis excepturi ullam nihil aperiam labore maiores nulla aspernatur, odio vero a reiciendis fuga deserunt consequatur voluptatem!</p>
+        </div> -->
+    </div>
+
+</body>
+</html>

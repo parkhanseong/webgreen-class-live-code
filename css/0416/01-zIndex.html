@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>z-index</title>
+<style>
+    .container {
+
+    }
+    div {
+        border: 1px solid #000;
+    }
+    /* 
+        1. 오른쪽이나 뒤에 써진 ele가 우선 순위가 높다
+        2. i-block이 block보다 우선순위가 높다
+     */
+    .box1 {
+        /* 붕 떴다 */
+        position: absolute; /* re/ab/fix */
+        width: 200px;
+        height: 200px;
+        background: gold;
+        left: 100px;
+        /* 
+        stack context 
+        맥락 쌓임
+        */
+        /* 
+            1. 숫자 큰 녀석이 앞으로 온다 
+            2. 음수 값이 가능하다
+            3. 0이 기본이다( 하지만, default: auto )
+            4. 범위 -9999 ~ 9999 가능 혹은 더 크게도 됨
+        */
+        z-index: -1;
+    }
+    .box2 { 
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: crimson;
+        left: 200px;
+        top: 100px;
+    }
+    .ball1 {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        width: 100px;
+        height: 100px;
+        background: skyblue;
+        z-index: 999999;
+        left: 250px;
+    }
+    /* .ball2 {
+        width: 100px;
+        height: 100px;
+        background: skyblue;
+    } */
+    
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box1">
+        </div>
+        <div class="box2">
+            <div class="ball2"></div>
+        </div>
+        <div class="ball1"></div>
+
+    </div>
+</body>
+</html>

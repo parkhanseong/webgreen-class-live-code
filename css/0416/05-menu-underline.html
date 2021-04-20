@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>underline menu</title>
+<style>
+    * {
+        padding: 0;
+    }
+    li {
+        list-style: none;
+    }
+    ul {
+        /* border: 1px solid #000; */
+    }
+    header {
+        display: inline-block;
+        width: 500px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .tnb li {
+        display: inline-block;
+        margin-right: 2rem;
+    }
+    .tnb li a {
+        font-size: 2rem;
+        text-decoration: none;
+        display: inline-block;
+        color: #000;
+        height: 50px;
+        line-height: 50px;
+        position: relative;
+        border: 1px solid red;
+    }
+    .tnb li:nth-child(1) a {
+        border: 1px solid coral;
+    }
+    .tnb li:nth-child(1) a:before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background: #999;
+        color: blue;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: .5s;
+    }
+    .tnb li:nth-child(1) a:hover:before,
+    .tnb li:nth-child(2) a:hover:before,
+    .tnb li:nth-child(3) a:hover:before
+    { width: 100%; }
+    
+    .tnb li:nth-child(3) a:before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background: #999;
+        color: blue;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transition: .5s;
+    }
+
+    .tnb li:nth-child(2) a:before {
+        content: "";
+        width: 1px;
+        height: 5px;
+        background: #999;
+        color: blue;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transition: .5s;
+    }
+    .tnb li:nth-child(2) a:hover:before {
+        width: 100%;
+        transform: translateX(-50%);
+    }
+    
+</style>
+</head>
+<body>
+
+    <header>
+        <ul class="tnb">
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li> 
+        </ul>
+    </header>
+
+</body>
+</html>

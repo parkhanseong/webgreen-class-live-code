@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<h9adsepia(1)
+<meta charset="UTF-8">
+<title>filter practice</title>
+<style>
+    * {
+        margin: 0;
+    }
+    .container {
+        margin-top: 80px;
+        border: 1px solid #000;
+        /* text-align은 상속이 된다 */
+        text-align: center;
+        font-size: .6rem;
+    }
+    img {
+        max-width: 100%;
+        /* auto가 default다 */
+        /* height: auto; */
+    }
+    .item {
+        display: inline-block;
+        width: 30%;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: all .5s;
+    }
+    .item:nth-child(1) {
+        position: relative;
+    }
+    .item:nth-child(1) img {
+        filter: opacity(.5);
+        /* opacity: .5; */
+    }
+    .item:nth-child(1) h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%, -50%);
+        color: #000;
+    }
+    .item:nth-child(1):hover img {
+        -ms-filter: blur(0px);
+        
+    }
+    .item:nth-child(2) {
+        filter: brightness(200%);
+        
+    }
+    .item:nth-child(2):hover  {
+        filter: brightness(100%);
+    }
+    .item:nth-child(3) {
+        filter: contrast(200%);
+    }
+    .item:nth-child(3):hover {
+        filter: contrast(100%);
+    }
+    .item:nth-child(4) {
+        filter: drop-shadow(-5px -5px hsla(0, 100%, 50%, 0.527));
+    }
+    .item:nth-child(4):hover {
+        filter: drop-shadow(0 0 0);
+    }
+    .item:nth-child(5) {
+        filter: grayscale(100%)
+    }
+    .item:nth-child(5):hover {
+        filter: grayscale(0%)
+    }
+    .item:nth-child(6) {
+        filter: hue-rotate(140deg)
+    }
+    .item:nth-child(6):hover {
+        filter: hue-rotate(0deg)
+    }
+    .item:nth-child(7) {
+        filter: invert(100%) 
+    }
+    .item:nth-child(7):hover {
+        filter: invert(0%) 
+    }
+    .item:nth-child(8) {
+        filter: opacity(.5)
+    }
+    .item:nth-child(8):hover {
+        filter: opacity(1)
+    }
+    .item:nth-child(9) {
+        filter: sepia(1) hue-rotate(140deg) opacity(.5)  blur(3px);
+    }
+    .item:nth-child(9):hover {
+        filter: none;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <img src="image/filter-img.png" alt="filter test img">
+            <h1>title</h1>
+            <p>blur(default: 0px)</p>
+        </div>
+        <div class="item">
+            <img src="image/filter-img.png" alt="filter test img">
+            <p>brightness(default: 100%)</p>
+        </div>
+        <div class="item">
+            <img src="image/filter-img.png" alt="filter test img">
+            <p>contrast(default: 100%)</p>
+        </div>
+        <div class="item">
+            <img src="image/filter-img.png" alt="filter test img">
+            <p>drop-shadow(default: 0px 0px color)</p>
+        </div>
+        <div class="item">
+            <img src="image/filter-img.png" alt="filter test img">
+            <p>grayscale(default: 0%)</p>
+        </div>
+        <div class="item">
+            <img src="image/filter-img.png" alt="filter test img">
+            <p>hue-rotate(default: 0-360deg)</p>
+        </div>
+        <div class="item">
+            <img src="image/filter-img.png" alt="filter test img">
+            <p>invert(default: 0%)</p>
+        </div>
+        <div class="item">
+            <img src="image/filter-img.png" alt="filter test img">
+            <p>opacity(default: 1)</p>
+        </div>
+        <div class="item">
+            <img src="image/filter-img.png" alt="filter test img">
+            <p>sepia(default: 0)</p>
+        </div>
+    </div>
+</body>
+</html>

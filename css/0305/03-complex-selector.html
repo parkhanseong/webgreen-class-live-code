@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+    .parent {
+        width: 200px;
+        height: 200px;
+        background-color: lightcoral;
+    }
+    /* 자식 셀렉터/복합 셀렉터 */
+    .parent > div {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        border: 1px solid black;
+    }
+    /* 자손 셀렉터/복합 셀렉터 */
+    .parent > div.box1 div {
+        width: 50%;
+        height: 50px;
+        background-color: lightcyan;
+        border: 1px solid black;
+    }
+    
+
+</style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="box1">
+            1
+            <div>
+                inner2
+            </div>
+            <div>
+                inner2-1
+            </div>
+        </div>
+        <div class="box2"></div>
+    </div>
+
+</body>
+</html>

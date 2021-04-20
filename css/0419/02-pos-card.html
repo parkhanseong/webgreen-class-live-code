@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>postion card</title>
+<style>
+    /* * {
+        margin: 0;
+        padding: 0;
+    } */
+    h1 {
+        /* border: 1px solid #000; */
+        margin: 4px 0;
+    }
+    p {
+        /* border: 1px solid #000; */
+        margin: 2px 0;
+    }
+    img {
+        /* border: 1px solid #000; */
+    }
+
+    .card {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        border-radius: 40px;
+        margin-top: 100px;
+        left: 50%;
+        transform: translate(-50%);
+        
+    }
+    .card:after {
+        content: '?';
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 5rem;
+        text-align: center;
+        line-height: 300px;
+        /* top: 10px;
+        bottom: 10px;
+        left: 10px;
+        right: 10px; */
+        width: 100%;
+        height: 100%;
+        background: #ddd;
+        opacity: 1;
+        transition: 1s;
+    }
+    .card:hover:after {
+        opacity: 0;
+    }
+    .card img {
+        background: linear-gradient(to right, crimson, gold);
+        border-radius: 50%;
+        transition: 1s;
+    }
+    .desc {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        opacity: 0;
+        transition: 1s;
+    }
+    
+    .card:hover .desc {
+        opacity: 1;
+    }
+    .card:hover img {
+        transform: rotateY(720deg);
+    }
+
+</style>
+</head>
+<body>
+    <h1>피카츄를 잡았다</h1>
+    <div class="card">
+        <img src="image/pikachu2_300x300.png" alt="">
+        <div class="desc">
+            <h1>피카츄</h1>
+            <p>피카츄는 전기 공격을 한다</p>
+        </div>
+    </div>
+    <!-- <div class="card">
+        <img src="image/ggobugi2_300x300.png" alt="">
+        <div class="desc">
+            <h1>피카츄</h1>
+            <p>피카츄는 전기 공격을 한다</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="image/isanghae_300x300.png" alt="">
+        <div class="desc">
+            <h1>피카츄</h1>
+            <p>피카츄는 전기 공격을 한다</p>
+        </div>
+    </div> -->
+
+</body>
+</html>

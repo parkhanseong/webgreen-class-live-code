@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>selector -css</title>
+    <style>
+        /* 전체 선택자, universal selector */
+        /* * {
+            color: purple;
+        } */
+        /* tag selector */
+
+        /* #id selector 
+        유일해야하며 하나여야 한ㄷ*/
+        #sample1 {
+            color:red;
+            font-size: 10px;
+        }
+        /* class selector
+        중복, 다수 선언 가능함 */
+        .sample2 {
+            color:cyan;
+        }
+        .sub-sample2 {
+            font-size: 30px;
+        }
+        /* 복합 셀렉터 */
+        p.test1, h1.test1 {
+            color: coral;
+        }
+        /* 속성을 선택할수 있는, attribute selecotr */
+        /* [속성] {
+
+        } */
+        [name="company"] {
+            color:dimgrey;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="http://www.facebook.com">facebook</a>
+    <a href="http://www.facebook.com" title="test" name="company">facebook</a>
+
+    <p class="test1">
+        p 셀럭터 부분
+    </p>
+    <h1 class="test1">
+        p 셀럭터 부분
+    </h1>
+
+    <h1 id="sample1">Lorem ipsum dolor sit amet.</h1>
+    <h2 class="sample2 sub-sample2 sub-sample3">Lorem ipsum dolor sit amet.</h2>
+    <h3 class="sample2 sub-sample2">Lorem ipsum dolor sit amet.</h3>
+    <h4>Lorem ipsum dolor sit amet.</h4>
+    <h5>Lorem ipsum dolor sit amet.</h5>
+    <h6>Lorem ipsum dolor sit amet.</h6>
+
+
+</body>
+</html>

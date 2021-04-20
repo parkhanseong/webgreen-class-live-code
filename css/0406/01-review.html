@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>01-filter review</title>
+
+<style>
+    body {
+        text-align: center;
+    }
+    img {
+        width: 300px;
+        border: 1px solid #000;
+        margin-right: 2rem;
+        display: block;
+    }
+    img.filter {
+        width: 100%;
+        filter: drop-shadow(0 0 10px red);
+        /* -ms-filter: drop-shadow(0 0 10px red); */
+        /* -ms-filter : "progid : DXCLASS.Object.Attr (drop-shadow(0 0 10px red))"; */
+        overflow: hidden;
+    }
+    img.boxShadow {
+        box-shadow: 0 0 10px red;
+    }
+    .box {
+        display: inline-block;
+        border: 1px solid #000;
+        overflow: hidden;
+    }
+</style>
+
+</head>
+<body>
+    <div class="box">
+        <img src="image/profile-remove-bg.png" alt="" class="filter">
+    </div>
+    <img src="image/profile-remove-bg.png" alt="" class="boxShadow">
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>close selector</title>
+<style>
+    #wrap {
+        width: 200px;
+        height: 400px;
+        background-color: skyblue;
+    }
+    #wrap div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+    }
+    .box1 ~ div {
+        background-color: coral;
+    }
+    .box1 ~ a {
+        color: black;
+    }
+</style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box1"></div>
+        <div></div>
+        <div></div>
+        <a href="#">test</a>
+        <a href="#">test</a>
+        <a href="#">test</a>
+    </div>
+</body>
+</html>

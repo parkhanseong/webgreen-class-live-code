@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>border</title>
+    <style>
+        /* 모듈화 > 코드 재사용 */
+        .basicBox {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: #999;
+            border: 3px solid coral;
+        }
+        .box1 {
+            border-radius: 10px;
+        }
+        .box2 {
+            border-radius: 20px;
+        }
+        .box3 {
+            border-radius: 50%;
+        }
+        .box4 {
+            border-radius: 20px 0 20px 0;
+        }
+        .box5 {
+            border-radius: 100% 0 0 0;
+        }
+        .box6 {
+            border-radius: 50px 50px 50px 0;
+        }
+        .box7 {
+            border-radius: 100% 0 100% 0;
+        }
+        .box8 {
+            border-radius: 50% 50% 0 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- w200, h200 -->
+    <span>test</span>
+    <span>test2</span>
+    <span>test3</span>
+    <span>test4</span>
+    <span>test5</span>
+    <span>test6</span>
+    <div class="basicBox box1">1</div>
+
+    <div class="basicBox box3">3</div>
+    <div class="basicBox box4">
+        4
+    </div>
+    <div class="basicBox box5">
+        5
+    </div>
+    <div class="basicBox box6">
+        6
+    </div>
+    <div class="basicBox box7">
+        7
+    </div>
+    <div class="basicBox box8">
+        8
+    </div>
+</body>
+</html>

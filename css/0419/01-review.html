@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>review</title>
+<style>
+    a {
+        color: inherit;
+        text-decoration: none;
+        /* border: 1px solid #000; */
+    }
+    .container {
+        width: 500px;
+        height: 500px;
+        border: 10px solid #000;
+        /* static을 제외한 position 속성이 있으면 */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .box {
+        width: 100%;
+        height: 100px;
+        /* background: skyblue; */
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    h1 {
+        display: inline-block;
+        /* border: 1px solid #000; */
+    }
+    ul {
+        text-align: center;
+        display: block;
+        
+    }
+    ul li {
+        display: inline-block;
+    }
+
+    /* 셀렉터 우선순위 */
+    
+    /* type slector + class selector */
+    ul.slider {
+        /* background: green; */
+    }
+    ul.slider li a {
+        /* background: coral; */
+        padding: 5px;
+        position: relative;
+    }
+    /* pseudo elements 가상의 엘리먼츠 */
+    ul.slider li a:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        background: purple;
+        width: 2px;
+        height: 2px;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: /* all 생략 가능 */all .5s;
+    }
+    ul.slider li a:hover:after {
+        width: 100%;
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <ul class="slider introduce green">
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+        </ul>
+    </div>
+</body>
+</html>

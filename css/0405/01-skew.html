@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>skew practice</title>
+<style>
+    body {
+        perspective: 1000px;
+    }
+    .box {
+        margin-top: 100px;
+        text-align: center;
+        transition: all .5s;
+    }
+    .box:hover img {
+        transform: skew(45deg, 10deg);
+    }
+</style>
+</head>
+<body>
+
+    <div class="box">
+        <img src="image/filter-img.png" alt="">
+    </div>
+
+</body>
+</html>

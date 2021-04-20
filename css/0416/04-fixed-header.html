@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<title>fixed header</title>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    a {
+        color: inherit;
+        display: inline-block;
+    }
+    .wrap {
+        margin: 0 auto;
+    }
+    header {
+        background: #222;
+        top: 0;
+        left: 0;
+        height: 100px;
+        color: #999;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+    }
+    header h1 {
+        line-height: 100px;
+    }
+    section {
+        color: #fff;
+        height: 50vh;
+        background: royalblue;
+    }
+    section:nth-of-type(1) {
+        color: red;
+        margin-top: 100px;
+    }
+    section:nth-of-type(2) {
+        color: black;
+    }
+    .btnTop {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        border: 1px solid #fff;
+        background: #999;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+        color: #333;
+        overflow: hidden;
+    }
+    .btnTop a {
+        width: 100%;
+    }
+    
+</style>
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <h1>title</h1>
+    </header>
+    <section>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto incidunt, ut labore praesentium soluta sit architecto tempora enim aliquam unde sed nisi ea distinctio totam illum voluptate, sint explicabo debitis!
+    </section>
+    <section>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur facilis totam quibusdam veniam libero adipisci eius, accusantium, laboriosam hic cupiditate magnam assumenda doloribus et magni, eaque expedita maiores cum.
+    </section>
+    <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, earum expedita! Explicabo fugit nesciunt architecto, error voluptates totam debitis itaque quibusdam laudantium delectus nulla aut. Pariatur quod recusandae totam perspiciatis!</section>    
+    <div class="btnTop">
+        <a href="#">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+    <footer></footer>
+</div>
+</body>
+</html>

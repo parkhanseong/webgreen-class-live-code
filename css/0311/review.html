@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/reset.css">
+<title>review - 0311</title>
+
+<style>
+    /* 질문 요청 start */
+    .box1 {
+        background-color: skyblue;
+    }
+    .box1 .box1-child {
+        font-size: 50px;
+    }
+    .box1 a.site {
+        color: red;
+    }
+    .box1 p:nth-of-type(2) {
+        color:red;        
+    }
+
+    /* 질문 요청 end */
+
+    /* 도움말 부분 start */
+    .box2 p:nth-child(1) {
+        color: blue;
+        font-size: 30px;
+    }
+    .box2 p:last-child {
+        color: purple;
+        font-size: 30px;
+    }
+    /* 도움말 end */
+
+</style>
+</head>
+<body>
+
+    <!-- 자식, 자손요소 셀렉터 -->
+    <div class="box1">
+        <p class="box1-child">
+            Lorem, ipsum dolor.
+        </p>
+        <a href="#" class="site">
+            naver
+        </a>
+        <p>
+            Lorem, ipsum dolor.
+        </p>
+    </div>
+    <div class="box2">
+        <p>
+            Lorem, ipsum dolor.
+        </p>
+        <p>
+            Lorem, ipsum dolor.
+        </p>
+        <p>
+            Lorem, ipsum dolor.
+        </p>
+        <p>
+            Lorem, ipsum dolor.
+        </p>
+    </div>
+
+</body>
+</html>

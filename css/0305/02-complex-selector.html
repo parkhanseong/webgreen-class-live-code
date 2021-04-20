@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>complex selector</title>
+<style>
+    .parent {
+        width: 200px;
+        height: 200px;
+        background-color: indianred;
+    }
+    .child {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+    }
+    .box {
+        width: 50px;
+        height: 50px;
+        background-color: lightblue;
+    }
+</style>
+</head>
+<body>
+    <!-- 3개층 -->
+    <!-- 부모 요소 -->
+    <div class="parent">
+        <!-- 자식 요소 -->
+        <div class="child">
+            <div class="box">
+                box1
+            </div>
+            <div class="box">
+                box2
+            </div>
+        </div>
+    </div>
+</body>
+</html>

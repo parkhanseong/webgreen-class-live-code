@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>table practice</title>
+
+    <style>
+        /* caption {
+            display: none;
+        } */
+    </style>
+
+</head>
+<body>
+
+    <h1>Table 구조 1</h1>
+    <table border="1">
+        <!-- table row: 열 -->
+        <tr>
+            <!-- table data: 셀 데이터 -->
+            <td>table cell 1</td>
+            <td>table cell 2</td>
+            <td>table cell 3</td>
+        </tr>
+        <tr>
+            <!-- table data: 셀 데이터 -->
+            <td>table cell 4</td>
+            <td>table cell 5</td>
+            <td>table cell 6</td>
+        </tr>
+        <tr>
+            <!-- table data: 셀 데이터 -->
+            <td>table cell 7</td>
+            <td>table cell 8</td>
+            <td>table cell 9</td>
+        </tr>
+    </table>
+
+    <h1>Table 구조 2</h1>
+    <table border="1" width="50%">
+        <caption>올림픽 메달 집계</caption>
+        <thead>
+            <tr>
+                <th>종목</th>
+                <th>금</th>
+                <th>은</th>
+                <th>동</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>양궁</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>탁구</td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">종합</th>
+                <th>2</th>
+                <th>2</th>
+                <th>2</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h3>Table 구조 3</h3>
+    <table border="1" width="50%">
+        <caption>맥도날드 가격표</caption>
+        <thead>
+            <tr>
+                <th>품목</th>
+                <th>품명</th>
+                <th>세트</th>
+                <th>단품</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">버거</td>
+                <td>1955 버거</td>
+                <td colspan="2">7300</td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td>빅맥</td>
+                <td>5300</td>
+                <td>4300</td>
+            </tr>
+            <tr>
+                <td rowspan="2">맥모닝</td>
+                <td>맥모닝 에그</td>
+                <td>5300</td>
+                <td rowspan="2">2300</td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td>베이컨 에그</td>
+                <td>4300</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

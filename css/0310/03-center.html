@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>center</title>
+    <style>
+        /* block 요소의 중앙 정렬 */
+        #wrap {
+            width: 500px;
+            height: 1000px;
+            /* 넓이값이 존재할때 */
+            /* 상하, 좌우 * margin 상,하는 auto가 안된다 */
+            margin: 0 auto;
+            background-color: skyblue;
+        }
+        header {
+            margin: 0 auto;
+            width: 300px;
+            background-color: coral;
+            text-align: center;
+            height: 100px;
+            /* 텍스트 세로 중앙 정렬은 line-height
+            높이값을 부모 요소의 값과 동일하게 한다 */
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 가장 상위의 box -->
+    <div id="wrap">
+        <header>LOGO</header>
+    </div>
+
+</body>
+</html>

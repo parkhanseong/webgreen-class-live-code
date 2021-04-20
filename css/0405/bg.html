@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>bg blur</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html {
+        height: 100%;
+        border: 10px solid red;
+
+    }
+    body {
+        border: 10px solid blue;
+        background: url(image/filter-img.png) no-repeat center/cover;
+        height: 100%;
+        filter: blur(10px);
+        /* backdrop-filter: blur(10px); */
+    }
+    .wrap {
+        /* border: 1px solid red; */
+        height: 100%;
+        width: 700px;
+        margin: 0 auto;
+        /* filter: blur(10px); */
+    }
+    .box {
+        background: gold;
+        width: 500px;
+        margin: 0 auto;
+        /* filter: blur(10px); */
+    }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, fugit? Eum odio modi nisi ex sequi corporis numquam, aperiam recusandae a dolorum laboriosam facilis nihil, doloremque deserunt iste quibusdam nobis?</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>rotate img</title>
+<style>
+    body {
+        text-align: center;
+    }
+    img {
+        width: 200px;
+        animation: rotateFilter 2s infinite;
+    }
+    img:nth-child(1){
+        background: dodgerblue;
+    }
+    img:nth-child(2){
+        background: royalblue;
+    }
+    img:nth-child(3){
+        background: lightpink;
+    }
+    @keyframes rotateFilter {
+        from {
+            filter: hue-rotate(0deg);
+        }
+        to {
+            filter: hue-rotate(160deg);
+        }
+    }
+
+</style>
+</head>
+<body>
+
+<img src="images/profile-remove-bg.png" alt="">
+<img src="images/profile-remove-bg.png" alt="">
+<img src="images/profile-remove-bg.png" alt="">
+
+</body>
+</html>

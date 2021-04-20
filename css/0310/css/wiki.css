@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrap {
+    padding: 20px;
+}
+/* header */
+header {
+    margin-bottom: 20px;
+}
+header h1 {}
+header hr {margin: 10px;}
+
+/* manage */
+.manage { 
+    border: 1px solid #BBDDFF;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.manage h1 {
+    margin-bottom: 10px;
+}
+
+/* delete */
+.delete {
+    border: 1px solid #BBDDFF;
+    padding: 20px;
+}
+.delete h4 {
+    background-color: #BBDDFF;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.delete p {}
+
+

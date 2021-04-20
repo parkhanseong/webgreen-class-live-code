@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>
+    around ball
+</title>
+<style>
+    .wrap {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .box {
+        width: 500px;
+        height: 500px;
+        background: lightpink;
+    }
+    .ball {
+        width: 250px;
+        height: 250px;
+        background: gold;
+        border-radius: 50%;
+        /* 1회 */
+        transform: translate(0, 0);
+        /* 2회 */
+        /* transform: translate(100%, 0); */
+        /* 3회 */
+        /* transform: translate(100%, 100%); */
+        /* 4회 */
+        /* transform: translate(0, 100%); */
+        /* 5회 */
+        /* transform: translate(0, 0); */
+        animation: around 3s alternate linear;
+        /* animation-delay: 10s; */
+        animation-fill-mode: forwards;
+    }
+    @keyframes around {
+        0% {
+            transform: translate(0, 0);
+        }
+        25% {
+            transform: translate(100%, 0);
+        }
+        50% {
+            transform: translate(100%, 100%);
+            background: coral;
+        }
+        75% {
+            transform: translate(0, 100%);
+        }
+        100% {
+            transform: translate(0, 0);
+            background: green;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="box">
+            <div class="ball"></div>
+        </div>
+    </div>
+
+</body>
+</html>

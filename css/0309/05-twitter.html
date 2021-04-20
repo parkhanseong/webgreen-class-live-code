@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>twitter logo</title>
+    <style>
+        a {
+            /* inline > block */
+            display: block;
+            text-decoration: none;
+            color: #000;
+            width: 300px;
+            height: 50px;
+            /* 가로 중앙 정렬 */
+            text-align: center;
+            /* 세로 중앙 정렬 */
+            line-height: 50px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+        }
+        a.signUp {
+            background-color: #1A91DA;
+            color: #fff;
+        }
+        a.signUp:hover {
+            /* 투명도 설정
+            rgba(0,0,0, 1)
+            hexcode (000000,00) */
+            opacity: 0.7;
+        }
+        a.login {
+            border: 1px solid #1A90D9;
+            color: #1A90D9;
+        }
+        a.login:hover {
+            background-color: #E7F4FD;
+        }
+    </style>
+</head>
+<body>
+    <h2>오늘 트위터에 가입하세요.</h2>
+    <!-- block -->
+    <a href="#" class="signUp">
+        <!-- block -->
+        <div>
+            가입하기
+        </div>
+    </a>
+    <a href="#" class="login">
+        <div>
+            로그인
+        </div>
+    </a>
+</body>
+</html>

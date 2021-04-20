@@ -1,0 +1,168 @@
+@charset "utf-8";
+@import "reset.css";
+
+header{
+    height: 300px;
+    background: url(../images/lego-1629073_1920.jpg);
+}
+.inner{
+    margin: auto;
+    width: 1000px;
+}
+header .inner .head_title{
+    padding: 100px 0 100px 0;
+    height:250px;
+}
+header .inner .head_title p{
+    padding: 1rem;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+}
+header .inner .head_title span{
+    display: inline-block;
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-weight: bold;
+    /* background: rgb(255, 95, 95); */
+    box-shadow: 3px 3px #fff;
+    text-align: center;
+    transition: all .3s;
+}
+header .inner .head_title a:hover span{
+    color: rgb(255, 95, 95);
+    text-shadow: 0 0 5px #000;
+}
+
+header .inner ul {
+    text-align: right;
+
+}
+header .inner ul li{
+    background: #fff;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height:50px;
+    border-radius: 15px 15px 0 0;
+    margin-left: 5px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(131, 131, 131);
+}
+header .inner ul li a{
+    display: block;
+}
+header .inner ul li a:hover{
+    transform: rotate(10deg);
+    color: rgb(255, 95, 95);
+    font-weight: bold;
+}
+main .skill{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(194, 194, 194);
+}
+main .skill .icon a{
+    display: block;
+}
+main .skill .icon{
+    display: inline-block;
+    border: 1px solid rgb(255, 173, 173);
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding-top: 15px;
+    padding-left: 5px;
+    border-radius: 50%;
+    background: rgb(255, 214, 214);
+    text-align: center;
+    transition: all .8s;
+}
+main .skill .icon i{
+    font-size: 120px;
+    color: rgb(255, 255, 255);
+}
+main .skill .icon:hover{
+    transform: rotateY(360deg);
+    background: rgb(235, 31, 92);
+}
+
+main .legoinfo{
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid rgb(194, 194, 194);
+}
+main .legoinfo .imgbox{
+    width:35%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 0 60px 60px 0;
+}
+main .legoinfo .imgbox img:hover{
+    transform: scale(1.2);
+}
+main .legoinfo .imgbox img{
+    transition: all 0.5s;
+    max-width: 100%;
+}
+main .imginfo{
+    width: 60%;
+    /* padding: 1rem; */
+    margin-top: 20px;
+    margin-left: 10px;
+    vertical-align: top;
+}
+main .imginfo span{
+    display: block;
+    font-weight: bold;
+    color: rgb(255, 95, 95);
+    padding: .5rem 0 .5rem 0;
+}
+main .legoinfo div{
+    display: inline-block;
+}
+main .legoinfo .imginfo_button {
+    display: block;
+    text-align:right;
+}
+main .legoinfo .imginfo_button a{
+    width: 80px;
+    height: 40px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    display: inline-block;
+    color: rgb(255, 95, 95);
+    background: #fff;
+    border: 1px solid rgb(255, 173, 173);
+    text-transform: uppercase;
+}
+main .legoinfo .imginfo_button a:hover{
+    filter: drop-shadow(3px 3px rgb(255, 95, 95));
+}
+footer {
+    background: rgb(255, 95, 95);
+    height: 230px;
+    /* padding-top: 1rem; */
+    text-align: center;
+}
+footer p{
+    color:#fff;
+}
+footer ul{
+    display: inline-block;
+    padding: 2rem;
+    color: #fff;
+}
+footer ul li:nth-child(1){
+    font-weight: bold;
+    padding: 1rem;
+}
+footer a:hover{
+    text-decoration: underline;
+}

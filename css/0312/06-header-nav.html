@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/reset.css">
+<title>header - nav</title>
+<style>
+    ul.gnb {
+        /* background-color: skyblue; */
+        /* border: 1px solid #000; */
+    }
+    h1.logo {
+        background-color: skyblue;
+        display: inline-block;
+        width: 25%;
+        height: 100px;
+        vertical-align: top;
+        text-align: center;
+        line-height: 100px;
+    }
+    h1.logo a {
+        background-color: green;
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    ul.gnb li {
+        display: inline-block; /* block > inline-block 변환 */
+        width: 25%;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+    }
+    ul.gnb li a {
+        display: block; /* inline > block 변환 */
+        background-color: #ddd;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    ul.gnb li a:hover {
+        color: #fff;
+        background-color: #000;
+        box-shadow: 2px 2px 2px 2px #000;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <ul class="gnb">
+            <h1 class="logo">
+                <a href="./06-header-nav.html">
+                    logo
+                </a>
+            </h1><li><a href="https://www.naver.com" target="_blank">menu1</a>
+            </li><li><a href="#">menu2</a>
+            </li><li><a href="#">menu3</a>
+            </li>
+        </ul>
+    </header>
+</body>
+</html>

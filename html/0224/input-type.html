@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>input type - usage</title>
+</head>
+<body>
+    <!-- single tag -->
+    <!-- open/close tag -->
+    <input type="text">
+    <input type="button" value="click me!!">
+    <input type="radio" name="" id="">
+    <!-- emmet 태그 자동 완성 기능 -->
+    <form action="main.html"> <!-- 2번 체크 단계 -->
+        <input type="text" require> <!-- 3번 체크 단계 -->
+        <br>
+        <input type="submit" value=""> <!-- 1번 체크 단계 -->
+        <br>
+        <!-- 
+            form 태그 내부에서 button event 발생시 
+            submit action이 실행된다면
+            type="button" 선언이 필요하다
+         -->
+        <button type="button"> <a href="login.html">회운가입</a></button>
+    </form>
+</body>
+</html>

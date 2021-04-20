@@ -1,0 +1,135 @@
+@charset "utf-8";
+@import "reset.css";
+
+#app {
+    width: 500px;
+    margin: 5% auto;
+    border: 1px solid #999;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+/* header */
+header {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    height: 50px;
+    padding: 2% 0;
+}
+header * {
+    display: inline-block;
+}
+header .logo {
+    margin: 0 -6px;
+    width: 80%;
+}
+header > a {
+    width: 10%;
+    vertical-align: top;
+}
+header img {
+    width: 100px;
+    padding-top: 5px;
+}
+
+/* story */
+.story {
+    border-bottom: 1px solid #ddd;
+    height: 150px;
+    padding: 12px;
+}
+.story .storyItem {
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+.story .storyItem a {
+    display: block;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 4%;
+    transition: all 0.8s;
+}
+.story .storyItem a:hover {
+    transform: scale(0.9);
+}
+.story .storyItem span {
+    font-size: 13px;
+    color: #3e3e3e;
+}
+.story .border-gradient {
+    background: linear-gradient(red, yellow);
+}
+.story img {
+    width: 100%;
+    border-radius: 50%;
+}
+/* profile */
+.profile .top {
+    height: 70px;
+    padding: 10px;
+}
+.profile .top li {
+    display: inline-block;
+    vertical-align: top;
+}
+.profile .top li:nth-child(1) a {
+    display: inline-block;
+    width: 50px;
+}
+.profile .top li:nth-child(1) img {
+    width: 100%;
+    border-radius: 50%;
+}
+.profile .top li:nth-child(1), 
+.profile .top li:nth-child(3) {
+    width: 10%;
+}
+.profile .top li:nth-child(2) {
+    padding-top: 5px;
+    padding-left: 15px;
+    width: 80%;
+}
+.profile .memberId {
+    font-size: 13px;
+}
+.profile .location {
+    font-size: 11px;
+    color: #666;
+}
+.profile .top li:nth-child(3) {
+    padding-top: 13px;
+}
+.profile .photo img {
+    width: 100%;
+}
+.profile .bottom {
+    padding: 2%;
+}
+.profile .bottom .icons {
+    margin-bottom: 5px;
+}
+.profile .bottom .icons i {
+    margin-right: 5px;
+}
+.like {
+    color: red;
+}
+
+/* footer */
+footer {
+    border-top: 1px solid #ddd;
+    height: 50px;
+}
+footer ul li {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    margin-right: -5px;
+}
+footer a {
+    display: block;
+}
+footer i {
+    line-height: 50px !important;
+}

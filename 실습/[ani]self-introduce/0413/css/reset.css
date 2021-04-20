@@ -1,0 +1,21 @@
+@charset "uft-8";
+@import "./index.css";
+@import "./main.css";
+:root {
+    --primary-bg:#F5D042;
+    --primary-color:#0A174E;
+}    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+li {
+    /* display: inline-block; */
+    list-style: none;
+}

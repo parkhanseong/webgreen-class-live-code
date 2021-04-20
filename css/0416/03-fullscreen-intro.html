@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>fullscreen intro page</title>
+<style>
+    * {
+        margin: 0;
+    }
+    html, body {
+        height: 100%;
+    }
+    body {
+        background: url(./hong-kong_1280.jpg) no-repeat center/cover;
+    }
+    body:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.431);
+        width: 100%;
+        height: 100%;
+    }
+    .search {
+        /* border: 1px solid #000; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+    }
+    .search h1 {
+        margin-bottom: 20px;
+    }
+    .search input[type="text"] {
+        width: 250px;
+        height: 50px;
+        border-radius: 30px 0 0 30px;
+        outline: none;
+        border: none;
+        margin-right: -6px;
+
+    }
+    .search input[type="text"]::placeholder {
+        padding-left: 1rem;
+    }
+    .search input[type="button"] {
+        background: rgba(255, 217, 0, 0.555);
+        color: #fff;
+        width: 90px;
+        height: 52px;
+        border-radius: 0 30px 30px 0;
+        outline: none;
+        border: none;
+    }
+
+</style>
+</head>
+<body>
+
+    <form action="post" class="search">
+        <h1>where you want to go?</h1>
+        <input type="text" name="" id="" placeholder="search keyword here...">
+        <input type="button" value="search">
+    </form>
+
+</body>
+</html>

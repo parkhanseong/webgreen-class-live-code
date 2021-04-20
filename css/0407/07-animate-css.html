@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<title>animated css</title>
+<style>
+    h1 {
+        animation-iteration-count: infinite;
+    }
+    /* 
+        커스터마이징이 가능하다
+    */
+    .animate__animated.animate__bounce {
+        --animate-duration: 10s;
+    }
+    p {
+        animation-iteration-count: infinite;
+        color: blue;
+    }
+    .animate__animated.animate__backOutDown {
+        --animate-duration: 10s;
+    }
+</style>
+</head>
+<body>
+
+    <h1 class="animate__animated animate__bounce">Lorem ipsum dolor sit amet.</h1>
+    <p class="animate__animated animate__backOutDown">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta corporis, ipsum aperiam asperiores quidem culpa earum id itaque dolorem vel ipsa possimus neque hic iure! Ratione, omnis. Modi, ad explicabo.
+    Quidem nobis quod necessitatibus hic, natus provident cum illum distinctio sapiente nisi tempora numquam officia totam ipsam placeat molestiae dolore, vero omnis cumque dolor facilis ad labore. Dolor, culpa illum.</p>
+
+</body>
+</html>

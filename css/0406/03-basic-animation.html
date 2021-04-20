@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>basic animation</title>
+<style>
+    .box {
+        border: 1px solid #000;
+        height: 50px;
+    }
+    .battery {
+        /* from */
+        width: 10%;
+        /* to */
+        /* width: 100%; */
+        height: 100%;
+        /* border: 1px solid #000; */
+        background: gold;
+        /* animation-name: full; */
+        /* animation-duration: 3s; */
+        /* animation-delay: 2s; */
+        /* default : 1이다 */
+        /* animation-iteration-count: infinite; */
+        /* defalut : normal */
+        /* animation-direction:alternate; */
+        /* 
+        animation-fill-mode : value
+        1. backwards : 대기 시점에 상태를 적용/유지 한다
+        2. forwards : 끝 시점의 상태를 유지한다
+        3. both : 둘다 적용하고 유지한다
+         */
+        /* animation-fill-mode: both; */
+        /* animation-timing-function: linear; */
+        cursor: pointer;
+        /* animation: name duration timing-function delay 
+        iteration-count direction fill-mode; */
+        animation: full 1s 2s 3 backwards;
+        animation-direction: alternate-reverse;
+    }
+    .battery:hover {
+        animation-play-state: paused;
+    }
+    /* animation 이름은 용도에 맞게 작성하기 자유롭게 */
+    @keyframes full {
+        /* 시작 지점 */
+        0% {
+            width: 10%;
+            font-size: 2rem;
+            background: red;
+        }
+        50% {
+            background: orangered;
+        }
+        100% {
+            width: 100%;
+            font-size: 5rem;
+            height: 200px;
+            background: green;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="battery">
+            battery
+        </div>
+    </div>
+
+</body>
+</html>

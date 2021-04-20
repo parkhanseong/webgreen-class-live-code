@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>box-sizing</title>
+    <!-- 
+    box1
+    w:300px
+    h300px
+    배경색 : skyblue;
+    padding: 10px;
+    border 10 선 coral;
+-->
+    
+<!-- 
+    box2
+    w:300px
+    h300px
+    배경색 : skyblue;
+    padding: 10px;
+    border 10 선 coral;
+    
+    * box-sizing: border-box;
+-->
+<style>
+        /* 재사용 > 컴포넌트(부품), 모듈화(부품) */
+        .basic-box {
+            width: 300px;
+            height: 300px;
+            background-color: skyblue;
+            border: 10px solid coral;
+            padding: 10px;
+        }
+        .box2 {
+            box-sizing: border-box;
+        }
+</style>
+</head>
+<body>
+
+    <div class="basic-box box1">
+    </div>
+    <div class="basic-box box2">
+    </div>
+    <div class="basic-box">
+    </div>
+    
+
+</body>
+</html>

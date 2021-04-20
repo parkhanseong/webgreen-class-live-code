@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- reset, common, default, primary -->
+<link rel="stylesheet" href="css/reset.css">
+<title>box model</title>
+    <style>
+        body {
+            background-color: #ddd;
+            margin: 100px;
+        }
+        .box1 {
+            width: 300px;
+            height: 300px;
+            background-color: skyblue;
+            border: 1px solid #000;
+            /* text-align: center; */
+            /* line-height: 300px; */
+        }
+        .innerBox {
+            /* width: 100px; */
+
+            height: 100px;
+            /* background-color: coral; */
+        }
+        /* inline - text */
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 50px;
+            /* display: inline-block; */
+            background-color: coral;
+        }
+        h4 {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        <!-- block -->
+        <!-- <div class="innerBox">
+        </div> -->
+        <!-- <h1>sample</h1>
+        <h4>Lorem, ipsum dolor.</h4> -->
+        <div class="innerBox">
+            text
+        </div>
+    </div>
+
+</body>
+</html>

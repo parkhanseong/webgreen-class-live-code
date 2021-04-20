@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>circle rotate</title>'
+<style>
+    body {
+        background: #111;
+    }
+    .box {
+        width: 500px;
+        margin: 0 auto;
+        color: #999;
+    }
+    .circle {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #999;
+        border-radius: 60% 45% 72% 65% / 45% 55% 70% 30%;
+        animation: rotate 10s infinite;
+    }
+    .center {
+        border: 1px solid red;
+        animation-direction: reverse;
+    }
+    .last {
+        animation-delay: 1s;
+    }
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+</head>
+<body>
+<div class="box">
+    <div class="circle">
+        <div class="circle center">
+            <div class="circle last">
+                test
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

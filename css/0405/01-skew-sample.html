@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>skew sample</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: #FFDFDE;
+        color: #666;
+        text-shadow: 0 0 2px #000;
+    }
+    .skewBg {
+        background: #6A7BA2;
+        padding: 100px 0;
+        transform: skewY(-10deg) translateY(-90px);
+    }
+    .skewBg .container {
+        transform: skewY(10deg);
+    }
+    .normalBg {
+        text-align: right;
+    }
+    .container {
+        padding: 100px 100px;
+    }
+    h1 {
+        margin-bottom: 1rem;
+    }
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="skewBg">
+            <div class="container">
+                <h1>hans.park blog</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus sapiente possimus error eum qui earum! Ducimus voluptates, velit ut non reiciendis hic cum enim deserunt vel suscipit pariatur architecto ratione.
+                </p>
+            </div>
+        </div>
+        <div class="normalBg">
+            <div class="container">
+                <h1>inside</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nesciunt, sint facilis rem aut, in neque, commodi ab veniam praesentium quibusdam ex officia provident eaque laudantium exercitationem consectetur officiis cum.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

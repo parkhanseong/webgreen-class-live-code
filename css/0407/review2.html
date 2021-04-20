@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>animation prac</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .wrap{
+        width: 800px;
+        margin: 100px auto;
+        background: #fff;
+        box-shadow: 0 0 5px 2px #888;
+    }
+    .wrap h1{
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        background: gold;
+        padding: 1rem;
+        text-shadow: 0 0 5px #777;
+    }
+    .myskill{
+        padding: 5px;
+    }
+    .myskill span{
+        color:lightslategrey
+    }
+    .myskill p span:first-child{
+        display: inline-block;
+        width: 100px;
+    }
+    .myskill .skillbar{
+        border: 1px solid rgb(128, 128, 128);
+        padding: 3px;
+        border-radius: 20px;
+    }
+    .skillbar .skillprocess{
+        height: 20px;
+        border-radius: 20px;
+        border: 1px solid red;
+        width: 10%;
+        animation: skill1 2s ease-in 1 normal forwards ;
+        overflow: hidden;
+        animation: full 2s;
+    }
+    .myskill:nth-child(1) .skillprocess {
+        width: 60%;
+    }
+    .myskill:nth-child(2) .skillprocess{
+        width: 50%;
+    }
+    .myskill:nth-child(3) .skillprocess{
+        width: 20%;
+    }
+    .myskill:nth-child(4) .skillprocess{
+        width: 80%;
+    }
+    .myskill:nth-child(5) .skillprocess{
+        width: 100%;
+    }
+    /* .skillprocess.core {
+        height: 100%;
+        background: linear-gradient(to right ,white,gold);
+        
+    } */
+    @keyframes full {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>software</h1>
+        <div class="skill">
+            <div class="myskill">
+                <p>
+                    <span>HTML</span>
+                    <span>60%</span>
+                </p>
+                <div class="skillbar">
+                    <div class="skillprocess core">
+                        <!-- <div class="core">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="myskill">
+                <p>
+                    <span>CSS</span>
+                    <span>50%</span>
+                </p>
+                <div class="skillbar">
+                    <div class="skillprocess core">
+                        <!-- <div class="core">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="myskill">
+                <p>
+                    <span>JAVASCRIPT</span>
+                    <span>20%</span>
+                </p>
+                <div class="skillbar">
+                    <div class="skillprocess core">
+                        <!-- <div class="core">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="myskill">
+                <p>
+                    <span>PHOTOSHOP</span>
+                    <span>80%</span>
+                </p>
+                <div class="skillbar">
+                    <div class="skillprocess">
+                        <div class="core">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="myskill">
+                <p>
+                    <span>ILLUSTRATOR</span>
+                    <span>100%</span>
+                </p>
+                <div class="skillbar">
+                    <div class="skillprocess">
+                        <div class="core">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+        </div>
+    </div>
+</body>
+</html>

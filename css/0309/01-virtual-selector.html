@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>virtual-selector</title>
+<style>
+    div {
+        font-size: 100px;
+        /* background-color: coral; */
+    }
+    
+    a {
+        font-size: 100px;
+    }
+    /* 방문하지 않은 상태일때를 선택 */
+    a:link {
+        color: black;
+    }
+    /* 방문한 상태일 때 */
+    a:visited {
+        color: black;
+        /* color: skyblue; */
+    }
+    /* 마우스가 올라간 상태일 때 */
+    a:hover {
+        background-color: #ddd;
+    }
+    a:active, a:focus {
+        background-color: tomato;
+    }
+    
+    /* 클린 된 상태일때 */
+    /* 포커스가 되었을때 */
+    /* a:focus {
+        background-color: tomato;
+    } */
+</style>
+</head>
+<body>
+    <h1>가상 셀렉터</h1>
+    <div>
+        <a href="https://www.naver.com">
+            naver
+        </a>
+    </div>
+    <hr>
+    <a href="https://www.thehersheycompany.com">
+        hershes
+    </a>
+    <hr>
+    <a href="https://www.yahoo.com">
+        yahoo
+    </a>
+
+</body>
+</html>

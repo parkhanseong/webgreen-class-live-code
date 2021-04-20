@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>pos basic</title>
+    <style>
+        .container {
+            border: 1px solid #000;
+            padding: 1rem;
+            color: #fff;
+            font-size: 1.5rem;
+            width: 600px;
+            height: 600px;
+        }
+        .box {
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+        }
+        .static {
+            background: gold;
+            /* default value다 */
+            position: static;
+            top: 10%;
+            left: 10%;
+        }        
+        .relative {
+            /* 본인의 최초 위치가 기준이 된다 */
+            position: relative;
+            /* top: 10%;
+            left: 200%; */
+            /* motion에 사용하는게 기본이다 */
+            /* transform: translate(100px, 100px); */
+            background: crimson;
+        }
+        .absolute {
+            /* 특징 
+                1. 공중에 뜬다 (겹쳐졌다, 공간이 없어졌다)
+                2. inline-block 속성이 된다 ( 컨텐츠값이 기본값, 크기가 작아졌다 )
+                top, left가 우선순위가 높다
+            */
+            /* position: absolute; */
+            background: purple;
+            /* top: 200%; */
+            /* left: 200%; */
+            /* left: 50%;
+            bottom: 50%; */
+        }
+        .fixed {
+            /* 특징 : absolute와 같다
+                1. 공중에 뜬다 (겹쳐졌다, 공간이 없어졌다)
+                2. inline-block 속성이 된다 ( 컨텐츠값이 기본값, 크기가 작아졌다 )
+                3. scroll이 되어도 사라지지 않는다
+            */
+            /* position: fixed; */
+            background: coral;
+            /* top: 200%;
+            left: 200%; */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">top</div>
+        <div class="box static">static</div>
+        <div class="box relative">relative</div>
+        <div class="box absolute">absolute</div>
+        <div class="box fixed">fixed</div>
+        <div class="box">bottom</div>
+    </div>
+    
+
+</body>
+</html>

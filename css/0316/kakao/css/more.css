@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+.moreContainer {
+    height: 100%;
+    padding: 2%;
+}
+
+/* banner */
+.banner {
+    display: block;
+    border-radius: 20px;
+    background-color: #eee;
+    height: 60px;
+}
+.banner:hover {
+    background-color: #ccc;
+}
+.banner .txtBox {
+    padding-top: 13px;
+    padding-left: 30px;
+    width: 80%;
+    display: inline-block;
+}
+.banner .txtBox h4 {
+    font-weight: bold;
+}
+.banner .txtBox h6 {
+    color: #adadad;
+}
+.banner i {
+    padding-top: 22px;
+    vertical-align: top;
+}
+
+/* icons */
+.iconsContainer {
+    font-size: 0;
+    margin-top: 20px;
+}
+.iconsContainer .iconItem {
+    font-size: 16px;
+    /* *, /은 무조건 띄워쓰기 해야 한다 */
+    width: calc(100% / 3);
+    text-align: center;
+    display: inline-block;
+    /* 상하, 좌우 */
+    padding: 8px 0;
+}
+.iconsContainer .iconItem:hover {
+    color: #666;
+}
+

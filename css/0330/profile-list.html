@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+    /* 변수 선언 */
+    :root {
+        /* --변수명 : value */
+        --primary-color: #999;
+        --secondary-color: blue;
+        --bgColor: #111;
+    }
+    /* reset css */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: var(--bgColor);
+        color: var(--primary-color);
+    }
+    li {
+        list-style: none;
+    }
+    img {
+        max-width: 100%;
+        margin-bottom: -30px;
+    }
+    a {
+        display: inline-block;
+    }
+    ul {
+        margin-top: 300px;
+        text-align: center;
+    }
+    li {
+        display: inline-block;
+        box-shadow: 0 0 5px 5px var(--primary-color);
+        margin-right: 20px;
+        text-align: center;
+        width: 25%;
+        transition: all 0.5s;
+    }
+    ul li:hover {
+        width: calc(25% + 5%);
+    }
+
+    ul li h3 {
+        color: #fff;
+        text-shadow: 0 0 5px black;
+    }
+    ul li p {
+        display: inline-block;
+        width: 200px;
+        padding: 20px;
+    }
+
+</style>
+</head>
+<body>
+
+    <ul>
+        <li>
+            <img src="images/profile-01.jpg" alt="">
+            <h3>michell</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur.
+                Lorem ipsum dolor sit amet consectetur.
+                Lorem ipsum dolor sit amet consectetur.
+            </p>
+        </li>
+        <li>
+            <img src="images/profile-02.jpg" alt="">
+            <h3>michell</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur.
+                Lorem ipsum dolor sit amet consectetur.
+                Lorem ipsum dolor sit amet consectetur.
+            </p>
+        </li>
+        <li>
+            <img src="images/profile-03.jpg" alt="">
+            <h3>michell</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur.
+                Lorem ipsum dolor sit amet consectetur.
+                Lorem ipsum dolor sit amet consectetur.
+            </p>
+        </li>
+    </ul>
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>selector priority</title>
+    <style>
+        /* 우선 순위 5위 */
+        /* 
+            - 빈번하게 사용 금지
+            - 급하거나 중요할때만 사용
+         */
+        p {
+            color: green !important;
+        }
+        /* 우선 순위 4위 */
+        .sample1 {
+            color: coral;
+        }
+        /* 우선 순위 3위 */
+        #sample2 {
+            color:blue;
+        }
+        /* inline style 2위 */
+
+        /* 10 + 100 = 110 */
+        /* .sample1 #sample2 {
+        } */
+        /* 1 + 10 + 100 = 111 */
+        /* p .sample1 #sample2 {
+        } */
+    </style>
+</head>
+<body>
+
+    <p>안녕하세요 셀렉터 우선 순위를 알아봅시다</p>
+    <p class="sample1">안녕하세요 셀렉터 우선 순위를 알아봅시다</p>
+    <p class="sample1" id="sample2" style="color:cadetblue">안녕하세요 셀렉터 우선 순위를 알아봅시다</p>
+
+</body>
+</html>

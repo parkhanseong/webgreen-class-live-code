@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+.wrap {
+    background: var(--primary-bg);
+    color: var(--primary-color);
+}
+.headerInner {
+    width: 100%;
+    margin: 0 auto;
+    background: var(--primary-color);
+    color: var(--primary-bg);
+}
+header {
+    /* border: 1px solid #000; */
+    text-align: center;
+}
+header .logo {
+    /* border: 1px solid #000; */
+    height: 100px;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+header .logo:hover {
+    opacity: .5;
+}
+nav {
+    background: var(--primary-bg);
+    color: var(--primary-color);
+}
+nav ul {
+    /* border: 1px solid red; */
+    /* height: 100%; */
+    line-height: 50px;
+}
+nav ul li {
+    display: inline-block;
+    /* border: 1px solid #000; */
+    width: 80px;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+nav ul li a {
+    width: 100px;
+    /* height: 30px; */
+    height: 100%;
+}
+nav ul li:hover a {
+    background: var(--primary-color);
+    color: var(--primary-bg);
+}
+.main {
+}
+.sectionInner {
+    width: 70%;
+    background: var(--primary-bg);
+    color: var(--primary-color);
+    margin-top: -20px;
+    /* height: 65%; */
+    margin: 0 auto;
+}
+.section {
+    width: 70%;
+    margin: 0 auto;
+}
+.profile {
+    /* border: 1px solid #000; */
+    margin-top: 20px;
+}
+.profile .profileBox {
+    /* border: 1px solid #000; */
+    width: 100%;
+    margin-bottom: 10px;
+}
+.profile .profileBox .photo {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+}
+.profile .profileBox .photo img {
+    width: 100%;
+    width: 100%;
+    vertical-align: top;
+    transition: 1s;
+}
+.profile .profileBox .photo:hover img {
+    transform: scale(1.1);
+}
+.expain {
+    display: inline-block;
+    width: 60%;
+    height: 50px;
+    vertical-align: top;
+    margin-left: 20px;
+}
+.expain h3 {
+    margin-top: 20px;
+}
+.expain p {
+    margin-top: 10px;
+}
+.expain a {
+    margin-top: 10px;
+    border: 1px solid #000;
+    padding: 10px 5px;
+    border-radius: 20px;
+    background: var(--primary-color);
+    color: var(--primary-bg);
+}
+.expain a:hover {
+    background: var(--primary-bg);
+    color: var(--primary-color);
+}
+.banner {
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 0;
+    margin-top: 20px;
+}
+.scroll {
+    width: 900px;
+    height: 100px;
+    animation: roll 7s infinite alternate;
+}
+.scroll img {
+    width: 300px;
+    height: 100px;
+}
+@keyframes roll {
+    50% {
+        margin-left: -300px;
+    }
+    100% {
+        margin-left: -600px;
+    }
+}
+footer {
+    margin-top: 20px;
+    /* border: 1px solid #000; */
+    text-align: center;
+    height: 100px;
+}
+.sns {
+    display: inline-block;
+    margin: 25px 20px;
+    font-size: 2.5rem;
+    transition: 1s;
+    
+}
+.sns a {
+    /* border: 1px solid #999;
+    border-radius: 50%; */
+    width: 50px;
+}
+.sns:hover {
+    opacity: .4;
+    transform: rotateY(360deg);
+}
+
+

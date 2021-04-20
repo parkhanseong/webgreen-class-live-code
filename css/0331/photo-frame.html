@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>photo frame</title>
+<style>
+    body {
+        background: #111;
+        color: #999;
+    }
+    .box {
+        width: 900px;
+        border: 1px solid #999;
+        text-align: center;
+        margin: 0 auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    img {
+        /* width: 40%; */
+        width: 100%;
+        /* margin: 20px; */
+        transition: all 1s;
+    }
+    img:hover {
+        /* width: 45%; */
+    }
+    .item {
+        border: 1px solid red;
+        width: 40%;
+        display: inline-block;
+    }
+</style>
+</head>
+<body>
+
+    <h1>
+        hover / transition / text
+    </h1>
+    <div class="box">
+        <div class="item">
+            <img src="images/hollywood.jpg" alt="holly wood img">
+            <span>text</span>
+        </div>
+        <div class="item">
+            <img src="images/los-angeles1.jpg" alt="holly wood img">
+            text
+        </div>
+        <div class="item">
+            <img src="images/manhattan.jpg" alt="holly wood img">
+            text
+        </div>
+        <div class="item">
+            <img src="images/los-angeles2.jpg" alt="holly wood img">
+            text
+        </div>
+    </div>
+
+
+</body>
+</html>

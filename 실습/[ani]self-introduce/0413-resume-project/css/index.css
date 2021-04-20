@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import "reset.css";
+
+.innerUp {
+    width: 900px;
+    height: 500px;
+    background-color: #000;
+}
+.innerSkew {
+    width: 900px;
+    height: 600px;
+    background-color: #000;
+    transform: skewY(-33deg);
+    margin-top: -300px;
+}
+.skewText {
+    padding-top: 200px;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    transform: skewY(33deg);
+    color: #fff;
+    animation: fadeIn 3s forwards;
+}
+.skewText h1 {
+    font-family: 'Parisienne', cursive;
+    letter-spacing: 5px;
+}
+.skewText .textSmall {
+    display: inline-block;
+    font-size: 22px;
+    color: transparent;
+    text-transform: none;
+    position: relative;
+    letter-spacing: 1px;
+}
+.skewText .textSmall::before {
+    content: "design & publishing";
+    position: absolute;
+    overflow: hidden;
+    color: #fff;
+    border-right: 1px solid #fff;
+    white-space: nowrap;
+    animation: typing 6s 1s steps(25) infinite;
+}
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    35% {
+        width: 75%;
+    }
+    40% {
+        width: 60%;
+    }
+    75% {
+        width: 100%;
+    }
+}
+.innerDown {
+    width: 900px;
+    height: 300px;
+    text-align: right;
+}
+.innerDown .flashout {
+    display: inline-block;
+    height: 50px;
+    width: 650px;
+    background: #000;
+    border-radius: 20px;
+    animation: flashout 0.3s 2 forwards;
+}
+@keyframes flashout {
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+.innerDown .goMain {
+    display: inline-block;
+    margin-right: 50px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    animation: fadeIn 6s infinite, wobble 1s 1s forwards;
+}

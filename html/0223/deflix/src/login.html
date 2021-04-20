@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>login page</title>
+</head>
+<body>
+    <!-- header area -->
+    <header>
+        <hr>
+        <h1><a href="#">DEFLIX</a></h1>
+        <h2><a href="login.html">- 로그인</a></h2>
+        <hr>
+    </header>
+    <!-- section area start -->
+    <section>
+        <!-- name: 서버에 보내는 key값 -->
+        <!--
+            민경님 : 야 머해?
+            - key는 데이터의 이름이다
+            - value는 데이터의 내용이다
+            { key: value }
+            { email-address: hans.park.dev@gmail.com }
+         -->
+        <form action="main.html">
+            <fieldset>
+                <legend>로그인 정보</legend>
+                <p>
+                    <label for="member-id">ID</label> &nbsp;:&nbsp;
+                    <!-- 방법1 -->
+                    <!-- <input type="email" name="member-id" placeholder="email 주소" required> -->
+                    <!-- 방법2 -->
+                    <input type="email" id="member-id" pattern=".+@naver.com" size="30" required>
+                </p>
+                <p>
+                    <label for="member-pw">PW :</label>
+                    <input type="password" name="member-pw" id="member-pw" placeholder="비밀번호를 추가하세요" required>
+                </p>
+                <input type="checkbox" name="personal-info-check" id="personal-info-check" required> 
+                <label for="personal-info-check"><small>개인정보 처리방침에 따른 개인정보 수집 및 활용에 동의합니다</small></label>
+                <br>
+                <br>
+                <!-- 방법1: 버튼 태그 -->
+                <button>
+                    <a href="sign-up.html">회원가입</a>
+                </button>
+                <!-- 방법2: input:button -->
+                <!-- <input type="button" value="회원가입"> -->
+                <!-- 방법3: input:submit -->
+                <input type="submit" value="로그인">
+            </fieldset>
+        </form>
+    </section>
+    <!-- section area end -->
+    <!-- footer area start-->
+    <footer>
+        <hr>
+        <address>
+            Address: 대구광역시 중구 그린빌딩 <br>
+            Tel: <a href="tel:054-111-9121">054)111-9121</a> <br>
+            E-mail: <a href="mailto:hans.park.dev@deflix.com">hans.park.dev@deflix.com</a>
+        </address>
+        <h6>&copy;copyAll right reserve</h6>
+        <hr>
+    </footer>
+    <!-- footer area end-->
+</body>
+</html>

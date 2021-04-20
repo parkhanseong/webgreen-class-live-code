@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>join Company</title>
+</head>
+<body>
+    <h1>join Company</h1>
+    <form action="">
+        <fieldset>
+            <legend>입사지원</legend>
+            <p>
+                <label for="email">아이디(e-mail) :</label>
+                <input type="text" id="email" name="email">
+                <label for="select-email">@</label>
+                <select name="email" id="select-email">
+                    <option value="">선택</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                </select>
+            </p>
+            <p>
+                <label for="password">비밀번호 :</label>
+                <input type="password" id="password">
+            </p>
+            <p>
+                <label for="mobile-company">통신사 :</label>
+                <select name="mobile-company" id="mobile-company">
+                    <option value="">통신사 선택</option>
+                    <option value="sk">SK</option> 
+                    <option value="kt">KT</option>
+                    <option value="lg">LG</option>
+                </select>
+                <input type="tel" maxlength="3" id="firstMobileNum">-<input type="tel" maxlength="4" id="secondMobileNum">-<input type="tel" maxlength="4" id="thirdMobileNum">
+            </p>
+            <p>
+                <label>직군 :</label>
+                <input type="radio" name="job-position" id="designer"><label for="designer">개발자</label>
+                <input type="radio" name="job-position" id="publisher"><label for="publisher">퍼블리셔</label>
+            </p>
+            <p>
+                <label>희망 근무지(*복수선택 가능) :</label>
+                <input type="checkbox" name="job-place" id="la"><label for="la">LA</label>
+                <input type="checkbox" name="job-place" id="dokyo"><label for="dokyo">도쿄</label>
+                <input type="checkbox" name="job-place" id="london"><label for="london">런던</label>
+                <input type="checkbox" name="job-place" id="singapole"><label for="singapole">싱가폴</label>
+            </p>
+        </fieldset>
+        <!-- form 태그 안에서만 작동한다 왜냐면 type="submit" -->
+        <input type="submit" value="입사지원 완료">
+        <!-- 일반적인 button을 의미한다 -->
+        <input type="button" value="입사지원 완료">
+        <!-- 버튼 태그로 button을 표현하는 방법 -->
+        <button>입사지원 완료</button>
+    </form>
+</body>
+</html>

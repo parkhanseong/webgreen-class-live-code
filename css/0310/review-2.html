@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>virtual selector</title>
+<style>
+    /* 첫번째 p 엘리먼트 빨간색 */
+    .parent p:first-child {
+        color: red;
+    }
+    /* 마지막 p 엘리먼트 파랑색 */
+    .parent p:last-child {
+        color: blue;
+    }
+    /* 세번째 p 엘리먼트 노랑색 */
+    .parent p:nth-child(3) {
+        color: yellowgreen;
+
+    }
+    .parent p:nth-last-child(2) {
+        color:violet;
+    }
+    /* parent_2에서 p태그 3번째 선택하기 */
+    .parent_2 p:nth-of-type(3) {
+        color: red;
+    }
+</style>
+</head>
+<body>
+    <div class="parent">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <hr>
+    <div class="parent_2">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="#">sample</a>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>

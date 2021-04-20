@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>virtual selector</title>
+    <style>
+        /* 첫번째 자식 요소를 선택 */
+        /* ul li:first-child {
+            color: coral;
+            font-size: 30px;
+        } */
+        /* 마지막 자식 요소 선택 */
+        /* li:last-child {
+            color: green;
+            font-size: 30px;
+        } */
+        /* 두번째 자식 요소 선택 */
+        /* ul li:nth-child(2) {
+            color:skyblue;
+            font-size: 30px;
+        } */
+        /* ul li:nth-child(3) {
+            color:red;
+            font-size: 30px;
+        } */
+        /* 홀수 번째 선택 */
+        /* div p:nth-child(odd) {
+            color: coral;
+            font-weight: bold;
+        } */
+        /* 짝수 번째 선택 */
+        /* div p:nth-child(even) {
+            color: green;
+            font-weight: bold;
+        } */
+        /* ul li:nth-of-type(4) {
+            color: red;
+            font-size: 30px;
+        } */
+        ul li:nth-child(2n) {
+            color: red;
+        }
+        ul p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>가상 셀렉터 nth-child</h1>
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+</body>
+</html>

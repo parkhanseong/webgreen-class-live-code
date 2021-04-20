@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>timing func</title>
+    <style>
+        ul {
+            padding: 0;
+            border: 1px solid #000;
+            padding: 1rem;
+        }
+        li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+        .item {
+            /* background: gold; */
+            background: linear-gradient(to right, gold, red);
+            height: 100px;
+            width: 20%;
+            line-height: 100px;
+            padding-left: 1rem;
+            /* 
+                root browser 
+                chrome 16px
+            */
+            /* root em */
+            transition: 2s;
+        }
+        ul:hover .item {
+            width: 100%;
+        }
+        
+        ul li:nth-child(1) .item {
+            color: blue;
+            transition-timing-function: ease;
+        }
+        li:nth-child(2) .item {
+            color: coral;
+            /* width: 80%; */
+            transition-timing-function: linear;
+        }
+        li:nth-child(3) .item {
+            color: red;
+            /* width: 30%; */
+            transition-timing-function: ease-in;
+        }
+        li:nth-child(4) .item {
+            /* width: 90%; */
+            color: #fff;
+            transition-timing-function: ease-out;
+        }
+        li:nth-child(5) .item {
+            /* width: 20%; */
+            color: skyblue;
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <div class="item">
+                ease
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                linear
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                ease-in
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                ease-out
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                ease-in-out
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

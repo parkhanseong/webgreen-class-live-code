@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+    html, body {
+        border: 1px solid #000;
+        height: 100%;
+    }
+    /* 
+    position: 위치
+    property: 
+        static(정적인): initial value t,l,b,r X
+        relative(상대적인): 본인 위치에서 시작한다 
+        absolute(절대적인): body를 기준으로 한다, 날라다닌다, 붕뜬다
+        fixed(고정): body를 기준으로 한다, 날라다닌다, 붕뜬다, 
+                     scroll시에도항상 고정된다
+    */
+    /*
+        stacking context > 
+        z-index: auto; 0; > -9999 ~ 9999; 
+        z-index: 1;
+        보모요소에는 pos: relative/absolute/fixed; 
+        자식요소에는 pos: absolute;
+    */
+    .container {
+        width: 500px;
+        height: 500px;
+        background: pink;
+        border: 1px solid #000;
+        position: relative;
+
+        /* right: 0px; */
+        
+        left: 100px;
+        bottom: 100px;
+    }
+    .box {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        /* margin-top: 400px;
+        margin-left: 400px; */
+        width: 100px;
+        height: 100px;
+        background: skyblue;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+</body>
+</html>

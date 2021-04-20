@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>dtravel review</title>
+</head>
+<body>
+    <!-- Index(들여쓰기 : 4칸 기본, ) -->
+    <!-- table 각 행의 넓이는 colgroup, col 태그에서 설정한다 -->
+    <h1>D-travle review</h1>
+    <table border width="50%" id="info-table">
+        <colgroup>
+            <col width="40%">
+            <col width="20%">
+            <col width="30%">
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>1 test</th>
+                <th>2 test</th>
+                <th>3 test</th>
+                <th>4 test</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>5 test</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--
+        disable : 사용을 막는다 , 
+        enable : 사용을 허용한다(default) 
+    -->
+    <input type="text" value="박한성" disabled>
+    <br>
+    <textarea name="article" id="article" cols="30" rows="10" disabled>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis necessitatibus nobis modi iusto tenetur impedit culpa dicta ipsam nihil provident, deserunt, fuga saepe, rem quis incidunt illum maxime nesciunt. Doloribus?
+        At inventore asperiores quam aut tempora architecto natus distinctio cumque, ipsam, molestiae voluptatem illum fugiat laborum recusandae consequuntur. Odit amet doloremque nam accusamus perspiciatis, commodi aut. Ipsa iure quas consequuntur?
+        Dolores dolor ipsam ad distinctio? Voluptate optio quaerat maiores commodi voluptates! Modi culpa beatae neque, unde perspiciatis dolorem, animi, voluptas explicabo eligendi deserunt dolores aut quasi. Rem officia rerum exercitationem.
+        Nesciunt accusamus amet consequuntur modi harum totam sequi alias perferendis? Aliquam ut, nobis magni veritatis debitis eos cum cumque numquam ipsa eaque! Officia suscipit distinctio eum. Vero natus odit placeat?
+        Ipsum reprehenderit accusamus obcaecati ullam eligendi. Sequi, quae ut, non eos tenetur autem perferendis nostrum laborum veniam reiciendis consequuntur, ea totam! Laborum beatae qui consectetur animi itaque libero ullam eius.
+    </textarea>
+    <br>
+    <input type="checkbox" disabled>
+    <br>
+    <!-- placeholder -->
+    <input type="text" placeholder="이름을 작성해주세요">
+    <!-- id, name, value -->
+    <!-- 
+        id는 해당 페이지 태그에 부여하는 주민번호와 같다
+        특성: 유일해야 한다, 어디에나 부여 가능하다
+        목적: 구분과 선택(CSS)
+     -->
+    <input type="text" value="박한성" id="member-id">
+    <!-- 
+        name는 서버에 보낼때 사용하는 값의 이름(key)
+        ex: (알파카 : 안녕하세요)
+        {
+            key(이름) : value(값)
+        }
+    -->
+    <!-- value는 key에 대응하는 값이다 -->
+    <input type="text" value="박한성" id="member-id" name="">
+    <select name="nationaliy" id="nationaliy">
+        <option value="">선택</option>
+        <option value="korea">한국</option>
+    </select>
+    <!-- ex -->
+    <label>여행지</label>
+    <input type="radio" name="travel-spot" id="travel-spot" value="gangreung">
+    <label for="gangreung">강릉</label>
+
+    <!-- 버그 잡기 -->
+    <!-- 만들어 낸다(50%) > 버그를 해결한다(50%) -->
+    <!-- 
+        1. 넓이 설정이 안됐거나 잘못 되었을대
+        2. 설정은 정상이나 태그가 누락되어 table이 정상 작동하지 않을때
+     -->
+    <table border width="50%" id="info-table">
+        <colgroup>
+            <col width="40%">
+            <col width="20%">
+            <col width="30%">
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>1 test test</th>
+                <th>2 test</th>
+                <th>3 test</th>
+                <th>4 test</th>
+            </tr>
+            <tr>
+                <td>5 test</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+</body>
+</html>

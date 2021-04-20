@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<title>company intro</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    .intro {
+        background: pink;
+        padding: 50px;
+        height: 700px;
+        background: url(images/industrial.jpg) no-repeat center/cover;
+        color: #fff;
+    }
+    .intro h1 {
+        margin-bottom: 30px;
+    }
+    ul {
+        margin-bottom: 30px;
+    }
+    ul li {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    ul li a:before {
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+        margin-right: 20px;
+    }
+    ul li:nth-child(1) a:before {
+        content:'\f042';
+    }
+    ul li:nth-child(2) a:before {
+        content:'\f0f9';
+    }
+    ul li:nth-child(3) a:before {
+        content:'\f100';
+    }
+    ul li:nth-child(4) a:before {
+        content:'\f2b9';
+    }
+    a.more {
+        border: 2px solid #fff;
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        border-radius: 20px;
+        padding-bottom: 4px;
+    }
+    a.more:after {
+        content: '\f061';
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+        color: coral;
+        margin-left: 8px;
+    }
+    .desc {
+        margin-top: 30px;
+    }
+</style>
+</head>
+<body>
+    <section class="intro">
+        <h1>창의적이고 경쟁력 있는 선도화학 기업</h1>
+        <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">사업영역</a></li>
+            <li><a href="#">투자정보</a></li>
+            <li><a href="#">인재채용</a></li>
+        </ul>
+        <a href="#" class="more">more</a>
+        <p class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut possimus eum amet facere! Autem hic blanditiis consequuntur rerum ratione nobis, adipisci magni illum illo, officiis temporibus velit ipsa? Accusantium, inventore.
+            Suscipit eaque assumenda, tempora delectus, optio obcaecati pariatur totam modi accusantium dolorum aut cumque consectetur quo, sequi magni veritatis inventore recusandae aliquam dignissimos fugit veniam! Commodi ea facere laudantium consequuntur.
+            Consequatur, ratione quaerat eius ipsum, ducimus possimus rem voluptatum tempora perferendis itaque delectus, cupiditate illo labore illum vero saepe incidunt. Minima reprehenderit autem voluptates accusantium quasi ipsum, inventore illum maiores!
+        </p>
+    </section>
+</body>
+</html>

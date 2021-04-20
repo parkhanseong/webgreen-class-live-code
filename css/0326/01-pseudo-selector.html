@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>pseudo selector basic</title>
+
+<style> 
+.box {
+    border: 1px solid #000;
+    width: 500px;
+    height: 500px;
+    padding-top: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+span {
+    font-size: 30px;
+    color: blue;
+    border: 1px solid #000;
+}
+/* 
+1. inline 요소다
+2. content가 무조건 있어야 한다
+3. display 속성 변경이 가능하다
+*/
+span:before {
+    content: '';
+    color: red;
+    font-size: 50px;
+    background: gold;
+    border: 10px dotted #000;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+span:after {
+    content: '';
+    color: green;
+    font-size: 20px;
+    background: black;
+    border: 10px solid red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+</style>
+</head>
+<body>
+    <div class="box">
+        <span>font</span>
+    </div>
+</body>
+</html>

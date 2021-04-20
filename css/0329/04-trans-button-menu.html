@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>trans button menu</title>
+<style>
+    body {
+        /* text-align: right; */
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: pink;
+        text-align: center;
+        line-height: 100px;
+        border-radius: 20px;
+        transition: 1s;
+    }
+    a:nth-child(1):hover {
+        background: green;
+        font-weight: bold;
+    }
+    a:nth-child(2):hover {
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        background: crimson;
+    }
+    .box {
+        /* border: 1px solid #000; */
+        display: inline-block;
+    }
+    .box:hover a {
+        margin-left: 100px;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="#">네이버</a>
+        <a href="#">구글</a>
+        <div class="box">
+            <a href="#">다음</a>
+        </div>
+    </div>
+
+</body>
+</html>

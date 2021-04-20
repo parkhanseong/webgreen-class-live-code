@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/* :root, html */
+/* :root { */
+:root {
+    /* --변수명: value */
+    --primary-bg: #815854;
+    --primary-color: #F9EBDE;
+    /* 
+    언제 써야 하냐? 
+    반복적으로 사용해야 하는 property value
+    */
+    /*
+    무엇을 써야 하냐? 
+    전부 반복되는 요소에
+    */
+}
+/* simple reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--primary-bg);
+    color: var(--primary-color);
+}
+/* 참고 사항 */
+*:after, *:before {
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+}
+a {
+    display: inline-block;
+    color: inherit; /* 부모에게 설정된 컬러를 받는다 */
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+/* layout */
+.wrap {
+}
+.inner {
+    width: 900px;
+    margin: 0 auto;
+}

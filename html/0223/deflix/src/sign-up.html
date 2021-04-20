@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>로그인 페이지</title>
+</head>
+<body>
+    <!-- Header 영역 -->
+    <header>
+        <hr>
+        <!-- #은 자기자신이다 -->
+        <h1><a href="#">DEFLIX</a></h1>
+        <h2><a href="login.html">- 로그인</a></h2>
+        <!-- <ul>
+            <li>
+                <h2><a href="">로그인</a></h2>
+            </li>
+        </ul> -->
+        <hr>
+    </header>
+    <!-- Container 영역 -->
+    <!-- 
+        데이터를 전송하는 방법:
+        1) GET 방식 :
+        보내고자하는 데이터를 url에 담아 전송하는 방법
+    
+        2) POST 방식 : 
+        데이터를 보이지 않게 묶어서 한꾸러미로 서버로 전송하는 방법
+     -->
+    <section>
+        <form action="main.html" method="GET">
+            <fieldset>
+                <legend>이용약관 동의</legend>
+                <textarea name="term-text" id="term-text" cols="50" rows="20" disabled>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, voluptates tenetur. Iusto facere, repellat mollitia deleniti vero molestias. Iure repudiandae delectus omnis voluptatem vero commodi tempore ut aliquam doloremque exercitationem!
+                    Itaque nemo eveniet iusto. Necessitatibus odit minima commodi soluta dolorem ut impedit omnis? Saepe quas laudantium, ratione aut ducimus eum! Fugit earum assumenda cum corporis voluptate dolore officia quisquam exercitationem.
+                    Dolores, nulla eos. Modi, animi? Facilis pariatur distinctio at nam maxime sunt accusamus harum culpa eveniet nulla, vitae deserunt, debitis velit, cumque mollitia nisi atque vero omnis adipisci iste dolor.
+                    Maxime odit facilis dolore, sed voluptate debitis eos minus! Odit facere a sequi tempora, nesciunt deserunt iste modi magnam cumque quas unde iusto dolores sint ea autem. Eum, earum rem!
+                    Nulla doloremque iste quis, voluptatem omnis itaque voluptate, quibusdam reiciendis esse consequatur atque repellat? Delectus, distinctio reiciendis quasi odit ab itaque deleniti ipsum, voluptatem nihil error nobis exercitationem eum sunt?
+                    Totam mollitia et commodi laboriosam, minima assumenda ullam eum, tenetur fuga aliquam reiciendis provident inventore repudiandae similique excepturi ipsum tempora debitis dolore. Dolore exercitationem soluta sequi quasi dicta voluptatibus voluptatem?
+                    Similique deserunt doloremque nemo assumenda accusamus quos tempore, earum ab obcaecati cumque odit eaque, quisquam repellat, dolorem maiores autem nobis quaerat qui laborum vel molestiae accusantium deleniti aut! Eveniet, autem!
+                    Aliquam, ratione numquam sint saepe reprehenderit omnis ducimus recusandae vel eligendi vero possimus laboriosam. Quas tenetur iste velit, nesciunt modi rem veritatis expedita ipsa dignissimos maxime aliquam alias sapiente praesentium.
+                    Animi facere ex ratione commodi qui maiores? Deleniti illo fugiat perferendis omnis architecto. Est atque esse veniam nisi corporis, quas debitis sed ad quibusdam velit voluptate eaque autem suscipit nam!
+                    Distinctio alias praesentium nobis nisi sint culpa atque placeat! Adipisci voluptatum, eaque architecto minus vero odit voluptatem consequatur autem vitae hic officia reiciendis excepturi voluptatibus, repellat quia incidunt recusandae unde.
+                </textarea>
+                <br>
+                <input type="checkbox" name="term-condition" id="term-condition" required>
+                <label for="term-condition">디플릭스 이용약관 동의</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>회원가입 정보</legend>
+                <p>
+                    <label for="member-id">아이디: </label><input type="text" name="member-id" id="member-id" required><br>
+                </p>
+                <p>
+                    <label for="member-pw">비밀번호: </label>
+                <input type="password" name="member-pw" id="member-pw" required maxlength="8"><br>
+                <small>* 비밀번호는 특수문자와 영어, 숫자 조합 8자리 가능합니다</small>
+                </p>
+                
+                <p>
+                    <label for="member-pw-check">비밀번호 확인: </label>
+                    <input type="password" name="member-pw-check" 
+                    id="member-pw-check" required><br>
+                </p>
+                <p>
+                    <label for="member-name">이름: </label>
+                    <input type="text" name="member-name" id="member-name" required>
+                </p>
+                <!--
+                    { key :value } 
+                    { birth-date : 10일 }
+                -->
+                <p>
+                    <label for="birth-year-mont">생년월일: </label> <input type="month" name="birth-year-mont" id="birth-year-mont">
+                    <input type="number" name="birth-date" id="birth-date" max="31" min="0">
+                </p>
+                <!-- 
+                    {
+                        gender: male/female
+                    }
+                 -->
+                <p>
+                    <label for="gender">성별: </label> 
+                    <select name="gender" id="gender" required>
+                        <option value="">선택</option>
+                        <option value="female">여자</option>
+                        <option value="male">남자</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="mobile">전화번호</label>
+                    <!-- 
+                        - data의 형태입니다 
+                        { mobile-company: sk }
+                    -->
+                    <select name="mobile-company" id="mobile-company">
+                        <option value="">통신사 선택</option>
+                        <option value="sk">SK</option>
+                        <option value="kt">KT</option>
+                        <option value="lg">LG</option>
+                    </select>
+                    <input type="tel" name="mobile-first-number" id="mobile-first-number" value="010" maxlength="3"
+                    onkeypress="onInputMobile();"
+                    >-
+                    <input type="tel" name="mobile-second-number" id="mobile-seoncd-number" maxlength="4">-
+                    <input type="tel" name="mobile-third-number" id="mobile-third-number" maxlength="4">
+                </p>
+                <input type="submit" value="가입완료!!">
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <hr>
+        <address>
+            Address: 대구광역시 중구 그린빌딩 <br>
+            Tel: <a href="tel:054-111-9121">054)111-9121</a> <br>
+            E-mail: <a href="mailto:hans.park.dev@deflix.com">hans.park.dev@deflix.com</a>
+        </address>
+        <h6>&copy; All right reserve</h6>
+        <hr>
+    </footer>
+</body>
+</html>

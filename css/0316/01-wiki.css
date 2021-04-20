@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+#wrap {
+    /* background-color: skyblue; */
+    padding: 20px;
+}
+/* common */
+.bold {
+    font-weight: bold;
+}
+/* basic, main, default */
+.primary-color {
+    color: #0645AD;
+}
+/* commone end */
+
+.titleBox h1 {
+    font-weight: 400;
+    margin: 0;
+}
+.titleBox hr {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.titleBox p {
+    margin-top: 10px;
+}
+.request {
+    border: 1px solid skyblue;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.request p {
+    line-height: 1.8em;
+}
+.request span {
+    color: #0645AD;
+    font-weight: bold;
+}
+.delete {
+    border: 1px solid skyblue;
+    padding-left: 20px;
+}
+

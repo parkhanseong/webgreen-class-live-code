@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+
+<title>0305 - review</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');    
+    @font-face {
+        font-family: 'KoreanFrenchTypewriter';
+        src: url(font/KoreanFrenchTypewriter/KoreanFrenchTypewriter.ttf);
+        font-weight: normal;
+        font-style: normal;
+    }
+    body {
+        background-color: #565656;
+    }
+    .press {
+        /* color: #333; */
+        font-size: 2em;
+        /* 0ffset-x축 offset-y축 shadow-color */
+        text-shadow: 0 -1px #000,
+                     0 1px #777;
+    }
+    /* 눈누, 구글 폰트 */
+    /* 기본 폰트 변경 */
+    .sample1{
+        font-family: monospace;
+    } 
+    /* 폰트를 다운받아 변경 */
+    .kr{
+        font-family: KoreanFrenchTypewriter;
+    } 
+    /* link or @import로 폰트 변경 */
+    .en {
+        /* font-family: 'Stick', sans-serif; */
+        font-family: 'Stick', sans-serif;
+    }
+
+    /* tag */
+    p {
+        color: white !important;
+    }
+    /* class */
+    .sample2 {
+        color: blue;
+    }
+    /* id selector */
+    #overwrite {
+        color: coral;
+    }
+
+
+</style>
+</head>
+<body>
+    <p class="press sample1">
+        Lorem, ipsum dolor.
+    </p>
+    <p class="press sample2 kr" id="overwrite">
+        안녕하세요 폰트 적용 중이에요
+    </p>
+    <p class="kr">
+        한글을 사용합시다
+    </p>
+    <p class="kr">
+        그린컴퓨터에서 코딩 
+    </p>
+    <p class="press sample3 en">
+        Lorem, ipsum dolor.
+    </p>
+</body>
+</html>

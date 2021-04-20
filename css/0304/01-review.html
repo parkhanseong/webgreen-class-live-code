@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>0304 - review</title>
+<style>
+    /* 전체 셀렉터, universal selector */
+    * {
+        color: deeppink;
+    }
+    /* tag selector, 태그 셀렉터 */
+    p {
+        color: blue;
+    }
+    /* id selector */
+    #sample1 {
+        color: gold;
+    }
+    /* class selector */
+    .sample1 {
+        color:forestgreen;
+    }
+    /* attribute selector */
+    [title="this is title"] {
+        color:fuchsia;
+    }
+    /* complex selector 복합 셀렉터 */
+    p#test1, p.test2 {
+        font-size: 30px;
+        color:hotpink;
+    }
+</style>
+</head>
+<body>
+    <p id="sample1">Lorem ipsum dolor sit amet.</p>
+    <p class="sample1">Lorem ipsum dolor sit amet.</p>
+    <p title="this is title">Lorem ipsum dolor sit amet.</p>
+    <p id="test1">Lorem ipsum dolor sit amet.</p>
+    <p class="test2">Lorem ipsum dolor sit amet.</p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>margin vs translate</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .wrap {
+        display: inline-block;
+        background: beige;
+        border: 10px solid red;
+    }
+    .box {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #000;
+    }
+    .box:nth-of-type(1) {
+        background: skyblue;
+    }
+    .box:nth-of-type(2) {
+        background: gold;
+        /* transform: translate(200px); */
+        margin-left: 100px;
+    }
+    .box:nth-of-type(3) {
+        /* transform: translate(100px); */
+        margin-left: 100px;
+        background: coral;
+    }
+
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box skyblue"></div>
+        <div class="box gold"></div>
+        <div class="box coral"></div>
+    </div>
+
+</body>
+</html>

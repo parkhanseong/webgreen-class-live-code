@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>typing</title>
+
+<style>
+    .box {
+        text-align: center;
+    }
+    h1 {
+        text-align: center;
+        /* border: 1px solid #000; */
+        position: relative;
+        display: inline-block;
+        /* 투명하게 */
+        color: transparent;
+        letter-spacing: 5px;
+    }
+    h1:before {
+        /* 필수값 */
+        content: attr(data-test);
+        color: #000;
+        overflow: hidden;
+        position: absolute;
+        border-right: 1px solid #000;
+        width: 0;
+        white-space: nowrap;
+        animation: typing 5s steps(14) infinite;
+    }
+    @keyframes typing {
+        50% {
+            width: 100%;
+        }
+    }
+</style>
+
+</head>
+<body>
+<div class="box">
+    <!-- data-() -->
+    <h1 data-test="hellow world">hellow world</h1>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>ping pong</title>
+<style>
+    .ground {
+        width: 500px;
+        margin: 200px auto;
+        /* border: 1px solid #000; */
+    }
+    .table {
+        height: 100px;
+        background: green;
+        cursor: pointer;
+    }
+    .ball {
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        border: 1px solid #000;
+        border-radius: 50%;
+        /* 초기 위치 */
+        transform: translate(0, 25px);
+        /* 마지막 위치 */
+        /* transform: translate(450px, 25px); */
+        animation: pingpong 2s infinite alternate;
+    }
+    .table:hover .ball {
+        animation-play-state: paused;
+        background: red;
+    }
+    @keyframes pingpong {
+        0% {
+            transform: translate(0, 25px);
+        }
+        100% {
+            transform: translate(450px, 25px);
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="ground">
+        <h1>탁구장</h1>
+        <div class="table">
+            <div class="ball">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

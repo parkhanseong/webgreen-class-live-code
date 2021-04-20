@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>review - css</title>
+<style>
+    .boxModel {
+        /* padding : 안쪽 영역 */
+        padding: 40px;
+        /* margin : 여백 */
+        /* margin: 50px; */
+        /* margin: 10px 20px 30px 40px; */
+        padding: 10px 20px 30px 40px;
+        /* border : 경계선 */
+        border: 10px solid #000;
+        background-color:coral;
+        /* 넓이 */
+        width: 100px;
+        /* 높이 */
+        height: 100px;
+    }
+    /* tag, class, id, *(universal), inline style */
+    /* 복합(complex selector) */
+    /* 자식 셀렉터 */
+    /* .parent >(바로 아래) div {
+        border: 1px solid #000;
+    } */
+    /* 자손 셀렉터 */
+    .parent div {
+        border: 1px solid #000;
+    }
+    /* 인접 형제 셀렉터 */
+    .parent .child + div {
+        background-color: coral;    
+     }
+    /* 일반 형제 셀렉터 */
+    .parent .child ~ span {
+        /* background-color: coral;     */
+        color: red;
+     }
+</style>
+</head>
+<body>
+    <!-- box model -->
+    <!-- <div class="boxModel">
+        Box Model
+    </div> -->
+    <div class="parent">
+        <div class="child">
+            1
+            <div>1-1</div>
+        </div>
+        <div>2</div>
+        <div>3</div>
+        <span>sample1</span>
+        <span>sample2</span>
+    </div>
+</body>
+</html>

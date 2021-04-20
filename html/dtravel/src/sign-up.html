@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+​
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index Page</title>
+</head>
+​
+<body>
+    <!-- Header 영역 -->
+    <header>
+        <hr>
+        <a href="../index.html">D-TRAVEL</a>
+        <ul>
+            <li><a href="main.html">메인</a></li>
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="sign-up.html">회원가입</a></li>
+        </ul>
+        <hr>
+    </header>
+    <!-- Container, body 영역 -->
+    <section>
+        <h1>회원가입 화면</h1>
+​
+        <form action="main.html">
+            <fieldset>
+                <legend>회원가입</legend>
+                <p>
+                    <label for="mobile">H.P</label>
+                    <br>
+                    <select name="mobile" id="mobile" required>
+                        <option value="">선택</option>
+                        <option value="korea">대한민국</option>
+                        <option value="nepal">네팔 +997</option>
+                        <option value="norway">노르웨이 +47</option>
+                    </select>
+                    -
+                    <input type="tel" name="mobile-first" id="mobile-first" maxlength="3">
+                    -
+                    <input type="tel" name="mobile-second" id="mobile-second" maxlength="4">
+                    -
+                    <input type="tel" name="mobile-third" id="mobile-third" maxlength="4">
+                </p>
+            </fieldset>
+            <input type="submit" value="가입하기">
+        </form>
+    </section>
+    <!-- Footer 영역 -->
+    <footer>
+        <hr>
+        <address>
+            <p>Address : 대구광역시 중구 그린빌딩</p>
+            Tel :<a href="Tel : 054) 111-9121">054) 111-9121</a>
+            E-mail :<a href="hans.park.dev@dtravel.com">hans.park.dev@dtravel.com</a>
+            <br>
+            &copy; <b>All right reserve.</b>
+        </address>
+        <hr>
+    </footer>
+</body>
+​
+</html>

@@ -1,0 +1,43 @@
+<!-- 
+* 작성자 : 박한성
+* 일 시 : 2021. 04. 02
+* 내 용 : scale 적용 화면
+* 참고 : 010-1234-1234
+얼른 이 프로젝트에서 도망가세요
+ -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>scale</title>
+<style>
+    .box {
+        margin: 200px auto;
+        width: 300px;
+        height: 200px;
+        background: gold;
+        border: 10px solid red;
+    }
+    img {
+        max-width: 100%;
+        transition: .5s;
+        opacity: 0.8;
+    }
+    /* 
+       참고 : scale을 1.5로 잡았습니다. 
+       이것은 소영 디자이너와 2021. 04. 02 기획 합의된 내용임
+     */
+    .box:hover img {
+        /* scale default: 1 */
+        transform: scale(.5);
+    }
+</style>
+</head>
+<body>
+
+    <div class="box">
+        <img src="image/tiger.jpg" alt="">
+    </div>
+
+</body>
+</html>

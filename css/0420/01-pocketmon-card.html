@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>pocketmon card</title>
+<style>
+    
+    .container {
+        /* border: 1px solid #000; */
+        margin-top: 300px;
+    }
+    .container .item {
+        /* border: 1px solid #000; */
+        width: 300px;
+        margin: 0 auto;
+        position: relative;
+        cursor: pointer;
+    }
+    .container .item:hover .content {
+        opacity: 1;
+        transform: translateY(-20px);
+        box-shadow: 0 2px 20px rgba(0,0,0,.2);
+    }
+    .container .item .content {
+        position: absolute;
+        top: -140px;
+        left: 0;
+        width: 100%;
+        height: 110px;
+        background: pink;
+        text-align: center;
+        border-radius: 20px;
+        opacity: 0;
+        /* visibility: hidden; */
+        transition: all 1s;
+    }
+    .container .item .content:after {
+        content:'';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        background: pink;
+        width: 10px;
+        height: 10px;
+        transform: translate(-50%, 50%) rotate(45deg);
+    }
+    .container .item img {
+        border-radius: 50%;
+    }
+    .container .item h2 {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .container .item p {
+        margin: 7px 0;
+    }
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">
+            <div class="content">
+                <h2>꼬부기</h2>
+                <p>꼬부기는 물계열 몬스터이다</p>
+            </div>
+            <img src="./image/ggobugi2_300x300.png" alt="">
+        </div>
+    </div>
+
+</body>
+</html>

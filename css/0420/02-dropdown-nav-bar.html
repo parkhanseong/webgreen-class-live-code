@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>dropdown nav bar</title>
+<style>
+    /* * {
+        margin: 0;
+        padding: 0;
+    } */
+    body {
+        margin: 0;
+    }
+    ul {
+        /* border: 1px solid #000; */
+        /* background: pink; */
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    header {
+        /* border: 1px solid #000; */
+        height: 100px;
+        background: pink;
+        /* margin collapse solution 1*/
+        /* overflow: hidden; */
+        /* border: 1px solid transparent; */
+    }
+
+    /* display: table 방법3*/
+    header:before {
+        content:'';
+        display: table;
+    }
+    ul.menu {
+        /* background: skyblue; */
+        text-align: center;
+        margin-top: 50px;
+    }
+    ul.menu li.menuItem {
+        display: inline-block;
+        /* background: #999; */
+        /* border: 2px solid red; */
+    }
+    ul.menu li.menuItem > a {
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+    }
+    ul.menu li.menuItem > a:hover ul.menuSub {
+        /* background: #999; */
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    ul.menu li.menuItem .menuSub a {
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background: pink;
+        color: #fff;
+    }
+
+    ul.menu li.menuItem .menuSub {
+        border: 2px solid blue;
+        opacity: 0;
+    }
+    ul.menu li.menuItem .menuSub li a:hover {
+        background: pink;
+        color: #999;
+    }
+
+    /* ul.menu li.menuItem .menuSub {
+        opacity: 1;
+        visibility: visible;
+    } */
+
+
+</style>
+</head>
+<body>
+
+    <header>
+        <ul class="menu">
+            <li class="menuItem">
+                <a href="#">menu1</a>
+                <ul class="menuSub">
+                    <li><a href="#">menuSub1</a></li>
+                    <li><a href="#">menuSub1</a></li>
+                    <li><a href="#">menuSub1</a></li>
+                </ul>
+            </li>
+            <!-- <li class="menuItem">
+                <a href="#">menu2</a>
+            </li>
+            <li class="menuItem">
+                <a href="#">menu3</a>
+            </li> -->
+        </ul>
+    </header>
+
+</body>
+</html>
