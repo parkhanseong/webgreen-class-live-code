@@ -138,8 +138,6 @@ section.create:before {
     width: 100%;
     height: 100%;
 }
-section.create .inner {
-}
 section.create .inner .content {
     width: 600px;
     position: absolute;
@@ -306,4 +304,6 @@ footer ul.info li a:hover,
 footer ul.contact li a:hover,
 footer ul.service li a:hover {
     text-decoration: underline;
+    color: var(--color-white);
+
 }
