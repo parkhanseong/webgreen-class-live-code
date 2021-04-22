@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* simple reset.css */
+:root {
+    --pimary-color: #333; /* 배경 */
+    --secondary-color: #999; /* 폰트 */
+}
+h1 {
+    margin: 8px 0;
+}
+p {
+    margin: 0;
+}
+a {
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/* layout */
+.inner {
+    max-width: 1600px;
+}

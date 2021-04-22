@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>floating side nav</title>
+<style>
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        /* border: 1px solid #000; */
+        list-style: none;
+    }
+
+    /* button */
+    input[id=menuBtn] {
+        display: none;
+    }
+
+    /* sideNav */
+    .sideNav {
+        background: pink;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%;
+        /* 유지보수에 용이하다 */
+        transform: translate(100%);
+        /* transform: translate(0); */
+        transition: all .8s;
+    }
+    .sideNav label {
+        position: absolute;
+        background: pink;
+        /* background: coral; */
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        top: 100px;
+        /* top: 0; */
+        /* left: 0; */
+        right: 100%;
+        border-radius: 30px 0 0 30px;
+    }
+    .sideNav label:hover,
+    .sideNavMenu li a:hover {
+        background: #999;
+        color: #fff;
+        cursor: pointer;
+    }
+    .sideNavMenu li a {
+        display: block;
+        line-height: 50px;
+        height: 50px;
+        text-align: center;
+    }
+    /* check Event */
+    /* checked 가상 class */
+    /* 인접 형제 선택자  (+) */
+    input[id="menuBtn"]:checked + .sideNav {
+        transform: translate(0);
+    }
+</style>
+</head>
+<body>
+
+    <input type="checkbox" id="menuBtn">
+    <!-- 웹표준 -->
+    <!-- 용도에 맞는 태그를 사용해야 한다
+    왜냐면 검색에 영향을 준다 -->
+    <nav class="sideNav"> 
+        <label for="menuBtn">menu</label>
+        <ul class="sideNavMenu">
+            <li><a href="#">sub-menu1</a></li>
+            <li><a href="#">sub-menu2</a></li>
+            <li><a href="#">sub-menu3</a></li>
+            <li><a href="#">sub-menu4</a></li>
+            <li><a href="#">sub-menu5</a></li>
+            <li><a href="#">sub-menu6</a></li>
+        </ul>
+    </nav>
+
+</body>
