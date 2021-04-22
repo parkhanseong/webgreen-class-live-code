@@ -293,17 +293,11 @@ footer ul {
     display: inline-block;
     color: var(--color-gray);
 }
-footer ul.info li a,
-footer ul.contact li a,
-footer ul.service li a
- {
+footer ul a {
     width: 250px;
     line-height: 50px;
 }
-footer ul.info li a:hover,
-footer ul.contact li a:hover,
-footer ul.service li a:hover {
+footer ul a:hover {
     text-decoration: underline;
     color: var(--color-white);
-
 }
