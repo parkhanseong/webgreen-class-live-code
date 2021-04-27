@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>slider</title>
+<style>
+    .sliderContainer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    /* button catch area  */
+    input[name=tab] {
+        display: none;
+    }
+    input[id=tab1]:checked ~ .sliderView .sliderItem {
+        top: 0;
+        left: 0;
+    }
+    input[id=tab2]:checked ~ .sliderView .sliderItem {
+        top: 0;
+        left: -300px;
+    }
+    input[id=tab3]:checked ~ .sliderView .sliderItem {
+        top: 0;
+        left: -600px;
+    }
+
+    /* slider area  */
+    .sliderView {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+    }
+    .sliderItem {
+        transition: all 300ms;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 900px;
+    }
+    .sliderItem img {
+        margin-right: -5px;
+        vertical-align: top;
+    }
+
+    /* button area  */
+    label {
+        background: #999;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        border-radius: 50%;
+    }
+    input[id=tab1]:checked ~ .tabBtnBox label[for=tab1],
+    input[id=tab2]:checked ~ .tabBtnBox label[for=tab2],
+    input[id=tab3]:checked ~ .tabBtnBox label[for=tab3]
+    {
+        background: coral;
+    }
+    label[for*=tab] {
+        cursor: pointer;
+    }
+    .tabBtnBox {
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="sliderContainer">
+        <!-- button catch area -->
+        <input type="radio" name="tab" id="tab1" checked>
+        <input type="radio" name="tab" id="tab2">
+        <input type="radio" name="tab" id="tab3">
+    
+        <!-- slider area -->
+        <div class="sliderView">
+            <div class="sliderItem">
+                <img src="float-item.png" alt="">
+                <img src="float-item2.png" alt="">
+                <img src="float-item3.png" alt="">
+            </div>
+        </div>
+    
+        <!-- button area -->
+        <div class="tabBtnBox">
+            <label for="tab1"></label>
+            <label for="tab2"></label>
+            <label for="tab3"></label>
+        </div>
+    </div>
+
+</body>
+</html>

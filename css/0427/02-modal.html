@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>modal prac</title>
+<style>
+    p {
+        margin: 0;
+    }
+    img {
+        max-width: 100%;
+    }
+    /* event catch */
+    input[id=modalBtn] {
+        display: none;
+    }
+    input[id=modalBtn] + label {
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        background: dodgerblue;
+        border-radius: 4px;
+        color: #fff;
+    }
+    input[id=modalBtn]:checked ~ .modalContainer {
+        display: block;
+    }
+
+    /* modalContainer */
+    .modalContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        border: 5px solid red;
+        /* display: none; */
+    }
+
+    /* modal box */
+    .modalBox {
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 800px;
+        height: 800px;
+        border-radius: 5px;
+        z-index: 2;
+        text-align: center;
+    }
+
+    /* overlay */
+    .modalContainer > label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.3);
+        z-index: 1;
+        border: 5px solid blue;
+    }
+
+    /* close btn */
+    .modalBox > label {
+        position: absolute;
+        border: 1px solid #999;
+        width: 20px;
+        height: 23px;
+        top: 0;
+        right: 0;
+        transform: translate(30%, -30%);
+        text-align: center;
+        line-height: 20px;
+        border-radius: 50%;
+        background: #fff;
+        z-index: 3;
+        cursor: pointer;
+    }
+    .modalBox h1 {
+        text-align: center;
+        font-size: 17px;
+        margin: 20px 0;
+    }
+    .modalBox button {
+        outline: none;
+        border: none;
+        color: #999;
+        background: #333;
+        border-radius: 4px;
+        width: 70px;
+        height: 30px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .desc__detail {
+        margin: auto;
+        /* border: 1px solid #000; */
+        width: 500px;
+        margin-bottom: 8px;
+        height: 150px;
+        /* background: gold; */
+        overflow: scroll;
+    }
+</style>
+</head>
+<body>
+
+    <input type="checkbox" id="modalBtn">
+    <label for="modalBtn">view</label>
+
+    <div class="modalContainer">
+        <div class="modalBox">
+            <label for="modalBtn">x</label>
+            <h1>파리행 티켓을 구매하시겠습니까?</h1>
+            <img src="./paris-bg.jpg" alt="">
+            <div class="description">
+                <p><strong>price: 99,000원</strong></p>
+                <p><strong>way: one way</strong></p>
+                <h2>info paris</h2>
+                <p class="desc__detail">Lorem ipsum, dolo
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cum rerum deserunt veniam rem dolor molestiae, eligendi corporis tempora quasi. Possimus quasi cumque perferendis nam! Optio, ea perspiciatis? Odio, error?   r sit amet consectetur adipisicing elit. Accusamus dolorem autem doloremque neque earum. Veniam sed in molestias, quidem autem esse. Ducimus optio repellendus earum cum nemo saepe vero assumenda.</p>
+            </div>
+
+            <button onclick="prompt('go paris');">No</button>
+            <button onclick="alert('결재 하시겠습니까?')">Yes</button>
+        </div>
+        <label for="modalBtn"></label>
+    </div>
+
+
+</body>
+</html>
