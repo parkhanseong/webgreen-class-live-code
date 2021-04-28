@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 * {
     box-sizing: border-box
 }
@@ -90,9 +89,7 @@ input[id=tab3]:checked ~ .sliderView .tabBtnBox label[for=tab3]
 
 /* slider container */
 .sliderContainer {
-    /* border: 1px solid red; */
     height: 100%;
-    /* background: blue; */
 }
 .sliderContainer input[name=tab] {
     display: none;
@@ -100,8 +97,6 @@ input[id=tab3]:checked ~ .sliderView .tabBtnBox label[for=tab3]
 
 /* slider View */
 .sliderView {
-    /* border: 1px solid red; */
-    /* background: gold; */
     width: 400px;
     height: 400px;
     overflow: hidden;
