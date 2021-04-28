@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="01-modal-in-slider.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<title>modal in slider</title>
+</head>
+<body>
+    <!-- modal Button -->
+    <input type="checkbox" id="modalBtn">
+    <label for="modalBtn">show</label>
+
+    <!-- modal -->
+    <div class="modalContainer">
+        <!-- modal Box -->
+        <div class="modalBox">
+            <label for="modalBtn">x</label>
+
+            <!-- sliderContainer -->
+            <div class="sliderContainer">
+
+                <input type="radio" name="tab" id="tab1" checked>
+                <input type="radio" name="tab" id="tab2">
+                <input type="radio" name="tab" id="tab3">
+
+                <div class="sliderView">
+                    <div class="sliderList">
+                        <div class="sliderItem">
+                            <h1>My skill Set</h1>
+                            <div class="sliderDescription">
+                                <i class="fab fa-html5 slider_gold"></i>
+                                <h2>HTML5</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam porro iusto, pariatur iure </p>
+                            </div>
+                        </div>
+                        <div class="sliderItem">
+                            <h1>My Skill Set</h1>
+                            <div class="sliderDescription">
+                                <i class="fab fa-css3-alt slider_dodgerblue"></i>
+                                <h2>CSS</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam porro iusto, pariatur iure </p>
+                            </div>
+                        </div>
+                        <div class="sliderItem">
+                            <h1>My Skill Set</h1>
+                            <div class="sliderDescription">
+                                <i class="fab fa-js-square slider_yellowgreen"></i>
+                                <h2>Javascript</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam porro iusto, pariatur iure </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabBtnBox">
+                        <label for="tab1"></label>
+                        <label for="tab2"></label>
+                        <label for="tab3"></label>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <!-- overlay -->
+        <label for="modalBtn"></label>
+    </div>
+
+</body>
+</html>

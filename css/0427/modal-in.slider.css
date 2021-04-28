@@ -185,7 +185,6 @@ input[id=tab3]:checked ~ .sliderView .sliderList {
 }
 
 /* button area  */
-
 input[id=tab1]:checked ~ .tabBtnBox label[for=tab1],
 input[id=tab2]:checked ~ .tabBtnBox label[for=tab2],
 input[id=tab3]:checked ~ .tabBtnBox label[for=tab3]
