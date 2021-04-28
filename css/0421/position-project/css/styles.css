@@ -72,8 +72,8 @@ li {
 /* header */
 header {
     background: var(--color-medium-black);
-    height: 150px;
-    padding-top: 30px;
+    height: 100px;
+    padding-top: 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -174,7 +174,7 @@ section.create .inner .content a:before {
     width: 0;
     height: 100%;
     background: rgba(255, 255, 255, 0.233);
-    transition: .8s
+    transition: .8s;
 }
 section.create .inner .content a:hover:before {
     width: 100%;
@@ -237,7 +237,7 @@ section.office .container .item .photo a:before {
 }
 
 section.office .container .item .photo:before {
-    background: rgba(0,0,0,.3);
+    background: rgba(0, 0, 0, .3);
 }
 section.office .container .item .photo:hover a:before {
     width: 100%;
