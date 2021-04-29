@@ -9,13 +9,18 @@
         padding: 0;
         box-sizing: border-box;
     }
+    html, body {
+        height: 100%;
+    }
     ul {
         list-style: none;
     }
     /* 전체 감싸는 부분 */
     .sliderWrap {
         background: skyblue;
-        height: 100vh; /* viewport height */
+        height: 100%; /* 부모에 대한 값이다 */
+        /* height: 100vh; */
+        /* viewport height */
     }
 
     input[id=tab1]:checked ~ .sliderView .sliderRoll {
