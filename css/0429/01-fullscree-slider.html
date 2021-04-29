@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>fullscreen slider</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    ul {
+        list-style: none;
+    }
+    /* 전체 감싸는 부분 */
+    .sliderWrap {
+        background: skyblue;
+        height: 100vh; /* viewport height */
+    }
+
+    input[id=tab1]:checked ~ .sliderView .sliderRoll {
+       left: 0; 
+    }
+    input[id=tab2]:checked ~ .sliderView .sliderRoll {
+      left: -100%;
+    }
+    input[id=tab3]:checked ~ .sliderView .sliderRoll {
+        left: -200%; 
+    }
+
+    input[id=tab1]:checked ~ .sliderView .btnBox label[for=tab1],
+    input[id=tab2]:checked ~ .sliderView .btnBox label[for=tab2],
+    input[id=tab3]:checked ~ .sliderView .btnBox label[for=tab3]
+    {
+        background: gold;
+        width: 50px;
+        height: 20px;
+        border-radius: 20px;
+    }
+
+    /* 보여지는 부분 */
+    .sliderView {
+        background: coral;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    /* rolling part */
+    .sliderRoll {
+        position: relative;
+        background: gold;
+        width: 300%;
+        height: 100%;
+        font-size: 0;
+        transition: all 300ms;
+    }
+
+    /* slider Item 1,2,3 */
+    .sliderItem {
+        display: inline-block;
+        width: 33.3333%;
+        font-size: 1rem;
+        height: 100%;
+        color: #fff;
+        position: relative;
+        text-align: center;
+    }
+    .sliderItem:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.5);
+    }
+    .sliderItem:nth-child(1) {
+        background: url(./planet-1280.jpg) no-repeat center/cover;
+    }
+    .sliderItem:nth-child(2) {
+        background: url(./code-1280.jpg) no-repeat center/cover;
+    }
+    .sliderItem:nth-child(3) {
+        background: url(./mountain-1280.jpg) no-repeat center/cover;
+    }
+    .sliderItemDesc {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        white-space: nowrap;
+        /* 줄바꿈이 이루어지지 않게 한다 */
+        transform: translate(-50%, -50%);
+    }
+    .sliderItemDesc h1 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    .btnBox {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    input[name=tab] {
+        display: none;
+    }
+    label[for*=tab] {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: rgb(29, 15, 15);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+</style>
+</head>
+<body>
+
+    <div class="sliderWrap">
+        
+        <input type="radio" name="tab" id="tab1" checked>
+        <input type="radio" name="tab" id="tab2">
+        <input type="radio" name="tab" id="tab3">
+
+        <div class="sliderView">
+            <ul class="sliderRoll"> 
+                <li class="sliderItem item_dodgerblue">
+                    <div class="sliderItemDesc">
+                        <h1>IT 기술 성장의 중심 기업<br><strong>‘영자닷컴’</strong></h1>
+                        <p>공공분야, 대기업 중심의 IT컨설팅, SI구축, 웹기반 시스템구축,
+                        <br>어플리케이션 플랫폼 구축 등을 수행하는 기업입니다.</p>
+                    </div>
+                </li>
+                <li class="sliderItem item_tomato">
+                    <div class="sliderItemDesc">
+                        <h1><strong>환경</strong>과 <strong>안전</strong>을 위한<br><strong>기술적 가치</strong>를 추구하는 기업</h1>
+                        <p>중·소규모 사업장의 효율적인 화학안전 관리를 위한 Smart System을 개발하여,
+                        <br>환경과 안전을 위한 기술적 가치를 실현하고자 합니다.</p>
+                    </div>
+                </li>
+                <li class="sliderItem item_green">
+                    <div class="sliderItemDesc">
+                        <h1>궁극의 기술 개발을 향한 여정,<br><strong>영자닷컴이 바꿀 미래</strong>를 주목하라.</h1>
+                        <p>매년 범람하는 새로운 기술 및 보안에 대응하여 각 분야의 전문인력구성,
+                        <br>연구개발, 기술력 향상을 최우선으로 합니다.</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="btnBox">
+                <label for="tab1"></label>
+                <label for="tab2"></label>
+                <label for="tab3"></label>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
