@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>float solution</title>
+<style>
+    /* common start */
+    .clearfix:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    /* common end */
+
+    header {
+        border: 1px solid coral;
+        /* height: 220px; */
+        /* display: flow-root; */
+        /* overflow: hidden; */
+    }
+    img {
+        width: 200px;
+        float: left;
+    }
+
+    /* header:after {
+        content: '';
+        display: block;
+        clear: both;
+    } */
+
+    .wrap {
+        border: 1px solid #000;
+    }
+    .wrap img {
+        float: right;
+    }
+
+    /* 
+        float을 해결하는 5가지 방법
+        1) height를 강제로 준다 (1차적 해결법)
+        2) display: flow-root;
+        3) overflow: hidden; (가장 보편적인 방법)
+         - box-shadow를 줄경우 사용 주의
+        4) pseudo element를 만들어서 clear:both 선언한다
+           ( 보편적인 방법2 )
+        5) clearFix (보편적인 방법 3)
+     */
+</style>
+</head>
+<body>
+
+    <header class="clearfix">
+        <img src="./float/postit.png" alt="">
+        <!-- <div></div> -->
+    </header>
+    <div class="wrap clearfix">
+        <img src="./pocketmonster/ggobugi2_300x300.png" alt="">
+    </div>
+
+</body>
+</html>

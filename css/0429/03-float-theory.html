@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>float theory</title>
+<style>
+    body {
+        margin: 0;
+    }
+    img {
+        width: 200px;
+    }
+    .document {
+        border: 5px solid orange;
+        /* padding: 10px; */
+        /* height: 250px; */
+        overflow: hidden;
+    }
+    img.left {
+        float: right;
+        background: pink;
+    }
+    h1 {
+        border: 10px solid blue;
+    }
+    p {
+        /* clear: both; */
+        border: 10px solid red;
+    }
+    /* float
+        1. float된 요소의 크기값은 부모에서 제외한다
+        2. float은 뒤에 오는 요소와 섞인다 ( 뒷 엘리먼트의 공간은 남는다 )
+     */
+     img.right {
+         float: right;
+         /* clear > float을 제거한다 */
+         clear: both;
+     }
+     .box {
+         height: 100px;
+         background: gold;
+     }
+</style>
+</head>
+<body>
+
+    <div class="document">
+        <img src="./profile-remove-bg.png" class="left">
+        <img src="./profile-remove-bg.png" class="left">
+        <img src="./profile-remove-bg.png" class="left">
+        <img src="./profile-remove-bg.png" class="left">
+    </div>
+    <div class="box">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>float review</title>
+<style>
+    img {
+        width: 200px;
+    }
+    .wrap {
+        background: gold;
+        border: 1px solid #000;
+        /* height: 300px; */
+        /* float, overflow */
+        overflow: hidden; /*  */
+    }
+    img.fly {
+        float: left;
+        border: 10px solid red;
+    }
+    img:nth-child(3) {
+        float: right;
+    }
+    p {
+        border: 10px solid blue;
+    }
+    .box {
+        border: 10px solid blue;
+        /* overflow: hidden; */
+        /* padding-left: 100px; */
+        /* margin-left: 100px; */
+    }
+</style>
+</head>
+<body>
+
+    <div class="wrap">
+        <img src="./float/postit.png" class="fly">
+        <img src="./float/postit.png" class="fly">
+        <img src="./float/postit.png" class="fly">
+        
+        <!-- <img src="./float/postit.png"> -->
+        <!-- <p>
+            PARK ipsum dolor sit amet consectetur adipisicing elit. Quisquam quia inventore, maiores fugit itaque iste eum libero ab alias voluptas incidunt ex? Soluta porro magnam, id in distinctio cum blanditiis.
+            PARK ipsum dolor sit amet consectetur adipisicing elit. Quisquam quia inventore, maiores fugit itaque iste eum libero ab alias voluptas incidunt ex? Soluta porro magnam, id in distinctio cum blanditiis.
+            PARK ipsum dolor sit amet consectetur adipisicing elit. Quisquam quia inventore, maiores fugit itaque iste eum libero ab alias voluptas incidunt ex? Soluta porro magnam, id in distinctio cum blanditiis.
+            PARK ipsum dolor sit amet consectetur adipisicing elit. Quisquam quia inventore, maiores fugit itaque iste eum libero ab alias voluptas incidunt ex? Soluta porro magnam, id in distinctio cum blanditiis.
+            PARK ipsum dolor sit amet consectetur adipisicing elit. Quisquam quia inventore, maiores fugit itaque iste eum libero ab alias voluptas incidunt ex? Soluta porro magnam, id in distinctio cum blanditiis.
+            PARK ipsum dolor sit amet consectetur adipisicing elit. Quisquam quia inventore, maiores fugit itaque iste eum libero ab alias voluptas incidunt ex? Soluta porro magnam, id in distinctio cum blanditiis.
+            PARK ipsum dolor sit amet consectetur adipisicing elit. Quisquam quia inventore, maiores fugit itaque iste eum libero ab alias voluptas incidunt ex? Soluta porro magnam, id in distinctio cum blanditiis.
+            PARK ipsum dolor sit amet consectetur adipisicing elit. Quisquam quia inventore, maiores fugit itaque iste eum libero ab alias voluptas incidunt ex? Soluta porro magnam, id in distinctio cum blanditiis.
+        </p> -->
+    </div>
+    <div class="box">
+        test
+    </div>
+    
+</body>
+</html>

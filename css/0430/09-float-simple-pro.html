@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>float simple project</title>
+<style>
+    /* reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    :root {
+        --border-radius: 10px;
+    }
+    ul {
+        list-style: none;
+    }
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+    }
+    /* header */
+    header {
+        background: url(./float/float-sample-header-bg.jpg) no-repeat center/cover;
+        height: 500px;
+        position: relative;
+        margin-bottom: -100px;
+        z-index: -1;
+    }
+    header h1 {
+        white-space: nowrap;
+        color: #fff;
+        font-size: 5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 5px rgba(0,0,0,.5);
+    }
+
+    /* card */
+    .cardContainer {
+        width: 800px;
+        margin: 0 auto;
+    }
+    .cardItem {
+        background: beige;
+        padding: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        border-radius: var(--border-radius);
+    }
+    .cardItem img {
+        border-radius: var(--border-radius);
+    }
+    .cardItem:nth-child(2n - 1) img {
+        float: left;
+    }
+    .cardItem:nth-child(2n) img {
+        float: right;
+    }
+    .cardItem .cardDesc {
+        overflow: hidden;
+        padding: 20px;
+        line-height: 1.5;
+    }
+    .cardDesc h2 {
+        margin-bottom: 10px;
+    }
+    .cardItem:nth-child(2n) .cardDesc {
+        text-align: right;
+    }
+    .cardDesc a {
+        margin-top: 30px;
+        padding: 10px 10px;
+        color: #fff;
+        border: 1px solid #ddd;
+        border-radius: var(--border-radius);
+        background: skyblue;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>beginning your <br> journey</h1>
+    </header>
+    <section class="card">
+        <ul class="cardContainer">
+            <li class="cardItem">
+                <img src="./float/float-item.png">
+                <div class="cardDesc">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vitae, commodi esse, ut non, nihil maiores ullam quos voluptas rem neque aperiam! Eum cupiditate dolore rerum adipisci, et laudantium consectetur.</p>
+                    <a href="#">get Ticket</a>
+                </div>
+            </li>
+            <li class="cardItem">
+                <img src="./float/float-item2.png">
+                <div class="cardDesc">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vitae, commodi esse, ut non, nihil maiores ullam quos voluptas rem neque aperiam! Eum cupiditate dolore rerum adipisci, et laudantium consectetur.</p>
+                    <a href="#">get Ticket</a>
+                </div>
+            </li>
+            <li class="cardItem">
+                <img src="./float/float-item3.png">
+                <div class="cardDesc">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vitae, commodi esse, ut non, nihil maiores ullam quos voluptas rem neque aperiam! Eum cupiditate dolore rerum adipisci, et laudantium consectetur.</p>
+                    <a href="#">get Ticket</a>
+                </div>
+            </li>
+            <li class="cardItem">
+                <img src="./float/float-item.png">
+                <div class="cardDesc">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vitae, commodi esse, ut non, nihil maiores ullam quos voluptas rem neque aperiam! Eum cupiditate dolore rerum adipisci, et laudantium consectetur.</p>
+                    <a href="#">get Ticket</a>
+                </div>
+            </li>
+            <li class="cardItem">
+                <img src="./float/float-item2.png">
+                <div class="cardDesc">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vitae, commodi esse, ut non, nihil maiores ullam quos voluptas rem neque aperiam! Eum cupiditate dolore rerum adipisci, et laudantium consectetur.</p>
+                    <a href="#">get Ticket</a>
+                </div>
+            </li>
+            <li class="cardItem">
+                <img src="./float/float-item3.png">
+                <div class="cardDesc">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vitae, commodi esse, ut non, nihil maiores ullam quos voluptas rem neque aperiam! Eum cupiditate dolore rerum adipisci, et laudantium consectetur.</p>
+                    <a href="#">get Ticket</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

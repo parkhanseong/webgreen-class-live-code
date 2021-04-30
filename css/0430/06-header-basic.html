@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>header basic</title>
+<style>
+    body {
+        margin: 0;/* user agent = browser */
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+    h1 {
+        margin: 0;
+    }
+    .clearfix:after {
+        content:'';
+        display: block;
+        clear: both;
+    }
+    header {
+        background: #111;
+        color: #999;
+        /* overflow: hidden; */
+        /* padding: 0 200px; */
+    }
+    h1.logo {
+        float: left;
+        font-size: 4rem;
+    }
+    ul.gnb {
+        /* background: gold; */
+        float: right;
+        white-space: nowrap;
+        overflow: scroll;
+        /* absolute, float > block, 특수한 환경(레이어)에 있다  */
+    }
+    .gnbItem {
+        /* background: coral; */
+        float: left;
+        /* display: inline-block; */
+        font-size: 2rem;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+    <header class="clearfix">
+        <h1 class="logo">
+            logo
+        </h1>
+        <ul class="gnb">
+            <li class="gnbItem">
+                menu1
+            </li>
+            <li class="gnbItem">
+                menu2
+            </li>
+            <li class="gnbItem">
+                menu3
+            </li>
+        </ul>
+    </header>
+
+</body>
+</html>

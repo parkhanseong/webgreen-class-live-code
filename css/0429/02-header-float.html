@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>hader i-block vs float</title>
+<style>
+    * {
+        margin: 0;
+    }
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
+    header {
+        border: 1px solid #000;
+        background: #111;
+        color: #999;
+    }
+    /* iblock */
+    header.iBlock h1.logo {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        vertical-align: top;
+        text-align: center;
+        line-height: 100px;
+    }
+    header.iBlock ul.navbar {
+        /* background: coral; */
+        width: calc(100% - 110px);
+        text-align: right;
+        display: inline-block;
+        height: 100px;
+    }
+    header.iBlock .navbarItem {
+        margin-top: 30px;
+        height: 40px;
+        width: 100px;
+        text-align: center;
+        line-height: 40px;
+        /* background: skyblue; */
+        display: inline-block;
+    }
+
+
+    /* float */
+    header.float {
+        height: 100px;
+    }
+    header.float h1.logo {
+        /* background: gold; */
+        float: left;
+        height: 100px;
+        line-height: 100px;
+        width: 100px;
+        text-align: center;
+    }
+    header.float ul.navbar {
+        /* background: coral; */
+        float: right;
+    }
+    header.float .navbarItem {
+        float: left;
+        width: 100px;
+        text-align: center;
+        height: 100px;
+        line-height: 100px;
+    }
+</style>
+</head>
+<body>
+
+    <h1>inline-block</h1>
+    <header class="iBlock">
+        <h1 class="logo">
+            logo
+        </h1>
+        <ul class="navbar">
+            <li class="navbarItem">
+                menu1
+            </li>
+            <li class="navbarItem">
+                menu1
+            </li>
+            <li class="navbarItem">
+                menu1
+            </li>
+        </ul>
+    </header>
+    <h1>float</h1>
+    <header class="float">
+        <h1 class="logo">
+            logo
+        </h1>
+        <ul class="navbar">
+            <li class="navbarItem">
+                menu1
+            </li>
+            <li class="navbarItem">
+                menu1
+            </li>
+            <li class="navbarItem">
+                menu1
+            </li>
+        </ul>
+    </header>
+
+</body>
+</html>
