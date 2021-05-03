@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>grid review</title>
+<style>
+    /* * {
+        box-sizing: border-box;
+    } */
+    .grid {
+        width: 900px;
+        /* height: 100vh; */
+        background: skyblue;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .item {
+        /* 정사각형이다 */
+        width: 20%;
+        padding-top: 20%;
+        background: gold;
+        float: left;
+        margin-right: 6.6666%;
+        box-sizing: border-box;
+        margin-bottom: 6.6666%;
+    }
+    /* 
+        1th, 2th, 3th, 4th > nth
+        0123456789 ~ 9999
+     */
+     /* 함수 function */
+    .item:nth-child(4n) {
+        margin-right: 0;
+        background: coral;
+        /* border: 1px solid #000; */
+    }
+</style>
+</head>
+<body>
+
+    <div class="grid">
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+    </div>
+
+</body>
+</html>

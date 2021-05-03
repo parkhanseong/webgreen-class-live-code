@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>float simple1</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* common */
+    .clearfix:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    header {
+        background: url(./img/float-sample-header-bg.jpg) no-repeat center/cover;
+        padding-top: 20%;
+        height: 0;
+        position: relative;
+    }
+    .headerTitle {
+        color: #fff;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        font-size: 3rem;
+        transform: translate(-50%, -30%);
+        white-space: nowrap;
+    }
+    .travel {
+        position: relative;
+        margin: 0 auto; 
+        margin-top: -50px;
+        width: 640px;
+        /* background: pink; */
+        /* height: 100vh; */
+    }
+    .travel_item img {
+        float: left;
+    }
+    .travel_item:nth-child(2n) img {
+        float: right;
+    }
+    .travel_item {
+        background: beige;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    .travelItemDesc {
+        padding: 10px;
+        overflow: hidden;
+    }
+    .travelItemDesc h2 {
+        margin-bottom: 10px;
+    }
+    .travelItemDesc a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 30px;
+        background: pink;
+        color: inherit;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+
+    
+</style>
+</head>
+<body>
+<header>
+    <h1 class="headerTitle">beginning your <br> journey</h1>
+</header>
+<!-- 
+    .travel .item .desc {}
+    <CamelCase>
+    camelCamel > .travelItemDesc
+    <BEM>
+    Block__Element-Modifier
+    .travelItemDesc
+ -->
+<section class="travel">
+    <div class="travel_item clearfix">
+        <img src="./img/float-item.png" alt="fly to the paris">
+        <div class="travelItemDesc">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam placeat beatae dolor doloribus aut illum dolorem sit odit minima, neque officiis nostrum id animi harum fugiat sint nobis sunt laudantium?
+            </p>
+            <a href="#">click</a>
+        </div>
+    </div>
+    <div class="travel_item clearfix">
+        <img src="./img/float-item2.png" alt="fly to the paris">
+        <div class="travelItemDesc">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam placeat beatae dolor doloribus aut illum dolorem sit odit minima, neque officiis nostrum id animi harum fugiat sint nobis sunt laudantium?
+            </p>
+            <a href="#">click</a>
+        </div>
+    </div>
+    <div class="travel_item clearfix">
+        <img src="./img/float-item3.png" alt="fly to the paris">
+        <div class="travelItemDesc">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam placeat beatae dolor doloribus aut illum dolorem sit odit minima, neque officiis nostrum id animi harum fugiat sint nobis sunt laudantium?
+            </p>
+            <a href="#">click</a>
+        </div>
+    </div>
+    <div class="travel_item clearfix">
+        <img src="./img/float-item2.png" alt="fly to the paris">
+        <div class="travelItemDesc">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam placeat beatae dolor doloribus aut illum dolorem sit odit minima, neque officiis nostrum id animi harum fugiat sint nobis sunt laudantium?
+            </p>
+            <a href="#">click</a>
+        </div>
+    </div>
+    <div class="travel_item clearfix">
+        <img src="./img/float-item3.png" alt="fly to the paris">
+        <div class="travelItemDesc">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam placeat beatae dolor doloribus aut illum dolorem sit odit minima, neque officiis nostrum id animi harum fugiat sint nobis sunt laudantium?
+            </p>
+            <a href="#">click</a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
