@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>
+    07-layout
+</title>
+<style>
+    * {
+        margin: 0;
+    }
+    header {
+        background: gold;
+        overflow: hidden;
+    }
+    .heaederLeft {
+        height: 100px;
+        width: 200px;
+        background: beige;
+        float:left;
+    }
+    .heaederRight {
+        float:right;
+        height: 100px;
+        width: 200px;
+        background: deepskyblue;
+    }
+    main {
+        height: 500px;
+        background: #BCB1B3;
+    }
+    section {
+        overflow: hidden;
+        background: skyblue;
+    }
+    .sectionItem {
+        float: left;
+        margin-right: 5%;
+        width: 30%;
+        height: 100px;
+        background: #DEC8C1;
+    }
+    .sectionItem:last-child {
+        margin-right: 0;
+    }
+    footer {
+        height: 100px;
+        background: gold;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <article class="heaederLeft">
+            <h1>left</h1>
+        </article>
+        <article class="heaederRight">
+            <h1>right</h1>
+        </article>
+    </header>
+    <main>
+        <h1>main</h1>
+    </main>
+    <section>
+        <article class="sectionItem">
+            <h1>article</h1>
+        </article>
+        <article class="sectionItem">
+            <h1>article2</h1>
+        </article>
+        <article class="sectionItem">
+            <h1>article3</h1>
+        </article>
+    </section>
+    <footer>
+        <h1>footer</h1>
+    </footer>
+
+</body>
+</html>

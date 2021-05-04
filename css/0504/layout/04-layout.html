@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>04 layout</title>
+<style>
+    * {
+        margin: 0;
+    }
+    aside {
+        height: 700px;
+        width: 200px;
+        background: gold;
+        float: left;
+    }
+    header {
+        height: 100px;
+        /* float: left; */
+        overflow: hidden;
+        width: calc(100% - 200px);
+        background: skyblue;
+    }
+    main {
+        height: 500px;
+        /* float: left; */
+        overflow: hidden;
+        width: calc(100% - 200px);
+        background: lightcoral;
+    }
+    footer {
+        height: 100px;
+        /* float: left; */
+        overflow: hidden;
+        width: calc(100% - 200px);
+        background: lightseagreen;
+    }
+</style>
+</head>
+<body>
+
+<aside>
+    <h1>side</h1>
+</aside>
+<header>
+    <h1>header</h1>
+</header>
+<main>
+    <h1>main</h1>
+</main>
+<footer>
+    <h1>footer</h1>
+</footer>
+
+</body>
+</html>

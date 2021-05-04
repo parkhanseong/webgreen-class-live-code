@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>02-layout</title>
+<style>
+    * {
+        margin: 0;
+    }
+    header {
+        height: 100px;
+        background: gold;
+        text-align: center;
+    }
+    nav {
+        height: 80px;
+        background: dodgerblue;
+        text-align: center;
+    }
+    .left {
+        width: 100px;
+        height: 500px;
+        background: beige;
+        float: left;
+    }
+    .right {
+        width: 100px;
+        height: 500px;
+        background: rgb(104, 104, 52);
+        float: left;
+    }
+    main {
+        height: 500px;
+        width: calc(100% - 200px);
+        background: rgb(185, 185, 62);
+        float: left;
+    }
+    footer {
+        clear:both;
+        text-align: center;
+        line-height: 100px;
+        height: 100px;
+        background: coral;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>header</h1>
+</header>
+<nav>
+    <h1>nav</h1>
+</nav>
+<aside class="left">
+    <h1>side left</h1>
+</aside>
+<main>
+    <h1>main</h1>
+</main>
+<aside class="right">
+    <h1>side right</h1>
+</aside>
+<footer>
+    <h1>footer</h1>
+</footer>
+
+
+</body>
+</html>

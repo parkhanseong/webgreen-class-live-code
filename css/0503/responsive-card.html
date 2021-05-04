@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dd</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+    }
+    .clearfix:after {
+        content:'';
+        display: block;
+        clear: both;
+    }
+    .container {
+        background: gold;
+        width: 940px;
+        margin: 0 auto;
+    }
+    .item {
+      width: 39%;
+      border: 5px solid #000;
+      float: left;
+    }
+    .item img {
+        width: 200px;
+        float: left;
+    }
+    .item p {
+        overflow: hidden;
+      background: skyblue;
+    }
+</style>
+</head>
+<body>
+
+<div class="container clearfix">
+    <div class="item">
+        <img src="./img/float-item.png" alt="">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores velit tempore nihil iure omnis quae, autem quia consequatur alias, rem delectus consequuntur ad eligendi eum error magnam officiis! Aut.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores velit tempore nihil iure omnis quae, autem quia consequatur alias, rem delectus consequuntur ad eligendi eum error magnam officiis! Aut.
+        </p>
+    </div>
+    test
+</div>
+
+</body>
+</html>

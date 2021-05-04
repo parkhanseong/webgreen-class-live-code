@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>05-layout</title>
+<style>
+    * {
+        margin: 0;
+    }
+    header {
+        height: 100px;
+        background: purple;
+    }
+    nav {
+        height: 70px;
+        background: lightcoral;
+    }
+    aside {
+        width: 200px;
+        height: 500px;
+        background: rgb(52, 175, 31);
+        float: left;
+    }
+    section.top {
+        width: calc(100% - 200px);
+        height: 250px;
+        background: rgb(173, 53, 157);
+        float: left;
+    }
+    section.bottom {
+        width: calc(100% - 200px);
+        height: 250px;
+        background: rgb(63, 44, 172);
+        float: left;
+    }
+    footer {
+        clear: both;
+        height: 100px;
+        background: gold;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>header</h1>
+    </header>
+    <nav>
+        <h1>nav</h1>
+    </nav>
+    <aside>
+        <h1>side</h1>
+    </aside>
+    <section class="top">
+        <h1>top</h1>
+    </section>
+    <section class="bottom">
+        <h1>bottom</h1>
+    </section>
+    <footer>
+        <h1>footer</h1>
+    </footer>
+</body>
+</html>

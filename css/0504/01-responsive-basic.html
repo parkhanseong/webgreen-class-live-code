@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+
+<!-- 
+    - 넓이를 디바이스 크기에 맞춘다
+    - 비율을 1.0(디바이스 크기에 맞춘다)
+ -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>responsive basic</title>
+<style>
+    .box {
+        width: 200px;
+        height: 200px;
+        background: gold;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* 
+        media query는 코드의 아랫쪽에 선언되어야 한다 
+    */
+    /* tablet breakpoint(분기점) */
+    /* 
+    1. 띄워쓰기가 꼭 들어가야 한다
+    */
+    /* 
+        screen 이면서 크기값이 768px 
+        아래 코드를 해석해
+    */
+    @media (max-width: 768px) {
+        .box {
+            background: coral;
+        }
+    }
+    /* mobile breakpoint 480px */
+    /* @media screen and (max-width: 480px) {
+        .box {
+            background: purple;
+        }
+    } */
+    
+        
+    
+</style>
+</head>
+<body>
+
+    <div class="box">
+
+    </div>
+
+</body>
+</html>
