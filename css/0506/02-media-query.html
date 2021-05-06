@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>media query</title>
+<style>
+    /* desktop first */
+    .wrap {
+        position: absolute;
+        width: 50%;
+        text-align: center;
+        background: #999;
+        color: pink;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .tablet {
+        display: none;
+    }
+    .mobile {
+        display: none;
+    }
+    /* 조건문 : 조건이 ture이면 실행된다 */
+    /* 
+        max-width를 분기점으로 할땐
+        큰 사이즈가 위로 와야 한다
+     */
+    /* tablet */
+    @media (max-width: 768px) {
+        .desktop {
+            display: none;
+        }
+        .tablet {
+            color: blue;
+            display: block;
+        }
+    }
+    @media (max-width: 480px) {
+        .tablet {
+            display: none;
+        }
+        .mobile {
+            display: block;
+            color: orange;
+        }
+    }
+    
+</style>
+</head>
+<body>
+
+    <div class="wrap">        
+        <h1 class="desktop">desktop</h1>
+        <h1 class="tablet">tablet</h1>
+        <h1 class="mobile">mobile</h1>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style>
+    /* .card {
+        background: pink;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .card img {
+        width: 200px;
+        float: left;
+    } */
+    /* cardDesc > camelCase naming rule */
+    /*
+        권장되지 않는다 
+        css에서 camelCase는 쓰지 않는다
+    */
+    /* .cardDesc {
+        overflow: hidden;
+        background: skyblue;
+    }
+    .cardDescTitle {
+        color: dodgerblue;
+    }
+    .cardDescPara {
+        padding: 10px;
+    } */
+
+    /* 일반적인 네이밍 방법 */
+    /* .card {
+        background: pink;
+        width: 50%;
+    }
+    .card img {
+        width: 200px;
+        float: left;
+    }
+    .card-desc {}
+    .card-desc .title {}
+    .card-desc .para {} */
+
+    /* BEM naming rule */
+    /* 
+        B: block
+        E: elementl
+        M: modifier
+     */
+    .card {}
+    .card__desc {}
+    .card__desc__title {}
+    .card__desc__para {}
+    .card__desc--btn {}
+</style>
+</head>
+<body>
+    <!-- 수업에서 하던 class naming rule -->
+    <!-- <div class="card">
+        <img src="./image/float-item.png" alt="">
+        <div class="cardDesc">
+            <h1 class="cardDescTitle">title</h1>
+            <p class="cardDescPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, facere veritatis expedita itaque, officiis dolores repellendus eius enim suscipit ad tempora. Aliquid accusantium consectetur eius nisi quisquam illum deserunt voluptatem?</p>
+        </div>
+    </div> -->
+
+    <!-- <div class="card">
+        <img src="./image/float-item.png" alt="">
+        <div class="card-desc">
+            <h1 class="title">title</h1>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, facere veritatis expedita itaque, officiis dolores repellendus eius enim suscipit ad tempora. Aliquid accusantium consectetur eius nisi quisquam illum deserunt voluptatem?</p>
+        </div>
+    </div> -->
+
+    <!-- BEM -->
+    <div class="card">
+        <img src="./image/float-item.png" alt="">
+        <div class="card__desc">
+            <h1 class="card__desc__title">title</h1>
+            <p class="card__desc__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, facere veritatis expedita itaque, officiis dolores repellendus eius enim suscipit ad tempora. Aliquid accusantium consectetur eius nisi quisquam illum deserunt voluptatem?</p>
+            <a href="#" class="card__desc--btn">click</a>
+        </div>
+    </div>
+
+</body>
+</html>

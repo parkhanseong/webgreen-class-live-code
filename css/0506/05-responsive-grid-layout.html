@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>responsive grid layout</title>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .clearfix:after {
+        content:'';
+        display: block;
+        clear: both;
+    }
+    header, footer {
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        background: gold;
+    }
+
+    /* grid */
+    #grid {
+        /* background: skyblue; */
+    }
+    #grid .grid-item {
+        float: left;
+        width: 33.3333%;
+        padding-top: 33.3333%;
+        position: relative;
+    }
+    .grid-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: 1rem;
+        background: coral;
+    }
+    @media (max-width: 768px) {
+        #grid .grid-item {
+            width: 50%;
+            padding-top: 50%;
+        }
+    }
+    @media (max-width: 480px) {
+        #grid .grid-item {
+            width: 100%;
+            padding-top: 100%;
+        }
+    }
+    
+</style>
+</head>
+<body>
+    <header>
+        <h1>header</h1>
+    </header>
+    <section id="grid" class="clearfix">
+        <h1>추천 영화</h1>
+        <div class="grid-item">
+            <div class="grid-box">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="grid-box"></div>
+        </div>
+        <div class="grid-item">
+            <div class="grid-box"></div>
+        </div>
+        <div class="grid-item">
+            <div class="grid-box"></div>
+        </div>
+        <div class="grid-item">
+            <div class="grid-box"></div>
+        </div>
+        <div class="grid-item">
+            <div class="grid-box"></div>
+        </div>
+        <div class="grid-item">
+            <div class="grid-box"></div>
+        </div>
+        <div class="grid-item">
+            <div class="grid-box"></div>
+        </div>
+        <div class="grid-item">
+            <div class="grid-box"></div>
+        </div>
+        
+    </section>
+    <footer>
+        <h1>footer</h1>
+    </footer>
+
+
+</body>
+</html>

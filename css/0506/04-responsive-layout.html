@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>responsive layout</title>
+<style>
+    * {
+        margin: 0;
+        text-align: center;
+    }
+    #header {
+        background: gold;
+        height: 100px;
+    }
+    #news {
+        width: 50%;
+        height: 300px;
+        float: left;
+        background: lightgreen;
+    }
+    #sports {
+        float: left;
+        width: 50%;
+        height: 300px;
+        background: gray;
+    }
+    #footer {
+        clear: both;
+        height: 100px;
+        background: lightblue;
+    }
+    /* tablet, mobile */
+    @media (max-width: 768px) {
+        #news {
+            font-size: 3rem;
+            color: #fff;
+            width: 100%;
+            background: coral;
+        }
+        #sports {
+            background: skyblue;
+            font-size: 3rem;
+            color: #fff;
+            clear:both;
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="wrap">
+        <header id="header">
+            <h1>header</h1>
+        </header>
+        <section id="news">
+            <h1>left</h1>
+        </section>
+        <section id="sports">
+            <h1>right</h1>
+        </section>
+        <footer id="footer">
+            <h1>footer</h1>
+        </footer>
+    </div>
+
+</body>
+</html>

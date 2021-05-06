@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>media query</title>
+<style>
+    /* mobile first */
+    .wrap {
+        position: absolute;
+        width: 50%;
+        text-align: center;
+        background: #999;
+        color: pink;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .mobile {
+        display: block;
+    }
+    .tablet {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+    
+    /* 
+        min-width를 분기점으로 할땐
+        작은 사이즈가 위로 와야 한다
+     */
+    /* tablet */
+    @media (min-width: 480px) {
+        .tablet {
+            display: block;
+            color: orange;
+        }
+        .mobile {
+            display: none;
+        }
+    }
+    
+    /* desktop */
+    @media (min-width: 768px) {
+        .desktop {
+            display: block;
+        }
+        .tablet {
+            color: blue;
+            display: none;
+        }
+    }
+    
+</style>
+</head>
+<body>
+
+    <div class="wrap">        
+        <h1 class="desktop">desktop</h1>
+        <h1 class="tablet">tablet</h1>
+        <h1 class="mobile">mobile</h1>
+    </div>
+
+</body>
+</html>

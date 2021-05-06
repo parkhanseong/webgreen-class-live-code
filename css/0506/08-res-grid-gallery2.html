@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>res grid gallery</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        img {
+            max-width: 100%;
+            vertical-align: top;
+        }
+        .clearfix:after {
+            content:''; /* pseudo element */
+            display: block; /* div */
+            clear: both; /* clear */
+        }
+        .grid-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .grid-item {
+            float: left;
+            width: 25%;
+            padding-top: 25%;
+            position: relative;
+        }
+        .grid-item-large {
+            width: 50%; 
+            padding-top: 50%;
+        }
+        .grid-item-long {
+            padding-top: 50%; 
+            float:right;
+        }
+        .grid-item .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: .5rem;
+        }
+        .grid-item .content img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .grid-item .content h1 {
+            position: relative;
+            font-size: 1rem;
+            top: 1rem;
+            left: 1rem;
+            color: #fff; 
+        }
+        @media (max-width: 768px) {
+            .grid-item .content h1 {
+                font-size: 2rem;
+            }
+            .grid-item {
+                width: 50%;
+                padding-top: 50%;
+            }
+        }
+        @media (max-width: 480px) {
+            .grid-item .content h1 {
+                font-size: 2rem;
+            }
+            .grid-item {
+                width: 100%;
+                padding-top: 100%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+<div class="grid-container clearfix">
+    <div class="grid-item grid-item-large" >
+        <div class="content">
+            <img src="./image/float-item.png" alt="">
+            <h1>item1</h1>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="content">
+            <img src="./image/float-item2.png" alt="">
+            <h1>item2</h1>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="content">
+            <img src="./image/float-item3.png" alt="">
+            <h1>item3</h1>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="content">
+            <img src="./image/float-item2.png" alt="">
+            <h1>item4</h1>
+        </div>
+    </div>
+    <div class="grid-item grid-item-long">
+        <div class="content">
+            <img src="./image/float-item.png" alt="">
+            <h1>item5</h1>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="content">
+            <img src="./image/float-item2.png" alt="">
+            <h1>item6</h1>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="content">
+            <img src="./image/float-item3.png" alt="">
+            <h1>item7</h1>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="content">
+            <img src="./image/float-item2.png" alt="">
+            <h1>item8</h1>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="content">
+            <img src="./image/float-item.png" alt="">
+            <h1>item9</h1>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="content">
+            <img src="./image/float-item2.png" alt="">
+            <h1>item10</h1>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="content">
+            <img src="./image/float-item3.png" alt="">
+            <h1>item3</h1>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="content">
+            <img src="./image/float-item2.png" alt="">
+            <h1>item4</h1>
+        </div>
+    </div>
+   
+</div>
+
+</body>
+</html>
