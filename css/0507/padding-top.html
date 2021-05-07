@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>padding top</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+        vertical-align: top;
+    }
+    .grid:after {
+        content:"";
+        display: block;
+        clear:both;
+    }
+    .grid {
+        width: 1440px;
+        margin: 0 auto;
+        border: 1px solid #000;
+        background: pink;
+    }
+    .grid-item {
+        width: 25%;
+        /*
+            1. 서로 다른 이미지를 균등하게 유지하기 위해서 
+        */
+        /* padding-top: 25%; */
+        /* margin: 1rem; */
+        float: left;
+        position: relative;
+    }
+    .grid-item img {
+        /* position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%; */
+        /* height: 100%; */
+    }
+</style>
+</head>
+<body>
+
+<!--     
+<img src="./image/career1.png" alt="">
+<img src="./image/float-item.png" alt="">
+<img src="./image/pocketmonster/ggobugi2_300x300.png" alt=""> 
+-->
+
+<div class="grid">
+    <div class="grid-item">
+        <img src="./image/career1.png" alt="">
+    </div>
+    <div class="grid-item">
+        <img src="./image/float-item.png" alt="">
+    </div>
+    <div class="grid-item">
+        <!-- <img src="./image/pocketmonster/ggobugi2_300x300.png" alt=""> -->
+    </div>
+</div>
+
+</body>
+</html>

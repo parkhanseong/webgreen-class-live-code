@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>grid system</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+        vertical-align: top;
+    }
+    /* grid system */
+    .l-grid-1-12 { width: 8.33333333%; }
+    .l-grid-2-12 { width: 16.66666667%; }
+    .l-grid-3-12 { width: 25%; }
+    .l-grid-4-12 { width: 33.33333333%; }
+    .l-grid-5-12 { width: 41.66666667%; }
+    .l-grid-6-12 { width: 50%; }
+    .l-grid-7-12 { width: 58.33333333%; }
+    .l-grid-8-12 { width: 66.66666667%; }
+    .l-grid-9-12 { width: 75%; }
+    .l-grid-10-12 { width: 83.33333333%; }
+    .l-grid-11-12 { width: 91.66666667%; }
+    .l-grid-12-12 { width: 100%;}
+
+    .l-grid:after {
+        content:"";
+        display: block;
+        clear: both;    
+    }
+    .l-grid {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .l-grid-item {
+        float: left;
+    }
+    .cover {
+        /* grid-item의 넓이값을 100% 가져온다 > 정사각형을 그린다 */
+        padding-top: 100%;
+        position: relative;
+        margin: 1rem;
+    }
+    .cover img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (max-width: 768px) {
+        .cover {
+            margin: .5rem;
+        }
+         /* grid tablet system */
+        .l-grid-tablet-1-12 { width: 8.33333333%; }
+        .l-grid-tablet-2-12 { width: 16.66666667%; }
+        .l-grid-tablet-3-12 { width: 25%; }
+        .l-grid-tablet-4-12 { width: 33.33333333%; }
+        .l-grid-tablet-5-12 { width: 41.66666667%; }
+        .l-grid-tablet-6-12 { width: 50%; }
+        .l-grid-tablet-7-12 { width: 58.33333333%; }
+        .l-grid-tablet-8-12 { width: 66.66666667%; }
+        .l-grid-tablet-9-12 { width: 75%; }
+        .l-grid-tablet-10-12 { width: 83.33333333%; }
+        .l-grid-tablet-11-12 { width: 91.66666667%; }
+        .l-grid-tablet-12-12 { width: 100%;}
+    }
+    @media (max-width: 480px) {
+        .cover {
+            margin: .2rem;
+        }
+         /* grid mobile system */
+        .l-grid-mobile-1-12 { width: 8.33333333%; }
+        .l-grid-mobile-2-12 { width: 16.66666667%; }
+        .l-grid-mobile-3-12 { width: 25%; }
+        .l-grid-mobile-4-12 { width: 33.33333333%; }
+        .l-grid-mobile-5-12 { width: 41.66666667%; }
+        .l-grid-mobile-6-12 { width: 50%; }
+        .l-grid-mobile-7-12 { width: 58.33333333%; }
+        .l-grid-mobile-8-12 { width: 66.66666667%; }
+        .l-grid-mobile-9-12 { width: 75%; }
+        .l-grid-mobile-10-12 { width: 83.33333333%; }
+        .l-grid-mobile-11-12 { width: 91.66666667%; }
+        .l-grid-mobile-12-12 { width: 100%;}
+    }
+</style>
+</head>
+<body>
+
+    <div class="l-grid">
+        <div class="l-grid-item l-grid-3-12 l-grid-tablet-6-12 l-grid-mobile-12-12">
+            <div class="cover">
+                <img src="./image/pocketmonster/Dragonite.png" alt="">
+            </div>
+        </div>
+        <div class="l-grid-item l-grid-3-12 l-grid-tablet-6-12 l-grid-mobile-12-12">
+            <div class="cover">
+                <img src="./image/pocketmonster/Dragonair.png" alt="">
+            </div>
+        </div>
+        <div class="l-grid-item l-grid-3-12 l-grid-tablet-3-12 l-grid-mobile-12-12">
+            <div class="cover">
+                <img src="./image/float-item.png" alt="">
+            </div>
+        </div>
+        <div class="l-grid-item l-grid-3-12 l-grid-tablet-3-12 l-grid-mobile-12-12">
+            <div class="cover">
+                <img src="./image/iceland_640.png" alt="">
+            </div>
+        </div>
+        <div class="l-grid-item l-grid-4-12 l-grid-tablet-3-12 l-grid-mobile-12-12">
+            <div class="cover">
+                <img src="./image/career3.png" alt="">
+            </div>
+        </div>
+        <div class="l-grid-item l-grid-4-12 l-grid-tablet-3-12 l-grid-mobile-12-12">
+            <div class="cover">
+                <img src="./image/career2.png" alt="">
+            </div>
+        </div>
+        <div class="l-grid-item l-grid-4-12 l-grid-tablet-6-12 l-grid-mobile-12-12">
+            <div class="cover">
+                <img src="./image/career3.png" alt="">
+            </div>
+        </div>
+        <div class="l-grid-item l-grid-6-12 l-grid-tablet-6-12 l-grid-mobile-12-12">
+            <div class="cover">
+                <img src="./image/float-item3.png" alt="">
+            </div>
+        </div>
+        <div class="l-grid-item l-grid-6-12 l-grid-tablet-6-12 l-grid-mobile-12-12">
+            <div class="cover">
+                <img src="./image/float-item2.png" alt="">
+            </div>
+        </div>
+        <div class="l-grid-item l-grid-12-1 l-grid-tablet-6-12 l-grid-mobile-12-12">
+            <div class="cover">
+                <img src="./image/float-item3.png" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

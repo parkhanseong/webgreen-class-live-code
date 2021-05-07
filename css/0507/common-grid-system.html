@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>grid system</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+        vertical-align: top;
+    }
+    /* grid system */
+    .grid-1-12 { width: 8.33333333%; }
+    .grid-2-12 { width: 16.66666667%; }
+    .grid-3-12 { width: 25%; }
+    .grid-4-12 { width: 33.33333333%; }
+    .grid-5-12 { width: 41.66666667%; }
+    .grid-6-12 { width: 50%; }
+    .grid-7-12 { width: 58.33333333%; }
+    .grid-8-12 { width: 66.66666667%; }
+    .grid-9-12 { width: 75%; }
+    .grid-10-12 { width: 83.33333333%; }
+    .grid-11-12 { width: 91.66666667%; }
+    .grid-12-12 { width: 100%;}
+
+    .grid:after {
+        content:"";
+        display: block;
+        clear: both;    
+    }
+    .grid {
+        width: 1440px;
+        margin: 0 auto;
+        background: pink;
+        border: 1px solid #000;
+    }
+    .grid-item {
+        float: left;
+        border: 1px solid #000;
+    }
+    .cover {
+        /* grid-item의 넓이값을 100% 가져온다 > 정사각형을 그린다 */
+        padding-top: 100%;
+        background: gold;
+    }
+</style>
+</head>
+<body>
+
+    <div class="grid">
+        <div class="grid-item grid-3-12">
+            <div class="cover">
+            </div>
+        </div>
+        <div class="grid-item grid-3-12">
+            <div class="cover">
+            </div>
+        </div>
+        <div class="grid-item grid-3-12">
+            <div class="cover">
+            </div>
+        </div>
+        <div class="grid-item grid-3-12">
+            <div class="cover">
+            </div>
+        </div>
+        <div class="grid-item grid-4-12">
+            <div class="cover">
+            </div>
+        </div>
+        <div class="grid-item grid-4-12">
+            <div class="cover">
+            </div>
+        </div>
+        <div class="grid-item grid-4-12">
+            <div class="cover">
+            </div>
+        </div>
+        <div class="grid-item grid-6-12">
+            <div class="cover">
+            </div>
+        </div>
+        <div class="grid-item grid-6-12">
+            <div class="cover">
+            </div>
+        </div>
+        <div class="grid-item grid-12-12">
+            <div class="cover">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
