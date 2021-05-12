@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+/* reset,common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* 16px * 62.5% = 10px => html */
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.4rem; /* 14px */
+    background: #111;
+    color: #999;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+/* layout/common */
+.inner {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* grid system */
+/* 
+    class name: 엘리먼트의 명찰과 같은것이다
+    l-col-1-12
+    layout을 잡을때 쓰인다
+    column: 열을 정의하는구나
+    1-12: 총 12개 column이고 그중에 1등분이구나   
+*/
+.l-col-1-12 { width: 8.33333333%; }
+.l-col-2-12 { width: 16.66666667%; }
+.l-col-3-12 { width: 25%; }
+.l-col-4-12 { width: 33.33333333%; }
+.l-col-5-12 { width: 41.66666667%; }
+.l-col-6-12 { width: 50%; }
+.l-col-7-12 { width: 58.33333333%; }
+.l-col-8-12 { width: 66.66666667%; }
+.l-col-9-12 { width: 75%; }
+.l-col-10-12 { width: 83.33333333%; }
+.l-col-11-12 { width: 91.66666667%; }
+.l-col-12-12 { width: 100%;}
+
+header {
+    background: url(./img/netflix-bg.jpg);
+    padding-top: 10%;
+    height: 0;
+    position: relative;
+}
+header:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5rem;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+.logo {
+    text-transform: uppercase;
+    color: red;
+    font-size: 5rem;
+    line-height: 1;
+    margin-top: -5rem;
+    position: relative;
+}
+.l-row {
+}
+.l-col {
+    float: left;
+}
+.l-col .cover {
+    padding-top: 100%;
+    margin: 1rem;
+    height: 0;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.movie-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    /* background: coral; */
+}
+.movie-photo img {
+    width: 100%;
+    height: 100%;
+}
+.movie-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    /* background: skyblue; */
+    padding: 1rem;
+}
+.movie-content p {
+    overflow: hidden;
+    line-height: 1.2;
+    height: 6em;
+    /* background: coral; */
+}
+.movie-content p:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+/* responsive tablet */
+@media (max-width: 768px) {
+    .l-col-tablet-1-12 { width: 8.33333333%; }
+    .l-col-tablet-2-12 { width: 16.66666667%; }
+    .l-col-tablet-3-12 { width: 25%; }
+    .l-col-tablet-4-12 { width: 33.33333333%; }
+    .l-col-tablet-5-12 { width: 41.66666667%; }
+    .l-col-tablet-6-12 { width: 50%; }
+    .l-col-tablet-7-12 { width: 58.33333333%; }
+    .l-col-tablet-8-12 { width: 66.66666667%; }
+    .l-col-tablet-9-12 { width: 75%; }
+    .l-col-tablet-10-12 { width: 83.33333333%; }
+    .l-col-tablet-11-12 { width: 91.66666667%; }
+    .l-col-tablet-12-12 { width: 100%;}
+
+    header {
+        padding-top: 20%;
+    }
+    .logo {
+        padding-left: 1rem;
+    }
+}
+
+/* responsive mobile */
+@media (max-width: 480px) {
+    .l-col-mobile-1-12 { width: 8.33333333%; }
+    .l-col-mobile-2-12 { width: 16.66666667%; }
+    .l-col-mobile-3-12 { width: 25%; }
+    .l-col-mobile-4-12 { width: 33.33333333%; }
+    .l-col-mobile-5-12 { width: 41.66666667%; }
+    .l-col-mobile-6-12 { width: 50%; }
+    .l-col-mobile-7-12 { width: 58.33333333%; }
+    .l-col-mobile-8-12 { width: 66.66666667%; }
+    .l-col-mobile-9-12 { width: 75%; }
+    .l-col-mobile-10-12 { width: 83.33333333%; }
+    .l-col-mobile-11-12 { width: 91.66666667%; }
+    .l-col-mobile-12-12 { width: 100%;}
+
+    header {
+        padding-top: 20%;
+    }
+    .logo {
+        padding-left: 1rem;
+    }
+    
+}
