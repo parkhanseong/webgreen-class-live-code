@@ -5,7 +5,6 @@
 
 /* header */
 header {
-    /* display: none; */
     position: fixed;
     top: 0;
     left: 0;
@@ -61,6 +60,7 @@ header .gnb .gnb-item-wrap {
 }
 header .gnb .gnb-item-wrap li {
     display: inline-block;
+    width: 100%;
 }
 header .gnb .gnb-item-wrap a:hover {
     color: var(--primary-color);
@@ -87,16 +87,10 @@ header .search .btn-search:hover {
     background: var(--primary-color);
     border: 1px solid var(--primary-color);
 }
-header .search .ir-logo {}
-
-
-
-
 
 /* section-title */
 h2.section-title {
     margin: 100px auto 44px;
-    /* background: pink; */
     text-align: center;
     font-size: 1.6rem;
     font-weight: 300;
@@ -159,7 +153,6 @@ section.vision {
     transform: scale(1.2);
 }
 .about .thumb-item .thumb-desc {
-    /* background: pink; */
     padding: 43px 0 30px;
     margin-left: 40px;
     border-bottom: 2px solid #ddd;
@@ -317,7 +310,6 @@ section.vision {
 }
 .sns .sns-tab .tab-item {
     display: inline-block;
-    /* margin-right: 5rem; */
 }
 .sns .sns-tab .tab-item + .tab-item:before {
     content:'';
@@ -331,7 +323,6 @@ section.vision {
 .sns .sns-tab .tab-item a {
     height: 20px;
     overflow: hidden;
-    /* border: 1px solid #000; */
 }
 .sns .sns-tab .tab-item:first-child a img {
     margin-top: -20px;

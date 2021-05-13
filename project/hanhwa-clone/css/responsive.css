@@ -25,14 +25,7 @@
         width: 80%;
     }
 
-    /* heaer */
-    header {}
-
-    /* visiton */
-    section.vision {}
-
     /* about */
-    section.about {}
     .about .thumb-item {
         float: left;
         width: 100%;
@@ -46,7 +39,6 @@
     }
 
     /* innovation */
-    section.innovation {}
     .innovation dd {
         height: auto;
     }
@@ -56,7 +48,6 @@
     }
 
     /* challenge */
-    section.challenge {}
     .challenge .outer-list > li {
         padding: 0 70px 50px;
     }
@@ -65,7 +56,6 @@
     }
 
     /* sns */
-    section.sns {}
     .sns .post .post-item {
         width: 100%;
     }
@@ -74,7 +64,6 @@
     }
 
     /* footer */
-    footer {}
     footer {
         padding-bottom: 35px;
         height: auto;
@@ -82,5 +71,6 @@
     }
     footer address {
         margin: 10px 20px;
+        display: block;
     }
 }
