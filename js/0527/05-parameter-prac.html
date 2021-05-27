@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>paramter prac</title>
+</head>
+<body>
+
+    <script>
+        // 인사하는 함수
+        function sayHello(name) {
+            console.log("안녕하세요~! " + name +"입니다");
+        }
+        sayHello("에이비씨");
+        // 숫자를 매개변수로 받는다
+
+        // 제곱을 하는 함수다
+        function getTwice(param){
+            console.log(param * param);
+        }
+        // var param = 300;
+        // var param = prompt('값을 입력해주세요');
+        // console.log(param);
+        // getTwice(300);
+
+        // 커피값 계산하는 함수
+        function cafeCalcul(cups){
+            var americanoPrice = 4500;
+            console.log(americano * cups);
+        } 
+        // cafeCalcul(7);
+
+        /*
+        * desc: 달러를 원화로 환전하는 함수
+        * param: usd
+        * return: won
+        */
+        function exchangeUsdToWon(usd){
+            var wonPrice = 1150;
+            var result = wonPrice * usd;
+            console.log(result + "원 입니다");
+        }
+        // exchangeUsdToWon(10000);
+
+        // kb to mb
+        function kbToMega(kb){
+            // 실행문
+            // 1MB = 1024KB
+            // 1 / 1024 MB = 1KB
+            // 45773 / 1024 MB = 45773KB
+            console.log(kb/1024);
+        }
+        // kbToMega(45773);
+
+        function teraToGiga(teraData){
+            // 1TB = 1024GB
+            // 3TB = 3 * 1024GB
+            var result = teraData * 1024;
+            console.log(teraData + "TB는");
+            console.log(result + "GB 입니다");
+        }
+        // teraToGiga(6);
+
+        function teraToMega(teraData){
+            //1024GB = 1024 * 1024MB;
+            //1TB = 1024GB;
+            //1TB = 1024 * 1024MB;
+            //7 * 1TB = 7 * 1024 * 1024MB;
+            var result = teraData * 1024 * 1024;
+            console.log(teraData + "TB는");
+            console.log(result + "MB 입니다");
+        }
+        teraToMega(25);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>compare null vs undefined</title>
+</head>
+<body>
+
+
+    <script>
+        var money;
+        console.log(money);/* unde */
+        
+        var yourMoney = null;
+        console.log(yourMoney); /* nul */
+
+        // 동등 비교 (값만 비교한다)
+        console.log(money == yourMoney); /* true */
+        // 일치 비교 (값과 타입을 비교한다)
+        console.log(money === yourMoney); /* false */
+        
+        // 부등 비교
+        console.log(money != yourMoney);
+        // 불일치 비교
+        console.log(money !== yourMoney);
+
+
+    </script>
+</body>
+</html>
