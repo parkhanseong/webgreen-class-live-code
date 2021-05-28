@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>flex layout2</title>
+    <style>
+        body {
+            color: #eee;
+        }
+        header, footer {
+            background: skyblue;
+            height: 100px;
+        }
+        section {
+            display: flex;
+            height: calc(100vh - 200px);
+        }
+        article {
+            background: teal;
+            flex: 80;
+        }
+        aside {
+            background: dodgerblue;
+            flex: 10;
+        }
+        nav {
+            background: royalblue;
+            flex: 10;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        header
+    </header>
+    <section>
+        <article>
+            article
+        </article>
+        <aside>
+            aside
+        </aside>
+        <nav>
+            nav
+        </nav>
+    </section>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>
