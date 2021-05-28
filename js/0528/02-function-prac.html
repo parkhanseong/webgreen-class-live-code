@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>calculator</title>
+</head>
+<body>
+
+    <script>
+        // 카페 계산기
+        function cafeCalculator(ameCount, price){
+            var totalPrice = ameCount * price;
+            console.log(`커피 ` + ameCount +`잔 주문하시면\n지불할 총 금액은 ` + totalPrice +`원 입니다`)
+        }
+        cafeCalculator(7, 4500);
+
+        
+        // 환율 계산기
+        function exchangeRateCalculator(dollar, wonRate, date){
+            var wonPrice = wonRate * dollar;
+            console.log(date + " 오늘 환율은 "+ wonRate +"원입니다\n원화로 " + wonPrice + "원 입니다")
+        }
+        exchangeRateCalculator(150, 1117, "2021.05.28");
+
+        // 체질량 구하기
+        function bmiCalc(name, weight, height){
+            var bmiIndex = weight / (height * height / 10000);
+            console.log(name + "님의 체질량 지수는 " + bmiIndex + "입니다");
+        }
+        bmiCalc("홀쭉이", 43.52, 160);
+        bmiCalc("코린이", 61.25, 175);
+        bmiCalc("퉁퉁이", 77.76, 180);
+
+    </script>
+</body>
+</html>

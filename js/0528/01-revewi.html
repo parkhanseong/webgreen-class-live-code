@@ -7,7 +7,33 @@
 </head>
 <body>
 
+    <h1>커피 자동 계산 프로그램</h1>
 
+<script>
+    function cafeCalculator(ameCups, latteCups, juiceCups){
+        // 아메리카노, 라떼, 주스
+        var americanoPrice = 4500;
+        var lattePrice = 6100;
+        var juicePrice = 10200;
+
+        var ameTotalPrice = americanoPrice * ameCups; 
+        var latteTotalPrice = lattePrice * latteCups;
+        var juiceTotalPrice = juicePrice * juiceCups;
+
+        var totalPrice = ameTotalPrice + latteTotalPrice + juiceTotalPrice;
+        var addComma = totalPrice.toLocaleString('ko-KR');
+
+        console.log("최종 지불할 금액은 : " + addComma);
+
+        // Nan : Not a Number;
+        // console.log : 브라우저 콘솔창에 log를 찍어주는 함수다
+    }
+
+    // function hoisting
+    // 함수 호이스팅 > 끌어올리다
+    cafeCalculator(123123123, 123123, 123123);
     
+</script>
+
 </body>
 </html>

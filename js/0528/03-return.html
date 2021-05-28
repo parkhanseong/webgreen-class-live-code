@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>return</title>
+</head>
+<body>
+
+<script>
+        // var year = 2021,
+        //     month = 12,
+        //     day = 20;
+        // es5
+        // console.log('생년월일은 ' + year + '년 ' + month + '월 ' + day + '일입니다');
+        // es6
+        // console.log(`생년월일은 ${year}년 ${month}월 ${day}일입니다`)
+
+
+        function slotMachin(number){
+            var square = number * number;
+            // console.log(square);
+            // 반환하다
+            return square;
+        };
+        // console.log(slotMachin(100));
+
+        // function printValue(x){
+        //     console.log(x);
+        // };
+        
+        // function getValue(x){
+        //     return x;
+        // };
+
+        // printValue(5);
+        // var result = getValue(7);
+        // console.log(result);
+
+        // function getTwice(num){
+        //     return num * 2;
+        // }
+        // var firstNum = getTwice(50);
+        // console.log(firstNum);
+        // var secondNum = getTwice(100);
+        // console.log(secondNum);
+
+        // console.log(firstNum + secondNum);
+
+        // function addCalc(num){
+        //     console.log('======== 리턴 전'); // dead code
+        //     console.log('======== 리턴 후'); // dead code
+        //     var result = num * num;
+        //     return result;
+        // }
+
+        // console.log('>>> 함수 호출 전');
+        // console.log(addCalc(777));
+        // console.log('>>> 함수 호출 후');
+        
+        function multiple(num){
+            return num * num;
+        }
+        console.log('>>> 함수 호출 전');
+        console.log(multiple(3) * multiple(3));
+        console.log('>>> 함수 호출 후');
+
+
+</script>
+
+</body>
+</html>

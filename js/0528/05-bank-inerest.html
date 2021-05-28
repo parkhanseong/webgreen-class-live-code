@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    bank interest
+</title>
+</head>
+<body>
+
+    <script>
+        
+        // 이자 계산하는 함수
+        function interestCalculator (myMoney, saveTerm, interestRate){
+            var result = myMoney * saveTerm * interestRate / 100;
+            return result;
+        }
+        
+        // 조건 입력 테스트
+        var myMoney = 3650000; 
+        var saveTerm = 1; 
+        var interestRate = 4; 
+        
+        // 수령액 계산 테스트
+        var myInterest = interestCalculator(myMoney, saveTerm, interestRate);
+        var totalMoney = myMoney + myInterest;
+        
+        // 출력 테스트
+        console.log('맡긴 금액은 ' + myMoney + '원 입니다.');
+        console.log('이자는 ' + myInterest + '원 입니다.');
+        console.log('최종 받을 금액은 ' + totalMoney + '원 입니다.');
+        
+        
+    </script>
+
+</body>
+</html>
