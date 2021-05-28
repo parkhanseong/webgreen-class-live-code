@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>flex header</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a {
+        color: inherit;
+        display: inline-block;
+        text-decoration: none;
+    }
+    .wrap {
+        max-width: 960px;
+        margin: 0 auto;
+        border: 1px solid #000;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        padding: 0 2rem;
+    }
+    .logo {
+        background: pink;
+    }
+    .gnb {
+        background: teal;
+    }
+</style>
+</head>
+<body>
+
+    <div class="wrap">
+        <header>
+            <h1 class="logo">
+                logo
+            </h1>
+            <div class="gnb">
+                <a href="#">menu1</a>
+                <a href="#">menu2</a>
+                <a href="#">menu3</a>
+            </div>
+        </header>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>flex basic</title>
+<style>
+    .flexbox-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        background: pink;
+        /* 
+            value: flext-start, center, flex-end
+         */
+        display: flex;
+        height: 300px;
+        width: 600px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        align-items: center;
+        /* align-content: flex-start; */
+    }
+    .item {
+        /* 
+            flex상태에서 item는 유사 block 상태가 된다
+         */
+        width: 100px;
+        height: 100px;
+        background: coral;
+        border: 1px solid #000;
+        
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+</div>
+
+</body>
+</html>
