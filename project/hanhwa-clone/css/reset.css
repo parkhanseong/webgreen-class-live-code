@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+button {
+    outline: none;
+    border:none;
+    color: inherit;
+    background: transparent;
+    cursor: pointer;
+}

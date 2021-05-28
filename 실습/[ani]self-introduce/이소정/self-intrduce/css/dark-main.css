@@ -1,0 +1,259 @@
+@charset "utf-8";
+@import "reset.css";
+
+.wrap {
+    background: #000;
+}
+header {
+    text-align: center;
+    width: 100%;
+}
+header h1 {
+    display: inline-block;
+    text-align: center;
+    width: 1000px;
+    color: #ddd;
+    font-style: italic;
+    font-family: fantasy;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+.icons {
+    display: inline-block;
+    padding: 3rem 1rem;
+    color: #eee;
+}
+.icons a {
+    transition: .3s;
+}
+.icons a:hover {
+    color: #fff;
+    text-shadow:1px 1px 1px #fff;
+}
+header .gnb li {
+    margin: 0 2rem;
+    display: inline-block;
+    height: 50px;
+    width: 10%;
+    color: rgb(254, 254, 254);
+}
+
+.menu nav .gnb li a {
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    background: rgb(66, 66, 66);
+    line-height: 50px;
+    width: 100%;
+    transition: .5s;
+}
+.menu nav .gnb li a:hover {
+    background: #aaa;
+    color: #000;
+}
+
+.main .inner {
+    background: rgb(66, 66, 66);
+    width: 100%;
+    text-align: center;
+    padding: 3rem;
+}
+
+.likeImg {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: inline-block;
+    /* border-radius: 50%; */
+}
+
+.likeImg .item img {
+    border: 1px solid #aaa;
+    width: 300px;
+    border-radius: 50%;
+    
+}
+
+.likeImg .item {
+    animation: scroll 4s infinite alternate ;
+    filter: brightness(90%);
+}
+
+@keyframes scroll {
+    0% {
+        margin-top: 20px;
+    }
+    50% {
+        margin-top: -300px;
+    }
+    100% {
+        margin-top: -550px;
+    }
+}
+
+.likeImg .item:hover {
+    animation-play-state: paused;
+    filter: brightness(100%);
+}
+.profile {
+    padding: 2rem;
+}
+
+.profile .item {
+    /* border: 1px solid #000; */
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color: #ddd;
+}
+
+.profile .item .photo {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.profile .item .photo img {
+    transition: all .5s;
+}
+
+.profile .item .photo:hover img {
+    transform: scale(1.2);
+}
+
+.profile .item .subDesc {
+    width: 60%;
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: top;
+}
+
+.profile .item .subDesc h3 {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 2rem;
+    margin-left: -20px;
+    text-align: left;
+    color: #eee;
+}
+
+.profile .item .subDesc p {
+    text-align: left;
+    padding: 1rem;
+}
+
+.skills .inner {
+    padding: 2rem;
+    height: 100%;
+    margin: 50px auto;
+    background: rgb(95, 95, 95);
+}
+
+.skills .inner h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: #000;
+}
+.skills .item p span:first-child {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+.skills .item p {
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    text-align: left;
+    color: #000;
+} 
+
+.skills .item .progress {
+    border: 1px solid #eee;
+    height: 30px;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.skills .item .progress-bar {
+    /* background: rgb(73, 61, 97); */
+    width: 90%;
+    height: 20px;
+}
+
+
+.skills .item:nth-child(2) .progress-bar {
+    width: 100%;
+}
+.skills .item:nth-child(3) .progress-bar {
+    width: 60%;
+}
+.skills .item:nth-child(4) .progress-bar {
+    width: 45%;
+}
+.skills .item:nth-child(5) .progress-bar {
+    width: 40%;
+}
+.skills .item:nth-child(6) .progress-bar {
+    width: 90%;
+}
+
+.core {
+    background: rgb(48, 48, 48);
+    height: 100%;
+    animation: skills 3s infinite alternate;
+}
+
+@keyframes skills {
+
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+.sns {
+    /* border: 1px solid #000; */
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.sns p {
+    color: #ddd;
+}
+.sns a {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50%;
+    margin-left: .5rem;
+    margin-top: -10px;
+}
+.sns .item {
+    margin-bottom: 30px;
+}
+.sns .item a i {
+    /* border: 1px solid blue; */
+    font-size: 2rem;
+    width: 34px;
+    color: #999;
+    transition: all .5s;
+}
+.sns a:nth-child(1):hover {
+    background: #3B5999;
+}
+.sns a:nth-child(2):hover {
+    background: #E4405F;
+}
+.sns a:nth-child(3):hover {
+    background: #55ACEE;
+}
+.sns a:nth-child(4):hover {
+    background: #DD4B39;
+}
+.sns a:hover i {
+    color: #fff;
+    transform: rotateY(360deg);
+}
