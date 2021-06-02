@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    01 review 
+</title>
+</head>
+<body>
+
+    <script>
+
+        // 인사하는 함수
+        // 상수이면서 global var(전역변수)
+        // const myName = "알파카";
+        // 자동으로 js에서 var를 선언해준다
+        
+        /* function greeting(name, func){
+            if(typeof func === "function"){
+                console.log(`안녕하세요~ ${name}입니다`);
+            }else{
+                console.log("부재중입니다");
+            }
+        }
+        var func = function (){
+            console.log("이건 함수야");
+        } */
+        // greeting(myName, func);
+
+        // console.log(typeof myName);
+        // console.log(typeof func);
+
+        // function prompt(){
+        //     // 
+        //     return value;
+        // }
+
+        function question(){
+            var answer = prompt("오늘 점심 메뉴로 뭐먹? 1) 짜장명 2) 짬뽕 3)몰라");
+                convertAnswer = Number(answer);
+
+            if( convertAnswer === 1){ /* ===, 1 유지 */
+                console.log('짜장면을 먹을게요')
+            }else if(convertAnswer === 2){
+                console.log('짬봉을 먹을게요')
+            }else{
+                console.log('고민 좀 해볼게요')
+            }
+        }
+        question();
+
+
+    </script>
+
+</body>
+</html>

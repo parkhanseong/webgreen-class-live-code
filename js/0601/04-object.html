@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>object</title>
+</head>
+<body>
+
+    <script>
+
+     
+
+        var cashDiary = {
+            date: 0610,
+            price: 4100,
+            brand: "starbucks",
+            when: "moring",
+            info: {
+                branch: "동성로점",
+                isGood: true,
+                taste: true
+            }
+        }
+
+        var myYouChannel = {
+            channelName: "alpca coding",
+            "open year": 2021,
+            isHot: true,
+            info: {
+                category: "코딩",
+                videoCount: 56
+            }
+        }
+        // 
+        console.log(myYouChannel.info.category);
+        var str = "info";
+        
+        console.log(myYouChannel[str]["category"]);
+        console.log(myYouChannel.info["category"]);
+
+        // console.log(cashDiary);
+        // console.log(cashDiary.brand);
+        // console.log(cashDiary["brand"]);
+        // console.log(cashDiary.when);
+        
+
+        // document.write(str);
+
+    </script>
+
+</body>
+</html>

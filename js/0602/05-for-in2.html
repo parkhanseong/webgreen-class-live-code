@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    for in prac
+</title>
+</head>
+<body>
+
+
+    <script>
+        
+var charlie = {
+   '된장찌개 만들기': 10,
+   '김치찌개 만들기': 8,
+   '피자 만들기': 22,
+   '까르보나라 만들기': 18,
+   '계란 삶기': 20,
+};
+
+var james = {
+   '된장찌개 만들기': 14,
+   '김치찌개 만들기': 8,
+   '피자 만들기': 12,
+   '까르보나라 만들기': 4,
+   '계란 삶기': 16,
+};
+
+addScore(charlie);
+addScore(james);
+
+
+// 매개 + 변수
+function addScore(scoreObj) {
+    // 최종 합산 점수
+    
+    var totalScore = 0;
+    for(var key in scoreObj){
+        totalScore += scoreObj[key];
+    }
+
+    // 합격 or 불합격
+   check(totalScore);
+}
+
+function check(totalScore){
+    if( totalScore >= 60){
+        console.log("축하합니다! 합격입니다!");
+    }else{
+        console.log("아쉽지만 불합격입니다..");
+    }
+}
+
+</script>
+
+</body>
+</html>

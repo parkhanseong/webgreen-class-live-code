@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>switch</title>
+</head>
+<body>
+
+    <script>
+
+        // switch
+       /*  var choice = prompt("좋아하는 계절은 무서인가요?");
+        console.log(choice); */
+
+        // if, for, switch
+        /* switch(choice){
+            case "봄":
+                console.log('봄을 좋아합니다');
+                break;
+            case "여름":
+                console.log('여름을 좋아합니다');
+                break;
+            case "가을":
+                console.log('가을을 좋아합니다');
+                break;
+            case "겨울":
+                console.log('겨울을 좋아합니다');
+                break;
+            default:
+                console.log('한글로 적어주세요sp');
+        } */
+
+
+        function checkPrice(grade){
+            switch(grade){
+                case "A":
+                    console.log("A석은 8만원 입니다."); 
+                    break;
+                case "S":
+                    console.log("S석은 10만원 입니다."); 
+                    break;
+                case "R":
+                    console.log("R석은 13만원 입니다.");
+                    break;
+                case "VIP":
+                    console.log("VIP석은 15만원 입니다."); 
+                    break;
+                default:
+                    console.log("VIP, R, S, A 중에서 하나를 선택해 주세요.");                         
+                    break;
+            }
+        }
+        checkPrice("R");
+        checkPrice('VIP');
+        checkPrice('S');
+        checkPrice('A');
+        checkPrice('B');
+
+        var obj = 777;
+        console.log(obj);
+
+    </script>
+
+
+</body>
+</html>

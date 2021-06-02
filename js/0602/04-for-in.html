@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    for in loop statement
+</title>
+</head>
+<body>
+
+    <script>
+
+    var parkhanseong = {
+        name: '박한성',
+        getMarried: false,
+        money: 0,
+        habit: 'tennis',
+        "special ability" : "cook",
+        test: "123",
+        test1: "123"
+    };
+
+    // for(var i = 0; i < 10; i++){
+    // }
+    // console.log(parkhanseong["name"]);
+
+    // console.log(parkhanseong["getMarried"]);
+    // console.log(parkhanseong["money"]);
+    // console.log(parkhanseong["habit"]);
+
+    // for( var key in parkhanseong ){
+    //     // console.log(key);
+    //     console.log(parkhanseong[key]);
+    // }
+
+    var paymentHistory = {
+        one: 1,
+        two: 2,
+        three: 3,
+        four: 4,
+        five: 5,
+        six: 6,
+    }
+
+    var total = 0;
+    for( var key in paymentHistory){
+        // console.log(key);
+        // console.log(paymentHistory[key]);
+        // total = total + paymentHistory[key];
+        total += paymentHistory[key];
+    }
+    console.log(total);
+
+
+
+    </script>
+
+</body>
+</html>
