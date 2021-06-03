@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>01 - review</title>
+</head>
+<body>
+
+    <script>
+
+        var window = {
+            height: 400,
+            width: 400,
+            offsetTop: 100,
+            color: "transparent",
+            "open-slide": "horizontal",
+            brand: "kcc",
+            hasCutton: false,
+            "window-count": 4,
+            thickness: 3,
+            openType: function(type){
+                if(type === 'horizontal'){
+                    console.log(">>>> 오른쪽으로 열기");
+                }else if(type==="vertical"){
+                    console.log(">>>> 위아래 여닫기");
+                }
+            }
+        }
+        // array > arr
+        var travelArr = ["홍콩", "영국", "미국", "헝가리", "독일"];
+        
+        // console.log(travelArr);
+        // console.log(travelArr[1]);
+        // console.log(travelArr[4]);
+        // console.log(travelArr[5]);
+        // array data create/add
+        travelArr[5] = "일본";
+        travelArr[8] = "핀란드";
+        // array(배열) 삭제하기
+        // travelArr.splice(6, 2);
+
+        //for in => (obejct) 반복문
+
+
+        // 배열 전문 반복문 
+        // type이 function이고 매개변수로 item
+        // 매개변수로 (item, index, array)를 받는다
+        travelArr.forEach(function (item, index, arr){
+            console.log(item);
+            console.log(index);
+            console.log(arr);
+        })
+        
+        // console.log(travelArr);
+
+
+
+
+
+    </script>
+
+</body>
+</html>
