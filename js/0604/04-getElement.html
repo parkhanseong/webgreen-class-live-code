@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>getElement</title>
+</head>
+<body>
+
+<h1 class="logo" id="logo">title1</h1>
+<h1 class="logo">title2</h1>
+<h1 class="logo">title3</h1>
+<h1 class="logo">title4</h1>
+
+<script>
+    // getElementsByTagName은 배열을 반환한다
+    // 그게 단 한개라도
+    // HTMLCollection = 유사 배열(array)
+    // var h1 = document.getElementsByTagName('h1');
+    // querySelector는 단일 객체를 반환한다
+    // console.log(h1q);
+    // var h1q = document.querySelector('h1');
+    // console.log(h1[0]);
+
+    var logo = document.getElementsByClassName('logo');
+    var logoById = document.getElementById('logo');
+    console.log('>>>>>>>>>>>')
+
+    console.dir(logo[2]);
+
+    // logo[2].style.color = "blue";
+    // logo[2].style.fontSize = "3rem";
+    // logo[2].style.backgroundColor = "coral";
+    logo[2].setAttribute("style", "color: blue; font-size: 3rem;");
+
+
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>js summary</title>
+ <style>
+     .box {
+         color: blue;
+     }
+ </style>
+</head>
+<body>
+
+<script>
+    // 함수 호이스팅(끌어올리다)
+    // testFunc();
+
+    // 엄격 모드(js 문법을)
+    'use strict';
+
+    // var let const(es5)
+    // var first = 1;
+    // let은 재선언(declare)이 안된다(es6)
+    // let second = "가";
+    // 재할당이 안된다(es6)
+    // const third = 3;
+
+    // es5
+    // function test(){
+    // }
+
+    // es6
+    // var test = () => {
+    // }
+    // number = 2;
+    // let number = 1;
+    // console.log(number);
+
+    // function testFunc(){ 
+    //     console.log('>>> test console >>');
+    //     console.log(">> ");
+    // };
+
+
+    /* // 삼항 연산자
+    var age = 100;
+    var status = (age >= 18) ? "성인" : "미성년자";
+    
+    // if 구문
+    var status2 = "";
+    if(age >= 18){ status2 = "성인"; }
+    else{ status2 = "미성년자"; }
+    
+    // if문 한줄로 작성도 한다
+    if(age > 20) {
+        console.log("중괄호 생략이 가능하다");
+    } 
+    
+    console.log(status2);
+    console.log(status); */
+
+
+    // 변수 var test = 0
+    // data type = Number, String, null, undefined, boolean
+    // 함수 function(){}
+    // 반복문 for(var i = 0; i < 10; i++) {}
+    // 조건문 if else if else
+    // data type = object {}, array[]
+    // var window = {
+    //     html: {
+    //         css: 'box'
+    //     }
+    // }
+
+    // 객체 점 접근법이다 = 대입연산자
+    // window.html.css = "box2";
+
+    var document1 = {
+        body1 : {
+            div: {
+                h1: "타이틀",
+                ul: {
+                    value: "타이틀",
+                    element: {
+                        li: "menu1"
+                    } 
+                }
+            }
+        }
+    }
+
+    console.log(document1.body1.div.h1);
+    
+</script>
+
+</body>
+</html>
