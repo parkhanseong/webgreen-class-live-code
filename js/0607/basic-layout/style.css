@@ -23,17 +23,22 @@ li {
 }
 
 .header {
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; */
     position: relative;
-    z-index: 100;
     padding: 1rem;
     display: flex;
+    z-index: 100;
     justify-content: flex-end;
     background: #6A7BA2;
     color: #FFDFDE;
+    transition: .5s;
+}
+header.fixedHead {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.5rem;
+    width: 100%;
+    background: rgba(0,0,0,.5);
 }
 .toggle {
     /* 
@@ -105,6 +110,12 @@ li {
     text-align: center;
     line-height: 70px;
 }
+.navbar__item a:hover {
+    color: #6A7BA2;
+    background: #FFDFDE;
+
+}
+
 
 
 /* ================= section ================= */

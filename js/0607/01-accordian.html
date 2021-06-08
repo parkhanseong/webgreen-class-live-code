@@ -6,6 +6,10 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 <title>pure js accoridan</title>
 <style>
+    /* :root {
+        --mb-1: 1rem; 
+        --mb-1-5: 1.5rem;
+    } */
     * {
         margin: 0;
         padding: 0;
@@ -21,12 +25,14 @@
 
     #skill {
         /* border: 1px solid #000; */
+        margin-top: 10rem;
     }
     .accordian {
         width: 500px;
         margin: 0 auto;
         background:#02343F;
         color: #F0EDCC;
+        position: relative;
     }
     .accordian__item {
         
@@ -62,6 +68,18 @@
         color: #F0EDCC;
         transform: rotate(180deg);
     }
+    #closeAll {
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        padding: 1rem;
+        background:#02343F;
+        color: #F0EDCC;
+        border: none;
+        /* root(browser 기본 폰트) em(font)  */
+        border-radius: .5rem .5rem 0 0;
+        cursor: pointer;
+    }
 </style>
 </head>
 <body>
@@ -73,6 +91,9 @@
     -->
     <section id="skill">
         <ul class="accordian">
+            <button id="closeAll">
+                close all
+            </button>
             <li class="accordian__item">
                 <div class="accoridan__title">
                     <a href="#">About</a>
@@ -114,12 +135,7 @@
         2. class명 open을 title에다가 붙여준다
      -->
     <script>
-        var title = document.querySelectorAll('.accoridan__title');
         
-        console.log(title);
-        console.log(title[0]); /* About */
-        console.log(title[1]); /* Skills */
-        console.log(title[2]); /* Info */
 
         // 반복문
         /* title[0].addEventListener('click', function(){
@@ -136,13 +152,33 @@
         // 특수한 변수
         // window - this 같은 레벨
         // this
+
+        var title = document.querySelectorAll('.accoridan__title');
         for(var i = 0; i < title.length; i++){
+            
             title[i].addEventListener('click', function(){
+                funcCloseAll();
                 // click이 되었을때 this(자기자신에) classList에 toggle을 해라
                 this.classList.toggle('open');
             });
         }
 
+        // 전체 닫기
+        var closeAll = document.getElementById("closeAll");
+        
+        closeAll.addEventListener('click', function(){
+            funcCloseAll();
+        });
+        function funcCloseAll(){
+            for(var i = 0; i < title.length; i++){
+                title[i].classList.remove('open');
+                // ele.classList
+            }
+        };
+        
+        // title[0].classList.remove('open');
+        // title[1].classList.remove('open');
+        // title[2].classList.remove('open');
     </script>
 
 </body>
