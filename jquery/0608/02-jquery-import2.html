@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 기본 css, js import 순서 -->
+<!-- <link rel="stylesheet" href="style.css"> -->
+<style>
+    img {
+        width: 300px;
+    }
+    .container {
+        text-align: center;
+    }
+    button {
+        padding: 1rem;
+        background: #2929;
+    }
+</style>
+<!-- local에 있는 jQuery 파일 import -->
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script>
+    // 1번 jquery 준비 구문
+    /* $(document).ready(function(){
+        js/jquery 코드 작성
+    }) */
+
+    // 2번 jquery 준비 구문
+    $(function(){
+        // js 문법으로 이미지 hidden
+        
+        
+        /* var btnHide = document.querySelector('#btnHide');
+        var imgEle = document.querySelector('img');
+        btnHide.addEventListener('click', function(){
+            imgEle.style.display = "none";
+        }) */
+
+        // js, jquery 실행문 다 작성 가능
+        // $가 앞에 붙었으면 무조건 jquery 구문이다
+        /* $("#btnShow").click(function(){
+            // js코드와 혼용해서 사용 가능하다
+            $("img").show();
+        })
+        $("#btnHide").click(function(){
+            $("img").hide();
+        }) */
+
+        // var $h1 = $('h1');
+        // console.log($h1);
+        // var h1 = document.querySelectorAll('h1');
+        // console.log(h1);
+        // equivalent
+        // $h1.eq(0).css('color', 'red');
+
+        var $h1 = $('h1');
+        var $idH1 = $('#h1');
+        var $classH1 = $('.h1');
+
+        
+
+        // console.log($h1);
+        // console.log($classH1);
+        console.log(
+            $idH1.eq(0)
+        );
+        
+    })
+
+</script>
+
+<title>jquery import2</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>title</h1>
+        <h1 id="h1">title</h1>
+        <h1 class="h1">title</h1>
+
+        <div class="controls">
+            <button id="btnShow">show</button>
+            <button id="btnHide">hide</button>
+        </div>
+        <img src="http://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2021/02/26/95c1dd95-347d-47da-a222-8933a7ea53fb.jpg" alt="">
+    </div>
+
+</body>
+</html>

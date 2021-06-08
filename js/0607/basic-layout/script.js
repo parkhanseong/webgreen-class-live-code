@@ -52,7 +52,7 @@ arrowTop.addEventListener('click', function(event){
     // 그러므로 preventDefault()로 막는다
     // ---------------------------------------------
     event.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 // navbar 클릭시 스크롤 이동
@@ -62,7 +62,8 @@ navbarItem.forEach(function(item){
     item.addEventListener('click', function(event){
         event.preventDefault();
 
-        
+        toggle.classList.remove('active');
+        navbar.classList.remove('active');
         
         // #about
         // #skills
