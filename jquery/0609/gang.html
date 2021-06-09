@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>01- dropdown</title>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        /* padding margin 마진값 포함 */
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        /* block 한줄에 안나오니 줄바꿈 알아서 */
+    }
+    ul {
+        list-style: none;
+    }
+    .wrap {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar {
+        color: #F5D042;
+        display: flex;
+    }
+    .navbar__menu {
+        background:  #0A174E;
+    }
+    .navbar__item {
+        width: 100px;
+    }
+    .navbar a {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .navbar__submenu a {
+        background: #F5D042;
+        color: #0A174E;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <div class="wrap">
+            <ul class="navbar">
+                <!-- class naming 연습 -->
+                <!-- navbar item menu : nested 방식 -->
+                <!-- navbar__menu : BEM block__element--modifier 방식 -->
+                <li class="navbar__item">
+                    <a href="#" class="navbar__menu">
+                        menu1
+                    </a>
+                    <div class="navbar__submenu">
+                        <a href="#">sub-menu1</a>
+                        <a href="#">sub-menu2</a>
+                        <a href="#">sub-menu3</a>
+                        <a href="#">sub-menu4</a>
+                    </div>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__menu">
+                        menu2
+                    </a>
+                    <div class="navbar__submenu">
+                        <a href="#">sub-menu1</a>
+                        <a href="#">sub-menu2</a>
+                        <a href="#">sub-menu3</a>
+                        <a href="#">sub-menu4</a>
+                    </div>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__menu">
+                        menu3
+                    </a>
+                    <div class="navbar__submenu">
+                        <a href="#">sub-menu1</a>
+                        <a href="#">sub-menu2</a>
+                        <a href="#">sub-menu3</a>
+                        <a href="#">sub-menu4</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+     // 초기 상태 세팅 : 안보이게
+     var $submenu = $('.navbar__submenu');
+        var $navbarItem = $('.navbar__item');
+        // 0 - > 1 
+        $submenu.hide();
+        // 마우스가 오면 submenu 보여라
+        $navbarItem.mouseenter(function(){
+            console.log(this);
+            // var $subMenu = $(this).children('.navbar__submenu');
+            //     $subMenu.slideDown(); 를 한줄로
+            $(this).children('.navbar__submenu').slideDown();
+        })
+        $navbarItem.mouseleave(function(){
+            $(this).children('.navbar__submenu').stop().slideUp();
+            // stop 을 넣어주어 마우스가 enter 도중에 떠났을 때
+            // 바로 멈출 수 있도록 해준다.
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>addClass, remove, toggle</title>
+<style>
+    .desc {
+        background: teal;
+        color: #999;
+        padding: 2rem;
+    }
+    .dark {
+        background: #111;
+    }
+</style>
+</head>
+<body>
+
+    <div class="control">
+        <button id="btnAdd">add</button>
+        <button id="btnRemove">remove</button>
+        <button id="btnToggle">toggle</button>
+    </div>
+    <p class="desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, iure consequatur inventore ratione doloribus perspiciatis voluptas suscipit. Totam sunt obcaecati, nostrum adipisci sequi at laudantium consectetur esse voluptatum vitae quae.
+    </p>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        var $btnAdd = $('#btnAdd'),
+            $btnRemove = $('#btnRemove'),
+            $btnToggle = $('#btnToggle'),
+            $desc = $('.desc');
+
+            // add event    
+            $btnAdd.click(function(){
+                $desc.addClass('dark');
+            })
+
+            // remove event
+            $btnRemove.click(function(){
+                $desc.removeClass('dark');
+            })
+            console.log('>>>>>>>>>>>>>>>>>>> ');
+            console.log(this.addEventListener);
+            console.log($(this).addClass());
+
+            console.log('>>>>>>>>>>>>>>>>>>> ');
+            // toggle event
+            $btnToggle.click(function(){
+                console.log(this);
+                $(this).toggleClass('dark');
+                // $desc.toggleClass('dark');
+            })
+    </script>
+
+</body>
+</html>

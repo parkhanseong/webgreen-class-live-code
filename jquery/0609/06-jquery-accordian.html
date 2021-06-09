@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<title>jquery accordian</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+    }
+    .skills {
+        width: 660px;
+        border: 1px solid #000;
+        margin: 0 auto;
+        background: #50586C;
+        color: #DCE2F0;
+    }
+    .skills__title {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+    .skills__desc {
+        padding: 1rem;
+        color: #50586C;
+        background: #DCE2F0;
+    }
+    .skills_icon {
+        font-size: 1.5rem;
+        transition: .3s;
+    }
+    .skills_icon.visible {
+        transform: rotate(180deg);
+    }
+    
+</style>
+</head>
+<body>
+
+    <section >
+        <!-- block -->
+        <ul class="skills">
+            <li class="skills__item">
+                <div class="skills__title">
+                    <h1>About</h1>
+                    <i class="uil uil-arrow-circle-up skills_icon"></i>
+                </div>
+                <p class="skills__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio inventore porro earum animi quia, dolores repellat incidunt vitae quod nulla quibusdam, repudiandae doloremque a ab recusandae veniam delectus est facilis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio inventore porro earum animi quia, dolores repellat incidunt vitae quod nulla quibusdam, repudiandae doloremque a ab recusandae veniam delectus est facilis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio inventore porro earum animi quia, dolores repellat incidunt vitae quod nulla quibusdam, repudiandae doloremque a ab recusandae veniam delectus est facilis.
+                </p>
+            </li>
+            <li class="skills__item">
+                <div class="skills__title">
+                    <h1>Skills</h1>
+                    <i class="uil uil-arrow-circle-up skills_icon"></i>
+                </div>
+                <p class="skills__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio inventore porro earum animi quia, dolores repellat incidunt vitae quod nulla quibusdam, repudiandae doloremque a ab recusandae veniam delectus est facilis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio inventore porro earum animi quia, dolores repellat incidunt vitae quod nulla quibusdam, repudiandae doloremque a ab recusandae veniam delectus est facilis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio inventore porro earum animi quia, dolores repellat incidunt vitae quod nulla quibusdam, repudiandae doloremque a ab recusandae veniam delectus est facilis.
+                </p>
+            </li>
+            <li class="skills__item">
+                <div class="skills__title">
+                    <h1>Info</h1>
+                    <i class="uil uil-arrow-circle-up skills_icon"></i>
+                </div>
+                <p class="skills__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio inventore porro earum animi quia, dolores repellat incidunt vitae quod nulla quibusdam, repudiandae doloremque a ab recusandae veniam delectus est facilis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio inventore porro earum animi quia, dolores repellat incidunt vitae quod nulla quibusdam, repudiandae doloremque a ab recusandae veniam delectus est facilis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio inventore porro earum animi quia, dolores repellat incidunt vitae quod nulla quibusdam, repudiandae doloremque a ab recusandae veniam delectus est facilis.
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- 
+        1. 초기 상태 세팅 : desc를 감춘다
+         - desc 객체 필요
+         - 감춘다 > hide(); 메서드
+
+        2. title이 클릭되면 desc를 보인다
+         - title 객체 필요
+         - click 이벤트 필요
+         - slideToggle();
+     -->
+     <script>
+         var $skillsDesc = $('.skills__desc');
+         var $skillsTitle = $('.skills__title');
+         var $skillsIcon = $('.skills_icon');
+
+        $skillsDesc.hide();
+        $skillsTitle.click(function(){
+        // siblings() 메서드는 형제 요소를 선택한다
+        // 태그, 아이디, 클래스명으로 요소 검색 가능
+        // 없으면 전체 선택
+            $skillsDesc.stop().slideUp();
+            $(this).siblings().stop().slideToggle();
+            $skillsIcon.toggleClass('visible');
+        })
+     </script>
+
+</body>
+</html>
