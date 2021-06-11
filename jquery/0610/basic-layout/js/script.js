@@ -6,6 +6,10 @@
     
 // 기본 세팅 2
 $(function(){
+
+    // wow js 초기화
+    new WOW().init();
+
     // header scroll event
     var $header = $('#header');
     var $arrowUp = $('#arrowUp');
