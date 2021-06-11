@@ -2,9 +2,12 @@
 
 /* header */
 :root {
+    /* color variable */
     --primary-color: #02343F;
     --secondary-color: #F0EDCC;
 
+    /* effect */
+    --header-fixed: #01262ee7;
     --hover-color: #012229da;
 
     /* zindex */
@@ -43,14 +46,25 @@ ul {
     justify-content: space-between;
     padding: 1rem;
     z-index: var(--zindex-header);
+    transition: .4s;
 }
+#header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem;
+    background: var(--header-fixed);
+}
+
+
 /* toggle */
 .toggle {
     width: 40px;
     height: 40px;
     position: relative;
     z-index: var(--zindex-toggle);
-    margin-right: 4rem;
+    /* margin-right: 4rem; */
     cursor: pointer;
 }
 .toggle span {
@@ -143,7 +157,26 @@ section:nth-of-type(3){
     border-radius: .5rem;
     cursor: pointer;
     transform: translateY(400%);
+    transition: .3s;
 }
 #arrowUp:hover {
     background: var(--hover-color);
 } 
+#arrowUp.visible {
+    transform: translateY(0);
+}
+
+/* dimmed */
+#dimmed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+/* visible, open,  */
+#dimmed.visible {
+    display: block;
+}

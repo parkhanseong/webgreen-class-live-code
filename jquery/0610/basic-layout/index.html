@@ -7,7 +7,14 @@
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 <!-- jquery -->
+<!-- CDN -->
+<!-- 
+    1. 장점: 서비스 용량이 가벼워 진다
+    2. 단점: 과부가 원인이 될 수 있다. CDN이 많아질 경우
+ -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- local  file -->
+<!-- <script src="./js/jQuery3.6.0"></script> -->
 <!-- script.js -->
 <script src="./js/script.js"></script>
 <title>basic laytou</title>
@@ -28,13 +35,19 @@
 
         <ul class="gnb">
             <li class="gnb__item">
-                <a href="#" class="gnb__menu">About</a>
+                <a href="#" class="gnb__menu" data-target="#about">About</a>
             </li>
             <li class="gnb__item">
-                <a href="#" class="gnb__menu">Skills</a>
+                <!-- 
+                    data-이름
+                    data-link
+                    data-target
+                    data-color
+                 -->
+                <a href="#" class="gnb__menu" data-target="#skills">Skills</a>
             </li>
             <li class="gnb__item">
-                <a href="#" class="gnb__menu">Contact</a>
+                <a href="#" class="gnb__menu" data-target="#contact">Contact</a>
             </li>
         </ul>
     </header>
