@@ -57,9 +57,10 @@ $(function(){
     // gnb__item window scroll 
     var $gnbMenu = $('.gnb__menu');
     $gnbMenu.click(function(){
-        var target = $(this).attr('data-target');
+        // dataTarget #about, #skills, #contact
+        var dataTarget = $(this).attr('data-target');
         // target은 클릭한 메뉴의 엘리먼트다
-        var $target = $(target);
+        var $target = $(dataTarget);
         var distance = $target.offset().top;
         $('html, body').animate({scrollTop: distance});
     })
