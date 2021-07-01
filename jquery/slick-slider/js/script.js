@@ -13,6 +13,8 @@ $(document).ready(function(){
             dots:true,
             autoplay: true,
             autoplaySpeed: 2000,
+            fade: true,
+            cssEase: 'linear'
     });
 
 });

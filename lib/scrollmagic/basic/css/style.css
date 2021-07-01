@@ -1,0 +1,32 @@
+body {
+    background: #000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    height: 100vh;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.logo {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background: gold;
+}
+.font {
+    font-size: 200px;
+    transform: translate(100%, 100%);
+}

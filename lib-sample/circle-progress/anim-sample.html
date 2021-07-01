@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/asPieProgress.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./js/jquery-asPieProgress.min.js"></script>
+<style>
+    h2 {
+        text-align: center;
+    }
+    .pie_progress {
+        width: 160px;
+        margin: 10px auto;
+    }
+    .row {
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    @media all and (max-width: 768px) {
+        .pie_progress {
+            width: 30%;
+            max-width: 300px;
+        }
+    }
+</style>
+<script>
+    $(function(){
+        $('.pie_progress').asPieProgress({
+            namespace: 'pie_progress'
+        });
+        $('.pie_progress').asPieProgress('start');
+    });
+</script>
+<title>anim circle sample</title>
+</head>
+<body>
+    <section>
+        <h2>animation progress</h2>
+        <section>
+          <div class="row">
+            <div class="pie_progress" role="progressbar" data-barcolor="#2929" data-goal="80" data-barsize="20">
+              <div class="pie_progress__number">0%</div>
+              <div class="pie_progress__label">HTML</div>
+            </div>
+            <div class="pie_progress" role="progressbar" data-barcolor="#2929" data-goal="90" data-barsize="20">
+              <div class="pie_progress__number">0%</div>
+              <div class="pie_progress__label">CSS</div>
+            </div>
+            <div class="pie_progress" role="progressbar" data-barcolor="#2929" data-goal="60" data-barsize="20">
+              <div class="pie_progress__number">0%</div>
+              <div class="pie_progress__label">Javascript</div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+</body>
+</html>
